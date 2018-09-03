@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 2.4.0">
+  <meta name="generator" content="Hugo 0.48" />
+  <meta name="author" content="Chao Zhang">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="(* indicates equal contribution)
+Recent &amp; Representative Publications:  TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering
+Chao Zhang, Fangbo Tao, Xiusi Chen, Jiaming Shen, Meng Jiang, Brian Sadler, Michelle Vanni, Jiawei Han
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (KDD), 2018
+ Weakly-Supervised Neural Text Classification
+Yu Meng, Jiaming Shen, Chao Zhang, Jiawei Han
+ACM International Conference on Information and Knowledge Management (CIKM), 2018">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://chaozhang.org/publication/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/custom.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-96993546-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="http://chaozhang.org/index.xml" type="application/rss+xml" title="Chao Zhang">
+  <link rel="feed" href="http://chaozhang.org/index.xml" type="application/rss+xml" title="Chao Zhang">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="http://chaozhang.org/publication/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Chao Zhang">
+  <meta property="og:url" content="http://chaozhang.org/publication/">
+  <meta property="og:title" content="Publications | Chao Zhang">
+  <meta property="og:description" content="(* indicates equal contribution)
+Recent &amp; Representative Publications:  TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering
+Chao Zhang, Fangbo Tao, Xiusi Chen, Jiaming Shen, Meng Jiang, Brian Sadler, Michelle Vanni, Jiawei Han
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (KDD), 2018
+ Weakly-Supervised Neural Text Classification
+Yu Meng, Jiaming Shen, Chao Zhang, Jiawei Han
+ACM International Conference on Information and Knowledge Management (CIKM), 2018">
+  <meta property="og:locale" content="en-us">
+  
+  
+  
+  
+
+  
+
+  
+
+  <title>Publications | Chao Zhang</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Chao Zhang</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/research">
+            
+            <span>Research</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/publication">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container">
+
+  
+
+
+  <div class="row">
+    <div class="col-md-12">
+
+      <h1>Publications</h1>
+
+      
+      <div class="article-style" itemprop="articleBody">
+
+<p>(* indicates equal contribution)</p>
+
+<h2 id="recent-representative-publications">Recent &amp; Representative Publications:</h2>
+
+<ul>
+<li><p><a href="/papers/kdd18a.pdf">TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering</a><br />
+<em>Chao Zhang</em>, Fangbo Tao, Xiusi Chen, Jiaming Shen, Meng Jiang, Brian Sadler, Michelle Vanni, Jiawei Han<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<strong>KDD</strong>), 2018</p></li>
+
+<li><p><a href="/papers/cikm18a.pdf">Weakly-Supervised Neural Text Classification</a><br />
+Yu Meng, Jiaming Shen, <em>Chao Zhang</em>, Jiawei Han<br />
+ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2018</p></li>
+
+<li><p><a href="/publication">Doc2Cube: Automated Document Allocation to Text Cube via Dimension-Aware Joint Embedding</a><br />
+Fangbo Tao*, <em>Chao Zhang</em>*, Xiusi Chen, Meng Jiang, Tim Hanratty, Lance Kaplan, Jiawei Han<br />
+IEEE International Conference on Data Mining (<strong>ICDM</strong>), 2018</p></li>
+
+<li><p><a href="/papers/kdd17.pdf">TrioVecEvent: Embedding-Based Online Local Event Detection in Geo-Tagged Tweet Streams</a><br />
+<em>Chao Zhang</em>, Liyuan Liu, Dongming Lei, Quan Yuan, Honglei Zhuang, Tim Hanratty, and Jiawei Han<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<strong>KDD</strong>), 2017</p></li>
+
+<li><p><a href="/papers/www17.pdf">Regions, Periods, Activities: Uncovering Urban Dynamics via Cross-Modal Representation Learning</a><br />
+<em>Chao Zhang</em>*, Keyang Zhang*, Quan Yuan, Haoruo Peng, Yu Zheng, Tim Hanratty, Shaowen Wang, and Jiawei Han<br />
+International World Wide Web Conference (<strong>WWW</strong>), 2017</p></li>
+
+<li><p><a href="/papers/kdd16.pdf">GMove: Group-Level Mobility Modeling Using Geo-Tagged Social Media</a><br />
+<em>Chao Zhang</em>, Keyang Zhang, Quan Yuan, Luming Zhang, Tim Hanratty, and Jiawei Han<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<strong>KDD</strong>), 2016</p></li>
+
+<li><p><a href="/papers/sigir16.pdf">GeoBurst: Real-Time Local Event Detection in Geo-Tagged Tweet Streams</a><br />
+<em>Chao Zhang</em>, Guangyu Zhou, Quan Yuan, Honglei Zhuang, Yu Zheng, Lance Kaplan, Shaowen Wang, Jiawei Han.<br />
+ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR</strong>), 2016</p></li>
+</ul>
+
+<h2 id="full-publication-list">Full Publication List:</h2>
+
+<h3 id="2018">2018</h3>
+
+<ul>
+<li><p><a href="/papers/kdd18a.pdf">TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering</a><br />
+<em>Chao Zhang</em>, Fangbo Tao, Xiusi Chen, Jiaming Shen, Meng Jiang, Brian Sadler, Michelle Vanni, Jiawei Han<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<strong>KDD</strong>), 2018<br />
+<a href="https://github.com/franticnerd/local-embedding" target="_blank"><code>Code</code></a> <a href="https://goo.gl/NRQbmg" target="_blank"><code>Data</code></a></p></li>
+
+<li><p><a href="/papers/kdd18b.pdf">HiExpan: Task-Guided Taxonomy Construction by Hierarchical Tree Expansion</a><br />
+Jiaming Shen, Zeqiu Wu, Dongming Lei, <em>Chao Zhang</em>, Xiang Ren, Michelle T. Vanni, Brian M. Sadler, Jiawei Han<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<strong>KDD</strong>), 2018</p></li>
+
+<li><p><a href="/papers/kdd18c.pdf">Easing Embedding Learning by Comprehensive Transcription of Heterogeneous Information Networks</a><br />
+Yu Shi, Qi Zhu, Fang Guo, <em>Chao Zhang</em>, Jiawei Han<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<strong>KDD</strong>), 2018</p></li>
+
+<li><p><a href="https://www.dropbox.com/s/0ca5wjwutzrioie/kdd18-tutorial-slides.pdf?dl=0" target="_blank">Towards Multidimensional Analysis of Text Corpora</a><br />
+Jingbo Shang, <em>Chao Zhang</em>, Jiaming Shen, Jiawei Han<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<strong>KDD</strong>), 2018<br />
+<code>Tutorial</code> <a href="https://shangjingbo1226.github.io/2018-04-21-kdd-tutorial/" target="_blank"><code>Website</code></a> <a href="https://www.dropbox.com/s/0ca5wjwutzrioie/kdd18-tutorial-slides.pdf?dl=0" target="_blank"><code>Slides</code></a></p></li>
+
+<li><p><a href="/papers/www18.pdf">DeepMove: Predicting Human Mobility with Attentional Recurrent Networks</a><br />
+Jie Feng, Yong Li, <em>Chao Zhang</em>, Funing Sun, Fanchao Meng, Ang Guo, Depeng Jin<br />
+The International World Wide Web Conference (<strong>WWW</strong>), 2018<br />
+<a href="https://github.com/vonfeng/DeepMove" target="_blank"><code>Code &amp; Data</code></a></p></li>
+
+<li><p><a href="/papers/cikm18a.pdf">Weakly-Supervised Neural Text Classification</a><br />
+Yu Meng, Jiaming Shen, <em>Chao Zhang</em>, Jiawei Han<br />
+ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2018</p></li>
+
+<li><p><a href="/papers/cikm18b.pdf">Open-Schema Event Profiling for Massive News Corpora</a><br />
+Quan Yuan, Xiang Ren, Wenqi He, <em>Chao Zhang</em>, Xinhe Geng, Lifu Huang, Heng Ji, Chin-Yew Lin, Jiawei Han<br />
+ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2018</p></li>
+
+<li><p><a href="/papers/aaai18a.pdf">Spatiotemporal Activity Modeling Under Data Scarcity: A Graph-Regularized Cross-Modal Embedding Approach</a><br />
+<em>Chao Zhang</em>, Mengxiong Liu, Zhengchao Liu, Carl Yang, Luming Zhang, and Jiawei Han.<br />
+AAAI Conference on Artificial Intelligence (<strong>AAAI</strong>), 2018</p></li>
+
+<li><p><a href="/papers/aaai18b.pdf">A Spherical Hidden Markov Model for Semantics-Rich Human Mobility Modeling</a><br />
+Wanzheng Zhu*, <em>Chao Zhang</em>*, Shuochao Yao, Xiaobin Gao, and Jiawei Han<br />
+AAAI Conference on Artificial Intelligence (<strong>AAAI</strong>), 2018</p></li>
+
+<li><p><a href="/publication">Doc2Cube: Automated Document Allocation to Text Cube via Dimension-Aware Joint Embedding</a><br />
+Fangbo Tao*, <em>Chao Zhang</em>*, Xiusi Chen, Meng Jiang, Tim Hanratty, Lance Kaplan, Jiawei Han<br />
+IEEE International Conference on Data Mining (<strong>ICDM</strong>), 2018</p></li>
+
+<li><p><a href="/papers/icde18.pdf">Did You Enjoy the Ride: Understanding Passenger Experience via Heterogeneous Network Embedding</a><br />
+Carl Yang, <em>Chao Zhang</em>, Jiawei Han, Xuewen Chen, and Jieping Ye<br />
+IEEE International Conference on Data Engineering (<strong>ICDE</strong>), 2018</p></li>
+
+<li><p><a href="/publication">SenseGAN: Enabling Deep Learning for Internet of Things with a Semi-Supervised Framework</a><br />
+Shuochao Yao, Yiran Zhao, Huajie Shao, <em>Chao Zhang</em>, Aston Zhang, Shaohan Hu, Dongxin Liu, Shengzhong Liu, and Tarek Abdelzaher<br />
+Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), 2018</p></li>
+
+<li><p><a href="https://ieeexplore.ieee.org/document/8364644/" target="_blank">Deep Learning for the Internet of Things</a><br />
+Shuochao Yao, Yiran Zhao, Aston Zhang, Huajie Shao, <em>Chao Zhang</em>, Lu Su, Tarek Abdelzaher<br />
+To appear in IEEE Computer, 2018</p></li>
+
+<li><p><a href="/papers/asonam18.pdf">Leveraging the Power of Informative Users for Local Event Detection</a><br />
+Hengtong Zhang, Fenglong Ma, Yaliang Li, <em>Chao Zhang</em>, Tianqi Wang, Yaqing Wang, Jing Gao, Lu Su<br />
+IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (<strong>ASONAM</strong>), 2018</p></li>
+
+<li><p><a href="https://arxiv.org/pdf/1709.02980.pdf" target="_blank">RDeepSense: Reliable Deep Mobile Computing Models with Uncertainty Estimations</a><br />
+Shuochao Yao, Yiran Zhao, Huajie Shao, Aston Zhang, <em>Chao Zhang</em>, Shen Li, and Tarek Abdelzaher.<br />
+ACM International Joint Conference on Pervasive and Ubiquitous Computing (<strong>UbiComp</strong>), 2018</p></li>
+
+<li><p><a href="/papers/infocom18.pdfj">A Constrained Maximum Likelihood Estimator for Unguided Social Sensing</a><br />
+Huajie Shao, Shuochao Yao, Yiran Zhao, <em>Chao Zhang</em>, Jinda Han, Lance Kaplan, Su Lu, and Tarek Abdelzaher<br />
+IEEE International Conference on Computer Communications (<strong>InfoCom</strong>), 2018</p></li>
+
+<li><p><a href="/papers/tist18.pdf">GeoBurst+: Effective and Real-Time Local Event Detection in Geo-Tagged Tweet Streams</a><br />
+<em>Chao Zhang</em>, Dongming Lei, Quan Yuan, Honglei Zhuang, Lance Kaplan, Shaowen Wang, Jiawei Han<br />
+ACM Transactions on Intelligent Systems and Technology, 2018</p></li>
+
+<li><p><a href="https://dl.acm.org/citation.cfm?id=3187011" target="_blank">Towards Personalized Activity Level Prediction in Community Question Answering Websites</a><br />
+Zhenguang Liu, Yingjie Xia, Qi Liu, Qinming He, Yanxiang Chen, <em>Chao Zhang</em>, and Roger Zimmermann<br />
+ACM Transactions on Multimedia Computing, Communications, and Applications, 2018</p></li>
+</ul>
+
+<h3 id="2017">2017</h3>
+
+<ul>
+<li><p><a href="/papers/kdd17.pdf">TrioVecEvent: Embedding-Based Online Local Event Detection in Geo-Tagged Tweet Streams</a><br />
+<em>Chao Zhang</em>, Liyuan Liu, Dongming Lei, Quan Yuan, Honglei Zhuang, Tim Hanratty, and Jiawei Han<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<strong>KDD</strong>), 2017<br />
+<a href="/slides/slides-kdd17.pdf"><code>Slides</code></a>
+<a href="https://github.com/franticnerd/triovecevent" target="_blank"><code>Code</code></a>
+<a href="https://www.youtube.com/watch?v=7eAVR5TGLg4" target="_blank"><code>Video</code></a></p></li>
+
+<li><p><a href="/papers/kdd17a.pdf">Bridging Collaborative Filtering and Semi-Supervised Learning: A Neural Approach for POI Recommendation</a><br />
+Carl Yang, Lanxiao Bai, <em>Chao Zhang</em>, Quan Yuan and Jiawei Han<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<strong>KDD</strong>), 2017<br />
+<a href="https://github.com/yangji9181/PACE2017" target="_blank"><code>Code &amp; Data</code></a></p></li>
+
+<li><p><a href="/papers/sigir17.pdf">ReAct: Online Multimodal Embedding for Recency-Aware Spatiotemporal Activity Modeling</a><br />
+<em>Chao Zhang</em>, Keyang Zhang, Quan Yuan, Fangbo Tao, Luming Zhang, Tim Hanratty, and Jiawei Han<br />
+ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR</strong>), 2017<br />
+<a href="https://docs.google.com/presentation/d/1pIkCi1Yxw8k8Q78xAuEqW4UWkC5oGyE8dBKRcNLIzE4/edit?usp=sharing" target="_blank"><code>Slides</code></a>
+<a href="https://goo.gl/HxvERN" target="_blank"><code>Code</code></a>
+<a href="https://goo.gl/kq4dfn" target="_blank"><code>Data</code></a></p></li>
+
+<li><p><a href="/papers/www17.pdf">Regions, Periods, Activities: Uncovering Urban Dynamics via Cross-Modal Representation Learning</a><br />
+<em>Chao Zhang</em>*, Keyang Zhang*, Quan Yuan, Haoruo Peng, Yu Zheng, Tim Hanratty, Shaowen Wang, and Jiawei Han<br />
+International World Wide Web Conference (<strong>WWW</strong>), 2017<br />
+<a href="/slides/slides-www17.pdf"><code>Slides</code></a>
+<a href="https://drive.google.com/open?id=0Byrzhr4bOatCck5mdWJnb2xudVk" target="_blank"><code>Code &amp; Data</code></a></p></li>
+
+<li><p><a href="/papers/icde17.pdf">Bringing Semantics to Spatiotemporal Data Mining: Challenges, Methods, and Applications</a><br />
+<em>Chao Zhang</em>, Quan Yuan, and Jiawei Han<br />
+IEEE International Conference on Data Engineering (<strong>ICDE</strong>), 2017<br />
+<code>Tutorial</code> <a href="/slides/slides-icde17.pdf"><code>Slides</code></a></p></li>
+
+<li><p><a href="https://drive.google.com/open?id=0Byrzhr4bOatCck5mdWJnb2xudVk" target="_blank">Towards Space and Time Coupled Social Media Analysis</a><br />
+<em>Chao Zhang</em>,  Quan Yuan, Shi Zhi, Sha Li, and Jiawei Han<br />
+2017 ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2017<br />
+<code>Tutorial</code> <a href="/tutorial-cikm17"><code>Website</code></a> <a href="https://drive.google.com/open?id=0Byrzhr4bOatCck5mdWJnb2xudVk" target="_blank"><code>Slides</code></a></p></li>
+
+<li><p><a href="/papers/wsdm17.pdf">PRED: Periodic Region Detection for Mobility Modeling of Social Media Users</a><br />
+Quan Yuan, Wei Zhang, <em>Chao Zhang</em>, Xinhe Geng, Gao Cong, and Jiawei Han<br />
+ACM International Conference on Web Search and Data Mining (<strong>WSDM</strong>), 2017<br />
+<a href="https://drive.google.com/open?id=0Byrzhr4bOatCQjZGNEFXUmlDSTg" target="_blank"><code>Code &amp; Data</code></a></p></li>
+
+<li><p><a href="/papers/cikm17a.pdf">Detecting Multiple Periods and Periodic Patterns in Event Time Sequences</a><br />
+Quan Yuan, Jingbo Shang, Xin Cao, <em>Chao Zhang</em>, Xinhe Geng and Jiawei Han<br />
+ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2017</p></li>
+
+<li><p><a href="/papers/cikm17b.pdf">SERM: A Recurrent Model for Next Location Prediction in Semantic Trajectories</a><br />
+Di Yao, <em>Chao Zhang</em>, Jianhui Huang and Jingping Bi<br />
+ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2017<br />
+<a href="https://github.com/yaodi833/serm" target="_blank"><code>Code &amp; Data</code></a></p></li>
+
+<li><p><a href="/papers/cikm17c.pdf">Urbanity: A System for Interactive Exploration of Urban Dynamics from Streaming Human Sensing Data</a><br />
+Mengxiong Liu, Zhengchao Liu, <em>Chao Zhang</em>,  Keyang Zhang, Quan Yuan, Tim Hanratty, and Jiawei Han<br />
+ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2017<br />
+(<a href="http://urbanity-frontend.herokuapp.com/" target="_blank">Demo</a>)</p></li>
+
+<li><p><a href="https://dl.acm.org/citation.cfm?id=3133182" target="_blank">ClaimVerif: A Real-time Claim Verification System Using the Web and Fact Databases</a><br />
+Shi Zhi, Yicheng Sun,  Jiayi Liu, <em>Chao Zhang</em>, and Jiawei Han<br />
+ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2017</p></li>
+
+<li><p><a href="/papers/ijcnn17.pdf">Trajectory Clustering via Deep Representation Learning</a><br />
+Di Yao, <em>Chao Zhang</em>, Zhihua Zhu, Jianhui Huang, and Jingping Bi<br />
+International Joint Conference on Neural Networks (<strong>IJCNN</strong>), 2017<br />
+<a href="https://github.com/yaodi833/trajectory2vec.git" target="_blank"><code>Code</code></a></p></li>
+
+<li><p><a href="/papers/tbd17.pdf">pg-Causality: Identifying Spatiotemporal Causal Pathways for Air Pollutants with Urban Big Data</a><br />
+Julie Yixuan Zhu*, <em>Chao Zhang</em>*, Huichu Zhang, Shi Zhi, Victor O.K. Li, Jiawei Han, and Yu Zheng<br />
+IEEE Transactions on Big Data, 2017</p></li>
+
+<li><p><a href="http://onlinelibrary.wiley.com/book/10.1002/9781118786352" target="_blank">Geographical Data Mining</a><br />
+<em>Chao Zhang</em> and Jiawei Han<br />
+The International Encyclopedia of Geography: People, the Earth, Environment and Technology, 2017</p></li>
+
+<li><p><a href="https://www.springer.com/us/book/9783319525204" target="_blank">A Survey on Spatiotemporal and Semantic Data Mining</a><br />
+Quan Yuan, <em>Chao Zhang</em>, Jiawei Han.<br />
+Trends in Spatial Analysis and Modelling, Springer, 2017</p></li>
+</ul>
+
+<h3 id="2016">2016</h3>
+
+<ul>
+<li><p><a href="/papers/kdd16.pdf">GMove: Group-Level Mobility Modeling Using Geo-Tagged Social Media</a><br />
+<em>Chao Zhang</em>, Keyang Zhang, Quan Yuan, Luming Zhang, Tim Hanratty, and Jiawei Han<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<strong>KDD</strong>), 2016<br />
+<a href="/slides/slides-kdd16.pdf"><code>Slides</code></a>
+<a href="https://drive.google.com/open?id=0Byrzhr4bOatCakZ1QkltM2oyNWM" target="_blank"><code>Code &amp; Data</code></a></p></li>
+
+<li><p><a href="/papers/sigir16.pdf">GeoBurst: Real-Time Local Event Detection in Geo-Tagged Tweet Streams</a><br />
+<em>Chao Zhang</em>, Guangyu Zhou, Quan Yuan, Honglei Zhuang, Yu Zheng, Lance Kaplan, Shaowen Wang, Jiawei Han.<br />
+ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR</strong>), 2016<br />
+<a href="/slides/slides-sigir16.pdf"><code>Slides</code></a>
+<a href="https://drive.google.com/open?id=0Byrzhr4bOatCU1Fwd0ZCQU1HVG8" target="_blank"><code>Code &amp; Data</code></a></p></li>
+
+<li><p><a href="/publication">Mining Contiguous Sequential Generators in Biological Sequences</a><br />
+Jingsong Zhang, Yinglin Wang, <em>Chao Zhang</em>, and Yongyong Shi<br />
+Transactions on Computational Biology and Bioinformatics, 13(5): 855&ndash;867, 2016</p></li>
+
+<li><p><a href="https://ieeexplore.ieee.org/document/7468563/" target="_blank">Flickr Circles: Aesthetic Tendency Discovery by Multi-view Regularized Topic Modeling</a><br />
+Richang Hong, Luming Zhang, <em>Chao Zhang</em> and Roger Zimmermann<br />
+IEEE Transactions on Multimedia, 18(8): 1555-1567, 2016</p></li>
+
+<li><p><a href="https://ieeexplore.ieee.org/document/7516655/" target="_blank">SnapVideo: Personalized Video Generation for a Sightseeing Trip</a><br />
+Luming Zhang, Peiguang Jing, Yuting Su, <em>Chao Zhang</em>, and Ling Shao<br />
+IEEE Transactions on Cybernetics, 2016</p></li>
+</ul>
+
+<h3 id="2015">2015</h3>
+
+<ul>
+<li><p><a href="/papers/kdd15.pdf">Assembler: Efficient Discovery of Spatial Co-evolving Patterns in Massive Geo-sensory Data</a><br />
+<em>Chao Zhang</em>, Yu Zheng, Xiuli Ma, Jiawei Han.<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<strong>KDD</strong>), 2015<br />
+<a href="/slides/slides-kdd15.pdf"><code>Slides</code></a>
+<a href="https://drive.google.com/open?id=0Byrzhr4bOatCa1hRS183NGUyeWs" target="_blank"><code>Data</code></a></p></li>
+
+<li><p><a href="/papers/pkdd15.pdf">Fast Inbound Top-K Query for Random Walk with Restart</a> <strong><code>(Best Student Paper Runner-up Award)</code></strong><br />
+<em>Chao Zhang</em>, Shan Jiang, Yucheng Chen, Yidan Sun, Jiawei Han.<br />
+European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (<strong>ECML/PKDD</strong>), 2015<br />
+<a href="/slides/slides-pkdd15.pdf"><code>Slides</code></a> <a href="/code/ink.zip"><code>Code</code></a></p></li>
+
+<li><p><a href="/papers/icde15.pdf">StreamCube: Hierarchical Spatio-temporal Hashtag Clustering for Event Exploration over the Twitter Stream</a><br />
+Wei Feng, <em>Chao Zhang</em>, Wei Zhang, Jiawei Han, Jianyong Wang, Charu Aggarwal, Jianbin Huang.<br />
+IEEE International Conference on Data Engineering (<strong>ICDE</strong>), 2015</p></li>
+</ul>
+
+<h3 id="2014">2014</h3>
+
+<ul>
+<li><p><a href="/papers/pvldb14.pdf">Splitter: Mining Fine-Grained Sequential Patterns in Semantic Trajectories</a><br />
+<em>Chao Zhang</em>, Jiawei Han, Lidan Shou, Jiajun Lu, Thomas La Porta.<br />
+International Conference on Very Large Data Bases (<strong>VLDB</strong>), 2014<br />
+<a href="/slides/slides-vldb14.pdf"><code>Slides</code></a>
+<a href="/code/splitter.zip"><code>Code &amp; Data</code></a></p></li>
+
+<li><p><a href="https://dl.acm.org/citation.cfm?id=2654903" target="_blank">Perception-Guided Multimodal Feature Fusion for Photo Aesthetics Assessment</a><br />
+Luming Zhang, Yue Gao, <em>Chao Zhang</em>, Hanwang Zhang, Qi Tian, Roger Zimmermann.<br />
+ACM International Conference on Multimedia (<strong>MM</strong>), 2014</p></li>
+
+<li><p><a href="https://ieeexplore.ieee.org/document/6816742/" target="_blank">Trendspedia: An Internet Observatory for Analyzing and Visualizing the Evolving Web</a><br />
+Wei Kang, Anthony K. H. Tung, Wei Chen, Xinyu Li, Qiyue Song, <em>Chao Zhang</em>, Feng Zhao, Xiajuan Zhou.<br />
+IEEE International Conference on Data Engineering (<strong>ICDE</strong>), 2014</p></li>
+</ul>
+
+<h3 id="2013-and-before">2013 and Before</h3>
+
+<ul>
+<li><p><a href="/papers/cikm12.pdf">Evaluating Geo-Social Influence in Location-Based Social Networks</a><br />
+<em>Chao Zhang</em>, Lidan Shou, Ke Chen, Gang Chen, Yijun Bei.<br />
+ACM International Conference on Information and Knowledge Management (<strong>CIKM</strong>), 2012</p></li>
+
+<li><p><a href="/papers/sigir12.pdf">See-To-Retrieve: Efficient Processing of Spatio-Visual Keyword Queries</a><br />
+<em>Chao Zhang</em>, Lidan Shou, Ke Chen, Gang Chen.<br />
+ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR</strong>), 2012</p></li>
+
+<li><p><a href="/papers/tkde13.pdf">Supporting Pattern-Preserving Anonymization for Time-Series Data</a><br />
+Lidan Shou, Xuan Shang, Ke Chen, Gang Chen, <em>Chao Zhang</em><br />
+IEEE Transactions on Knowledge and Data Engineering, 25(4): 877-892, 2013</p></li>
+
+<li><p><a href="/papers/sigir11.pdf">What-You-Retrieve-Is-What-You-See: A Preliminary Cyber-Physical Search Engine</a><br />
+Lidan Shou, Ke Chen, Gang Chen, <em>Chao Zhang</em>, Yi Ma, Xian Zhang.<br />
+ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR</strong>), 2011</p></li>
+</ul>
+</div>
+      
+
+
+    </div>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="container">
+
+    
+
+    <p class="powered-by">
+
+      &copy; 2018 Chao Zhang 
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/search.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    <script src="/js/search.js"></script>
+    
+
+    
+    
+
+  </body>
+</html>
+

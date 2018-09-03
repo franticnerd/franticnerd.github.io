@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Chao Zhang</title>
+    <link>http://chaozhang.org/project/</link>
+    <description>Recent content in Projects on Chao Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Chao Zhang</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0600</lastBuildDate>
+    
+	<atom:link href="http://chaozhang.org/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Low-Resource Text Mining</title>
+      <link>http://chaozhang.org/project/low-resource/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://chaozhang.org/project/low-resource/</guid>
+      <description>Text data account for more than 80% of all data in organizations and play a critical role in countless domains. But success stories of existing text mining and natural language processing tools still rely on excessive labeled data, which are often too costly to obtain in practice. The goal of this project is to develop next-generation text mining methods that turn massive text data into actionable knowledge with limited human supervision.</description>
+    </item>
+    
+    <item>
+      <title>Multimodal Data Analytics</title>
+      <link>http://chaozhang.org/project/multimodal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://chaozhang.org/project/multimodal/</guid>
+      <description>Text&amp;ndash;—the major data form for encoding information, and space and time—&amp;ndash;the two most important contexts of our physical world, are increasingly converging. Existing text mining and spatiotemporal data mining techniques operate separately and quickly become obsolete in dealing with such complex data. How do we unveil the subtle correlations between different modalities? How do we discover interesting patterns in the multidimensional space? Can we integrate different modalities to make more accurate predictions?</description>
+    </item>
+    
+  </channel>
+</rss>

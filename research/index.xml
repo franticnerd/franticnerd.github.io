@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Chao Zhang</title>
+    <link>http://chaozhang.org/research/</link>
+    <description>Recent content in Research on Chao Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Chao Zhang</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0600</lastBuildDate>
+    
+	<atom:link href="http://chaozhang.org/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Research</title>
+      <link>http://chaozhang.org/research/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://chaozhang.org/research/projects/</guid>
+      <description>Research interests Our research goal is to enable machines to turn massive data into actionable insights and intelligent decisions faster and with less supervision. Revolving around this goal, we study the following topics in data mining and machine learning:
+- Data Mining: text mining; spatiotemporal data mining; time series analysis
+- Machine Learning: deep learning; semi-supervised learning; transfer learning; multimodal learning
+Representative publications Please find below some of our representative works:</description>
+    </item>
+    
+  </channel>
+</rss>
