@@ -25,13 +25,15 @@ insights and intelligent decisions faster and with less supervision&lt;/em&gt;.
 Revolving around this goal, we study the following topics in data mining and
 machine learning:&lt;br /&gt;
 - &lt;strong&gt;Data Mining&lt;/strong&gt;: text mining; spatiotemporal data mining; time series analysis&lt;br /&gt;
-- &lt;strong&gt;Machine Learning&lt;/strong&gt;: deep learning; semi-supervised learning; transfer learning; multimodal learning&lt;/p&gt;
+- &lt;strong&gt;Machine Learning&lt;/strong&gt;: transfer learning; semi-supervised learning; few-shot learning; deep learning; reinforcement learning&lt;/p&gt;
 
 &lt;h3 id=&#34;representative-publications&#34;&gt;Representative publications&lt;/h3&gt;
 
 &lt;p&gt;Please find below some of our representative works:&lt;br /&gt;
 - &lt;a href=&#34;http://chaozhang.org/papers/cikm18a.pdf&#34;&gt;Weakly-Supervised Neural Text Classification&lt;/a&gt;, CIKM 2018&lt;br /&gt;
 - &lt;a href=&#34;http://chaozhang.org/papers/kdd18a.pdf&#34;&gt;TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering&lt;/a&gt;, KDD 2018&lt;br /&gt;
+- &lt;a href=&#34;http://chaozhang.org/papers/icdm18.pdf&#34;&gt;Doc2Cube: Automated Document Allocation to Text Cube without Labeled Data&lt;/a&gt;, ICDM 2018&lt;br /&gt;
+- &lt;a href=&#34;http://chaozhang.org/papers/aaai18a.pdf&#34;&gt;Spatiotemporal Activity Modeling Under Data Scarcity: A Graph-Regularized Cross-Modal Embedding Approach&lt;/a&gt;, AAAI 2018&lt;br /&gt;
 - &lt;a href=&#34;http://chaozhang.org/papers/kdd17.pdf&#34;&gt;TrioVecEvent: Embedding-Based Online Local Event Detection in Geo-Tagged Tweet Streams&lt;/a&gt;, KDD 2017&lt;br /&gt;
 - &lt;a href=&#34;http://chaozhang.org/papers/www17.pdf&#34;&gt;Regions, Periods, Activities: Uncovering Urban Dynamics via Cross-Modal Representation Learning&lt;/a&gt;, WWW 2017&lt;br /&gt;
 - &lt;a href=&#34;http://chaozhang.org/papers/kdd16.pdf&#34;&gt;GMove: Group-Level Mobility Modeling Using Geo-Tagged Social Media&lt;/a&gt;, KDD 2016&lt;br /&gt;
@@ -147,17 +149,21 @@ with massive social media data.&lt;/p&gt;
 &lt;h2 id=&#34;recent-representative-publications&#34;&gt;Recent &amp;amp; Representative Publications:&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/kdd18a.pdf&#34;&gt;TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering&lt;/a&gt;&lt;br /&gt;
-&lt;em&gt;Chao Zhang&lt;/em&gt;, Fangbo Tao, Xiusi Chen, Jiaming Shen, Meng Jiang, Brian Sadler, Michelle Vanni, Jiawei Han&lt;br /&gt;
-ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (&lt;strong&gt;KDD&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
-
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/cikm18a.pdf&#34;&gt;Weakly-Supervised Neural Text Classification&lt;/a&gt;&lt;br /&gt;
 Yu Meng, Jiaming Shen, &lt;em&gt;Chao Zhang&lt;/em&gt;, Jiawei Han&lt;br /&gt;
 ACM International Conference on Information and Knowledge Management (&lt;strong&gt;CIKM&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;Doc2Cube: Automated Document Allocation to Text Cube via Dimension-Aware Joint Embedding&lt;/a&gt;&lt;br /&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/kdd18a.pdf&#34;&gt;TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering&lt;/a&gt;&lt;br /&gt;
+&lt;em&gt;Chao Zhang&lt;/em&gt;, Fangbo Tao, Xiusi Chen, Jiaming Shen, Meng Jiang, Brian Sadler, Michelle Vanni, Jiawei Han&lt;br /&gt;
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (&lt;strong&gt;KDD&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/icdm18.pdf&#34;&gt;Doc2Cube: Automated Document Allocation to Text Cube without Labeled Data&lt;/a&gt;&lt;br /&gt;
 Fangbo Tao*, &lt;em&gt;Chao Zhang&lt;/em&gt;*, Xiusi Chen, Meng Jiang, Tim Hanratty, Lance Kaplan, Jiawei Han&lt;br /&gt;
 IEEE International Conference on Data Mining (&lt;strong&gt;ICDM&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/aaai18a.pdf&#34;&gt;Spatiotemporal Activity Modeling Under Data Scarcity: A Graph-Regularized Cross-Modal Embedding Approach&lt;/a&gt;&lt;br /&gt;
+&lt;em&gt;Chao Zhang&lt;/em&gt;, Mengxiong Liu, Zhengchao Liu, Carl Yang, Luming Zhang, and Jiawei Han.&lt;br /&gt;
+AAAI Conference on Artificial Intelligence (&lt;strong&gt;AAAI&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/kdd17.pdf&#34;&gt;TrioVecEvent: Embedding-Based Online Local Event Detection in Geo-Tagged Tweet Streams&lt;/a&gt;&lt;br /&gt;
 &lt;em&gt;Chao Zhang&lt;/em&gt;, Liyuan Liu, Dongming Lei, Quan Yuan, Honglei Zhuang, Tim Hanratty, and Jiawei Han&lt;br /&gt;
