@@ -20,7 +20,7 @@
       <guid>http://chaozhang.org/research/projects/</guid>
       <description>Research interests Our research goal is to enable machines to turn massive data into actionable insights and intelligent decisions faster and with less supervision. Revolving around this goal, we study the following topics in data mining and machine learning:
 - Data Mining: text mining; spatiotemporal data mining; time series analysis
-- Machine Learning: transfer learning; semi-supervised learning; few-shot learning; deep learning; reinforcement learning
+- Machine Learning: semi-supervised learning; transfer learning; few-shot learning; deep learning; reinforcement learning
 Representative publications Please find below some of our representative works:</description>
     </item>
     
