@@ -28,7 +28,7 @@ I am completing my PhD at the Computer Science Department of UIUC, advised by Pr
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
       <guid>http://chaozhang.org/home/news/</guid>
-      <description>News  [2018.08]: Two papers on weakly supervised text classification and event extraction are accepted by CIKM&amp;rsquo;18. [2018.08]: One paper on text cube construction without labeled data is accepted by ICDM&amp;rsquo;18. [2018.08]: Delivered a tutorial and presented three papers in KDD 2018@London. [2018.07]: Our paper on using GAN for semi-supervised learning is accepted by IMWUT&amp;rsquo;18. [2018.07]: Serving on the Program Committee of AAAI&amp;rsquo;19. [2018.07]: We will give a tutorial on multidimensional analysis of text data (website) in KDD&amp;rsquo;18.</description>
+      <description>News  [2018.11]: Our paper on weakly-supervised hierarchical text classification is accepted by AAAI&amp;rsquo;19. [2018.10]: Our paper on linear-time trajectory similarity computation is accepted by ICDE&amp;rsquo;19. It&amp;rsquo;s up to 100x faster than state-of-the-art trajectory similarity computation techniques and supports all major measures! Code will be out soon. [2018.08]: One paper on weakly-supervised text classification is accepted by CIKM&amp;rsquo;18. No need for excessive training data but just a few seeds. Congrats Yu!</description>
     </item>
     
     <item>
