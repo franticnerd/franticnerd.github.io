@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Chao Zhang</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Research</title>
       <link>http://chaozhang.org/research/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>http://chaozhang.org/research/projects/</guid>
       <description>
@@ -47,7 +47,7 @@ machine learning:&lt;br /&gt;
     <item>
       <title>Low-Resource Text Mining</title>
       <link>http://chaozhang.org/project/low-resource/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>http://chaozhang.org/project/low-resource/</guid>
       <description>&lt;p&gt;Text data account for more than 80% of all data in organizations and play a
@@ -229,7 +229,8 @@ The International World Wide Web Conference (&lt;strong&gt;WWW&lt;/strong&gt;), 
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/cikm18a.pdf&#34;&gt;Weakly-Supervised Neural Text Classification&lt;/a&gt;&lt;br /&gt;
 Yu Meng, Jiaming Shen, &lt;em&gt;Chao Zhang&lt;/em&gt;, Jiawei Han&lt;br /&gt;
-ACM International Conference on Information and Knowledge Management (&lt;strong&gt;CIKM&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
+ACM International Conference on Information and Knowledge Management (&lt;strong&gt;CIKM&lt;/strong&gt;), 2018&lt;br /&gt;
+&lt;a href=&#34;https://github.com/yumeng5/WeSTClass&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Code&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/cikm18b.pdf&#34;&gt;Open-Schema Event Profiling for Massive News Corpora&lt;/a&gt;&lt;br /&gt;
 Quan Yuan, Xiang Ren, Wenqi He, &lt;em&gt;Chao Zhang&lt;/em&gt;, Xinhe Geng, Lifu Huang, Heng Ji, Chin-Yew Lin, Jiawei Han&lt;br /&gt;
@@ -245,7 +246,8 @@ AAAI Conference on Artificial Intelligence (&lt;strong&gt;AAAI&lt;/strong&gt;), 
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/icdm18.pdf&#34;&gt;Doc2Cube: Allocating Documents to Text Cube without Labeled Data&lt;/a&gt;&lt;br /&gt;
 Fangbo Tao*, &lt;em&gt;Chao Zhang&lt;/em&gt;*, Xiusi Chen, Meng Jiang, Tim Hanratty, Lance Kaplan, Jiawei Han&lt;br /&gt;
-IEEE International Conference on Data Mining (&lt;strong&gt;ICDM&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
+IEEE International Conference on Data Mining (&lt;strong&gt;ICDM&lt;/strong&gt;), 2018&lt;br /&gt;
+&lt;a href=&#34;https://github.com/fangbo-tao/doc2cube&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Code&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/icde18.pdf&#34;&gt;Did You Enjoy the Ride: Understanding Passenger Experience via Heterogeneous Network Embedding&lt;/a&gt;&lt;br /&gt;
 Carl Yang, &lt;em&gt;Chao Zhang&lt;/em&gt;, Jiawei Han, Xuewen Chen, and Jieping Ye&lt;br /&gt;
