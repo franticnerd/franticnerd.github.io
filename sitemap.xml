@@ -46,6 +46,13 @@
     
     <url>
     
+      <loc>http://chaozhang.org/course/19s-cx4240/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>http://chaozhang.org/categories/</loc>
       <priority>0</priority>
     </url>
@@ -56,6 +63,14 @@
     
       <loc>http://chaozhang.org/</loc>
       <lastmod>2016-04-20T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>http://chaozhang.org/course/</loc>
       <priority>0</priority>
     </url>
     

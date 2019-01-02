@@ -25,7 +25,7 @@ insights and intelligent decisions faster and with less supervision&lt;/em&gt;.
 Revolving around this goal, we study the following topics in data mining and
 machine learning:&lt;br /&gt;
 - &lt;strong&gt;Data Mining&lt;/strong&gt;: text mining; spatiotemporal data mining; time series analysis&lt;br /&gt;
-- &lt;strong&gt;Machine Learning&lt;/strong&gt;: semi-supervised learning; transfer learning; few-shot learning; deep learning; reinforcement learning&lt;/p&gt;
+- &lt;strong&gt;Machine Learning&lt;/strong&gt;: semi-supervised learning; few-shot learning; deep learning&lt;/p&gt;
 
 &lt;h3 id=&#34;representative-publications&#34;&gt;Representative publications&lt;/h3&gt;
 
@@ -98,6 +98,420 @@ multi-granular fashion. Text cube
 
 &lt;/figure&gt; 
 --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://chaozhang.org/course/19s-cx4240/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://chaozhang.org/course/19s-cx4240/</guid>
+      <description>
+
+&lt;h2 id=&#34;cx4240-introduction-to-computational-data-analysis-2019-spring&#34;&gt;CX4240: Introduction to Computational Data Analysis (2019 Spring)&lt;/h2&gt;
+
+&lt;h3 id=&#34;course-information&#34;&gt;Course Information&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Lecture time&lt;/strong&gt;: Mons and Weds, 4:30pm-5:45pm&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Location&lt;/strong&gt;: TBD&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Instructor&lt;/strong&gt;: &lt;a href=&#34;http://chaozhang.org&#34; target=&#34;_blank&#34;&gt;Chao Zhang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Teaching Assistant&lt;/strong&gt;: &lt;a href=&#34;https://www.cc.gatech.edu/~hdai8/&#34; target=&#34;_blank&#34;&gt;Hanjun Dai&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Piazza&lt;/strong&gt;: TBD&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;course-overview&#34;&gt;Course Overview&lt;/h3&gt;
+
+&lt;p&gt;This course introduces techniques for computational data analysis, with an
+emphasis on &lt;em&gt;machine learning algorithms and their applications to real-world
+data&lt;/em&gt;. We will investigate the following question: how to extract useful
+knowledge from data computationally for decision making and task support? We
+will focus on on machine learning methods for computational data analysis,
+which are organized into three parts:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Basic math for data science and machine learning&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Linear algebra&lt;/li&gt;
+&lt;li&gt;Probability and statistics&lt;/li&gt;
+&lt;li&gt;Information theory&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Unsupervised machine learning for data exploration&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Clustering analysis&lt;/li&gt;
+&lt;li&gt;Dimension reduction&lt;/li&gt;
+&lt;li&gt;Kernel density estimation&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Supervised learning for predictive data analysis&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tree-based models&lt;/li&gt;
+&lt;li&gt;Linear classification and regression&lt;/li&gt;
+&lt;li&gt;Neural networks&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Prerequisites for this course include 1) basic knowledge of probability,
+statistics, and linear algebra; 2) basic programming experience, preferably in
+Python.&lt;/p&gt;
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;th&gt;Topic&lt;/th&gt;
+&lt;th&gt;Assignment&lt;/th&gt;
+&lt;th&gt;Due&lt;/th&gt;
+&lt;th&gt;Readings&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1/7/19&lt;/td&gt;
+&lt;td&gt;Course Overview&lt;/td&gt;
+&lt;td&gt;Sign up for Piazza&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://policylibrary.gatech.edu/student-affairs/academic-honor-code&#34; target=&#34;_blank&#34;&gt;GT Honor Code&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1/9/19&lt;/td&gt;
+&lt;td&gt;Math Basics: Linear Algebra&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://cs229.stanford.edu/section/cs229-linalg.pdf&#34; target=&#34;_blank&#34;&gt;Linear Algebra Review by Zico Kolter&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1/14/19&lt;/td&gt;
+&lt;td&gt;Math Basics: Probability and Statistics&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.cs.cmu.edu/~./awm/tutorials/prob.html&#34; target=&#34;_blank&#34;&gt;Probability Theory Review by Andrew Moore&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1/16/19&lt;/td&gt;
+&lt;td&gt;Math Basics: Information Theory&lt;/td&gt;
+&lt;td&gt;AS1 Out&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://colah.github.io/posts/2015-09-Visual-Information/&#34; target=&#34;_blank&#34;&gt;Visual Information Theory by Chris Olah&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1/21/19&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;No Class&lt;/strong&gt; (Martin Luther King Day)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1/23/19&lt;/td&gt;
+&lt;td&gt;Data Analysis Toolbox&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://cs231n.github.io/python-numpy-tutorial/&#34; target=&#34;_blank&#34;&gt;NumPy Tutorial&lt;/a&gt;; &lt;a href=&#34;https://www.labri.fr/perso/nrougier/teaching/matplotlib/&#34; target=&#34;_blank&#34;&gt;Matplotlib Tutorial&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1/28/19&lt;/td&gt;
+&lt;td&gt;Introduction to Clustering Analysis and K-Means&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;AS1 Due&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1/30/19&lt;/td&gt;
+&lt;td&gt;Gaussian Mixture Model&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2/4/19&lt;/td&gt;
+&lt;td&gt;Hierarchical Clustering&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2/6/19&lt;/td&gt;
+&lt;td&gt;Density-Based Clustering&lt;/td&gt;
+&lt;td&gt;AS2 Out&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2/11/19&lt;/td&gt;
+&lt;td&gt;Evaluation of Clustering Algorithms&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2/13/19&lt;/td&gt;
+&lt;td&gt;Dimension Reduction&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2/18/19&lt;/td&gt;
+&lt;td&gt;Kernel Density Estimation&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2/20/19&lt;/td&gt;
+&lt;td&gt;Midterm Review&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;AS2 Due&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2/25/19&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Midterm Exam&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2/27/19&lt;/td&gt;
+&lt;td&gt;Decision Tree and Random Forest&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3/4/19&lt;/td&gt;
+&lt;td&gt;Decision Tree and Random Forest&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3/6/19&lt;/td&gt;
+&lt;td&gt;Linear Regression&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3/11/19&lt;/td&gt;
+&lt;td&gt;Linear Regression&lt;/td&gt;
+&lt;td&gt;AS3 Out&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3/13/19&lt;/td&gt;
+&lt;td&gt;Naïve Bayes and Logistic Regression&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3/18/19&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;No Class&lt;/strong&gt; (Spring Break)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3/20/19&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;No Class&lt;/strong&gt; (Spring Break)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3/25/19&lt;/td&gt;
+&lt;td&gt;Support Vector Machine&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3/27/19&lt;/td&gt;
+&lt;td&gt;Support Vector Machine&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;AS3 Due&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4/1/19&lt;/td&gt;
+&lt;td&gt;Neural Networks&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4/3/19&lt;/td&gt;
+&lt;td&gt;Neural Networks&lt;/td&gt;
+&lt;td&gt;AS4 Out&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4/8/19&lt;/td&gt;
+&lt;td&gt;Model Selection&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4/10/19&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;No Class&lt;/strong&gt; (Project Preparation)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4/15/19&lt;/td&gt;
+&lt;td&gt;Project Presentation&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4/17/19&lt;/td&gt;
+&lt;td&gt;Project Presentation&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;AS4 Due&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4/22/19&lt;/td&gt;
+&lt;td&gt;Course Review&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4/24/19&lt;/td&gt;
+&lt;td&gt;Reading Day&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;TBD&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Final Exam&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;office-hours-and-questions&#34;&gt;Office Hours and Questions&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Office Hours&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Chao Zhang (Instructor), Weds 3:30-4:20pm;&lt;/li&gt;
+&lt;li&gt;Hanjun Dai (Teaching Assistant), Mons 1-2pm.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Piazza&lt;/strong&gt; will be the main place for course discussions and announcements. If you have questions, please &lt;strong&gt;ask it on Piazza first&lt;/strong&gt; because 1) other students may have the same question; 2) you will get help faster compared to sending emails.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If it&amp;rsquo;s something you do not like to discuss publicly on Piazza, send an email with &lt;strong&gt;CX4240&lt;/strong&gt; in the subject.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;grading&#34;&gt;Grading&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Assignments (50%)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There will be four assignments. Each one is designed for testing your understanding of the taught algorithms. It could be either programming or written analysis.&lt;/li&gt;
+&lt;li&gt;You will need to hand in the assignments at the beginning of the class on the due date.&lt;/li&gt;
+&lt;li&gt;All assignments follow the &amp;ldquo;no-late&amp;rdquo; policy. Assignments received after the due time will receive zero credit.&lt;/li&gt;
+&lt;li&gt;All students are expected to follow the &lt;a href=&#34;http://policylibrary.gatech.edu/student-affairs/academic-honor-code&#34; target=&#34;_blank&#34;&gt;Georgia Tech Academic Honor Code&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Project (20%)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You are expected to complete a project on computational data analysis with real-life data. Your project needs to be clear about 1) the data you are using; 2) the problem you are attempting to solve; 3) the method you are using; 4) the results and conclusion you obtain.&lt;/li&gt;
+&lt;li&gt;You will need to turn in a project report and also give an in-class presentation for your project. The project report and the presentation will each count for 10% of your final grade.&lt;/li&gt;
+&lt;li&gt;Each project needs to be completed in a team of 2-4 people. Team members need to clearly claim their contributions in the project report.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Class participation (5%)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Your class participation score will be graded based on attendance and in-class quizzes.&lt;/li&gt;
+&lt;li&gt;Participation in class discussions (including asking relevant questions in class, volunteering to answer questions on Piazza) will be considered when determining your final grade. It will be especially useful when you are right on the edge of two letter grades.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Midterm Exam (10%)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The midterm exam will take place on Feb 25th in lieu of the regular class.&lt;/li&gt;
+&lt;li&gt;The midterm exam will be a written and open-book exam, but Internet usage will not be allowed.&lt;/li&gt;
+&lt;li&gt;There will be no make-up exams. You will get zero credit for your missed midterm exam.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Final Exam (15%)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The final exam will be at whatever time is scheduled for this class.&lt;/li&gt;
+&lt;li&gt;The final exam will be a written and open-book exam, but no Internet usage will be allowed.&lt;/li&gt;
+&lt;li&gt;Again, there will be no make-up exams. You will get zero credit for your missed final exam.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+
+&lt;p&gt;Recommended books:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.cmu.edu/~tom/mlbook.html&#34; target=&#34;_blank&#34;&gt;Machine learning&lt;/a&gt;, by Tom Mitchell&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.elsevier.com/books/data-mining-concepts-and-techniques/han/978-0-12-381479-1&#34; target=&#34;_blank&#34;&gt;Data Mining: Concepts and Techniques&lt;/a&gt;, by Jiawei Han, Micheline Kamber, and Jian Pei&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.stanford.edu/~hastie/ElemStatLearn/&#34; target=&#34;_blank&#34;&gt;The Elements of Statistical Learning&lt;/a&gt;, by Trevor Hastie, Robert Tibshirani, and Jerome Friedman&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.deeplearningbook.org/&#34; target=&#34;_blank&#34;&gt;Deep Learning&lt;/a&gt;, by Ian Goodfellow, Yoshua Bengio, and Aaron Courville&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.springer.com/us/book/9780387310732&#34; target=&#34;_blank&#34;&gt;Pattern recognition and machine learning&lt;/a&gt;, by Christopher Bishop&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Other resources, such as machine learning toolboxes and datasets, will be provided throughout the course.&lt;/p&gt;
 </description>
     </item>
     
@@ -466,38 +880,10 @@ ACM SIGIR Conference on Research and Development in Information Retrieval (&lt;s
 
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;2017 Fall&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://wiki.illinois.edu//wiki/display/cs412/2.+Course+Syllabus+and+Schedule&#34; target=&#34;_blank&#34;&gt;CS 412: Introduction to Data Mining&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;UIUC&lt;/td&gt;
-&lt;td&gt;Guest Lecturer&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;2016 Fall&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://wiki.illinois.edu/wiki/display/cs412/Fall+2016+Course+Syllabus+and+Schedule&#34; target=&#34;_blank&#34;&gt;CS 412: Introduction to Data Mining&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;UIUC&lt;/td&gt;
-&lt;td&gt;Teaching Assistant&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;2016 Fall&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.coursera.org/learn/cluster-analysis&#34; target=&#34;_blank&#34;&gt;Cluster Analysis in Data Mining&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Coursera&lt;/td&gt;
-&lt;td&gt;Teaching Assistant&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;2016 Spring&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.coursera.org/learn/data-patterns&#34; target=&#34;_blank&#34;&gt;Pattern Discovery in Data Mining&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Coursera&lt;/td&gt;
-&lt;td&gt;Teaching Assistant&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;2015 Fall&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://wiki.illinois.edu//wiki/display/cs512/Lectures&#34; target=&#34;_blank&#34;&gt;CS 512: Advanced Data Mining&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;UIUC&lt;/td&gt;
-&lt;td&gt;Teaching Assistant&lt;/td&gt;
+&lt;td&gt;2019 Spring&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://chaozhang.org/course/19s-cx4240&#34;&gt;CX4240: Introduction to Computational Data Analysis&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;GaTech&lt;/td&gt;
+&lt;td&gt;Instructor&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
