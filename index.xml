@@ -7,25 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Chao Zhang</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0500</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Research</title>
       <link>http://chaozhang.org/research/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
       <guid>http://chaozhang.org/research/projects/</guid>
       <description>
 
 &lt;h3 id=&#34;research-interests&#34;&gt;Research interests&lt;/h3&gt;
 
-&lt;p&gt;Our research goal is to enable machines to &lt;em&gt;turn massive data into actionable
-insights and intelligent decisions faster and with less supervision&lt;/em&gt;.
-Revolving around this goal, we study the following topics in data mining and
-machine learning:&lt;br /&gt;
+&lt;p&gt;Our research goal is to enable machines to turn massive data into knowledge in
+a label-efficient and robust way.  Revolving around this goal, we study the
+following topics in data mining and machine learning:&lt;br /&gt;
 - &lt;strong&gt;Data Mining&lt;/strong&gt;: text mining; spatiotemporal data mining; time series analysis&lt;br /&gt;
-- &lt;strong&gt;Machine Learning&lt;/strong&gt;: semi-supervised learning; few-shot learning; deep learning&lt;/p&gt;
+- &lt;strong&gt;Machine Learning&lt;/strong&gt;: semi-supervised learning; deep learning; adversarial learning, uncertainty estimation&lt;/p&gt;
 
 &lt;h3 id=&#34;representative-publications&#34;&gt;Representative publications&lt;/h3&gt;
 
@@ -33,6 +32,7 @@ machine learning:&lt;br /&gt;
 - &lt;a href=&#34;http://chaozhang.org/papers/cikm18a.pdf&#34;&gt;Weakly-Supervised Neural Text Classification&lt;/a&gt;, CIKM 2018&lt;br /&gt;
 - &lt;a href=&#34;http://chaozhang.org/papers/kdd18a.pdf&#34;&gt;TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering&lt;/a&gt;, KDD 2018&lt;br /&gt;
 - &lt;a href=&#34;https://dl.acm.org/citation.cfm?id=3264954&#34; target=&#34;_blank&#34;&gt;SenseGAN: Enabling Deep Learning for Internet of Things with a Semi-Supervised Framework&lt;/a&gt;, IMWUT 2018&lt;br /&gt;
+- &lt;a href=&#34;https://arxiv.org/pdf/1709.02980.pdf&#34; target=&#34;_blank&#34;&gt;RDeepSense: Reliable Deep Mobile Computing Models with Uncertainty Estimations&lt;/a&gt;, UbiComp 2018&lt;br /&gt;
 - &lt;a href=&#34;http://chaozhang.org/papers/icdm18.pdf&#34;&gt;Doc2Cube: Allocating Documents to Text Cube without Labeled Data&lt;/a&gt;, ICDM 2018&lt;br /&gt;
 - &lt;a href=&#34;http://chaozhang.org/papers/aaai18a.pdf&#34;&gt;Spatiotemporal Activity Modeling Under Data Scarcity: A Graph-Regularized Cross-Modal Embedding Approach&lt;/a&gt;, AAAI 2018&lt;br /&gt;
 - &lt;a href=&#34;http://chaozhang.org/papers/kdd17a.pdf&#34;&gt;Bridging Collaborative Filtering and Semi-Supervised Learning: A Neural Approach for POI Recommendation&lt;/a&gt;, KDD 2017&lt;br /&gt;
@@ -47,7 +47,7 @@ machine learning:&lt;br /&gt;
     <item>
       <title>Low-Resource Text Mining</title>
       <link>http://chaozhang.org/project/low-resource/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0500</pubDate>
       
       <guid>http://chaozhang.org/project/low-resource/</guid>
       <description>&lt;p&gt;Text data account for more than 80% of all data in organizations and play a
@@ -116,7 +116,7 @@ multi-granular fashion. Text cube
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Lecture time&lt;/strong&gt;: Mons and Weds, 4:30pm-5:45pm&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Location&lt;/strong&gt;: Klaus 1447&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Instructor&lt;/strong&gt;: &lt;a href=&#34;http://chaozhang.org&#34; target=&#34;_blank&#34;&gt;Chao Zhang&lt;/a&gt; (chao.uiuc@gmail.com)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Instructors&lt;/strong&gt;: M. Mahdi Roozbahani and &lt;a href=&#34;http://chaozhang.org&#34; target=&#34;_blank&#34;&gt;Chao Zhang&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Teaching Assistant&lt;/strong&gt;: Hanjun Dai (hanjundai@gatech.edu) and Wendi Ren (wren44@gatech.edu)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Piazza&lt;/strong&gt;: &lt;a href=&#34;https://piazza.com/class/jqeo3f7s5vc426&#34; target=&#34;_blank&#34;&gt;https://piazza.com/class/jqeo3f7s5vc426&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -506,10 +506,10 @@ Python.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.cs.cmu.edu/~tom/mlbook.html&#34; target=&#34;_blank&#34;&gt;Machine learning&lt;/a&gt;, by Tom Mitchell&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.springer.com/us/book/9780387310732&#34; target=&#34;_blank&#34;&gt;Pattern recognition and machine learning&lt;/a&gt;, by Christopher Bishop&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.elsevier.com/books/data-mining-concepts-and-techniques/han/978-0-12-381479-1&#34; target=&#34;_blank&#34;&gt;Data Mining: Concepts and Techniques&lt;/a&gt;, by Jiawei Han, Micheline Kamber, and Jian Pei&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.stanford.edu/~hastie/ElemStatLearn/&#34; target=&#34;_blank&#34;&gt;The Elements of Statistical Learning&lt;/a&gt;, by Trevor Hastie, Robert Tibshirani, and Jerome Friedman&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.deeplearningbook.org/&#34; target=&#34;_blank&#34;&gt;Deep Learning&lt;/a&gt;, by Ian Goodfellow, Yoshua Bengio, and Aaron Courville&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.springer.com/us/book/9780387310732&#34; target=&#34;_blank&#34;&gt;Pattern recognition and machine learning&lt;/a&gt;, by Christopher Bishop&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Other resources, such as machine learning toolboxes and datasets, will be provided throughout the course.&lt;/p&gt;

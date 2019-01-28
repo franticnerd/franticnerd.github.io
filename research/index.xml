@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Chao Zhang</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0600</lastBuildDate>
     
 	<atom:link href="http://chaozhang.org/research/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,13 +15,14 @@
     <item>
       <title>Research</title>
       <link>http://chaozhang.org/research/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
       <guid>http://chaozhang.org/research/projects/</guid>
-      <description>Research interests Our research goal is to enable machines to turn massive data into actionable insights and intelligent decisions faster and with less supervision. Revolving around this goal, we study the following topics in data mining and machine learning:
+      <description>Research interests Our research goal is to enable machines to turn massive data into knowledge in a label-efficient and robust way. Revolving around this goal, we study the following topics in data mining and machine learning:
 - Data Mining: text mining; spatiotemporal data mining; time series analysis
-- Machine Learning: semi-supervised learning; few-shot learning; deep learning
-Representative publications Please find below some of our representative works:</description>
+- Machine Learning: semi-supervised learning; deep learning; adversarial learning, uncertainty estimation
+Representative publications Please find below some of our representative works:
+- Weakly-Supervised Neural Text Classification, CIKM 2018</description>
     </item>
     
   </channel>
