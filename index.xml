@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Chao Zhang</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Research</title>
       <link>http://chaozhang.org/research/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>http://chaozhang.org/research/projects/</guid>
       <description>
@@ -47,7 +47,7 @@ following topics in data mining and machine learning:&lt;br /&gt;
     <item>
       <title>Low-Resource Text Mining</title>
       <link>http://chaozhang.org/project/low-resource/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>http://chaozhang.org/project/low-resource/</guid>
       <description>&lt;p&gt;Text data account for more than 80% of all data in organizations and play a

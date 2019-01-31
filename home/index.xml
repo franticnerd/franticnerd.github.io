@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Chao Zhang</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://chaozhang.org/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,17 +15,18 @@
     <item>
       <title></title>
       <link>http://chaozhang.org/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>http://chaozhang.org/home/about/</guid>
-      <description>I am an incoming assistant professor at School of Computational Science and Engineering, Georgia Tech. I obtained my Ph.D. in Computer Science from UIUC under the advisement of Prof. Jiawei Han.
-My research interests fall in the area of data mining and machine learning. My current work focuses on developing label-efficient and robust methods that turn massive data (e.g., text, spatiotemporal data) into knowledge for task support and decision making.</description>
+      <description>I am an assistant professor at School of Computational Science and Engineering, Georgia Tech. I obtained my Ph.D. in Computer Science from UIUC under the advisement of Prof. Jiawei Han.
+My research interests fall in the area of data mining and machine learning. My current work focuses on developing label-efficient and robust methods that turn massive data (e.g., text, spatiotemporal data) into knowledge for task support and decision making.
+I am actively looking for talented and motivated students to work with me.</description>
     </item>
     
     <item>
       <title></title>
       <link>http://chaozhang.org/home/news/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>http://chaozhang.org/home/news/</guid>
       <description>News  [2018.11]: The code for our CIKM paper on weakly-supervised text classification is released. If you want to use deep neural nets to do text classification but don&amp;rsquo;t have much labeled data, try it out! [2018.11]: Our paper on weakly-supervised hierarchical text classification is accepted by AAAI&amp;rsquo;19. [2018.10]: Our paper on linear-time trajectory similarity computation is accepted by ICDE&amp;rsquo;19. It&amp;rsquo;s up to 100x faster than state-of-the-art trajectory similarity computation techniques and supports all major measures!</description>
@@ -34,7 +35,7 @@ My research interests fall in the area of data mining and machine learning. My c
     <item>
       <title>Contact</title>
       <link>http://chaozhang.org/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>http://chaozhang.org/home/contact/</guid>
       <description></description>
