@@ -19,7 +19,7 @@
       
       <guid>http://chaozhang.org/home/about/</guid>
       <description>I am an assistant professor at School of Computational Science and Engineering, Georgia Tech. I obtained my Ph.D. in Computer Science from UIUC under the advisement of Prof. Jiawei Han.
-My research area is data mining and machine learning. I am broadly interested in intelligent systems that acquire actionable knowledge from data for decision making and task support. My current projects are particularly focused on developing label-efficient and robust learning techniques, with applications in text mining and spatiotemporal data mining.</description>
+My research is to build intelligent systems that acquire knowledge from data for effective task support and decision making. Towards this goal, much of my recent work has been centered around mining unstructured text data, with particular emphasis on developing techniques that learn from data in a label-efficient and robust way.</description>
     </item>
     
     <item>
