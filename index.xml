@@ -21,10 +21,12 @@
 &lt;h3 id=&#34;research-interests&#34;&gt;Research interests&lt;/h3&gt;
 
 &lt;p&gt;Our research goal is to enable machines to turn massive data into knowledge in
-a label-efficient and robust way.  Revolving around this goal, we study the
+a label-efficient and robust way. Revolving around this goal, we study the
 following topics in data mining and machine learning:&lt;br /&gt;
-- &lt;strong&gt;Data Mining&lt;/strong&gt;: text mining; spatiotemporal data mining&lt;br /&gt;
-- &lt;strong&gt;Machine Learning&lt;/strong&gt;: uncertainty estimation; probabilistic modeling; graphical models; semi-supervised learning&lt;/p&gt;
+  - Low-resource text mining&lt;br /&gt;
+  - Time series and sequential data analysis&lt;br /&gt;
+  - Learning with less labeled data&lt;br /&gt;
+  - Probabilistic modeling and uncertainty quantification&lt;/p&gt;
 
 &lt;h3 id=&#34;representative-publications&#34;&gt;Representative publications&lt;/h3&gt;
 
@@ -612,17 +614,13 @@ ACM SIGIR Conference on Research and Development in Information Retrieval (&lt;s
 &lt;em&gt;Chao Zhang&lt;/em&gt;, Jiawei Han&lt;br /&gt;
 Synthesis Lectures on Data Mining and Knowledge Discovery, Morgan &amp;amp; Claypool Publishers&lt;/p&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;State-Sharing Hidden Markov Models for Personalized Sequences&lt;/a&gt;&lt;br /&gt;
+Hongzhi Shi, &lt;em&gt;Chao Zhang&lt;/em&gt;, Mingquan Yao, Yong Li, Funing Sun, Depeng Jin&lt;br /&gt;
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (&lt;strong&gt;KDD&lt;/strong&gt;), 2019&lt;/p&gt;&lt;/li&gt;
+
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;A Gradual, Semi-Discrete Approach to Generative Network Training via Explicit Wasserstein Minimization&lt;/a&gt;&lt;br /&gt;
 Yucheng Chen, Matus Telgarsky, &lt;em&gt;Chao Zhang&lt;/em&gt;, Bolton Bailey, Daniel Hsu, Jian Peng&lt;br /&gt;
 International Conference on Machine Learning (&lt;strong&gt;ICML&lt;/strong&gt;), 2019&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;GeoAttn: Localization of Social Media Messages Via Attentional Memory Network&lt;/a&gt;&lt;br /&gt;
-Sha Li, &lt;em&gt;Chao Zhang&lt;/em&gt;, Dongming Lei, Ji Li, Jiawei Han&lt;br /&gt;
-SIAM International Conference on Data Mining (&lt;strong&gt;SDM&lt;/strong&gt;), 2019&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;Semantics-Aware Hidden Markov Model for Human Mobility&lt;/a&gt;&lt;br /&gt;
-Hongzhi Shi, Hancheng Cao, Xiangxin Zhou, Yong Li, &lt;em&gt;Chao Zhang&lt;/em&gt;, Vassilis Kostakos, Funing Sun, Fanchao Meng&lt;br /&gt;
-SIAM International Conference on Data Mining (&lt;strong&gt;SDM&lt;/strong&gt;), 2019&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;DPLink: User Identity Linkage via Deep Neural Network From Heterogeneous Mobility Data&lt;/a&gt;&lt;br /&gt;
 Jie Feng, Mingyang Zhang, Huandong Wang, Zeyu Yang, &lt;em&gt;Chao Zhang&lt;/em&gt;,  Yong Li, Depeng Jin&lt;br /&gt;
@@ -635,11 +633,23 @@ AAAI Conference on Artificial Intelligence (&lt;strong&gt;AAAI&lt;/strong&gt;), 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;Computing Trajectory Similarity in Linear Time: A Generic Seed-Guided Neural Metric Learning Approach&lt;/a&gt;&lt;br /&gt;
 Di Yao, Gao Cong, &lt;em&gt;Chao Zhang&lt;/em&gt;, Jingping Bi&lt;br /&gt;
 IEEE International Conference on Data Engineering (&lt;strong&gt;ICDE&lt;/strong&gt;), 2019&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;GeoAttn: Localization of Social Media Messages Via Attentional Memory Network&lt;/a&gt;&lt;br /&gt;
+Sha Li, &lt;em&gt;Chao Zhang&lt;/em&gt;, Dongming Lei, Ji Li, Jiawei Han&lt;br /&gt;
+SIAM International Conference on Data Mining (&lt;strong&gt;SDM&lt;/strong&gt;), 2019&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;Semantics-Aware Hidden Markov Model for Human Mobility&lt;/a&gt;&lt;br /&gt;
+Hongzhi Shi, Hancheng Cao, Xiangxin Zhou, Yong Li, &lt;em&gt;Chao Zhang&lt;/em&gt;, Vassilis Kostakos, Funing Sun, Fanchao Meng&lt;br /&gt;
+SIAM International Conference on Data Mining (&lt;strong&gt;SDM&lt;/strong&gt;), 2019&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;2018&#34;&gt;2018&lt;/h3&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;Multi-Dimensional Mining of Unstructured Data with Limited Supervision&lt;/a&gt;&lt;br /&gt;
+&lt;em&gt;Chao Zhang&lt;/em&gt;&lt;br /&gt;
+Ph.D. Thesis&lt;/p&gt;&lt;/li&gt;
+
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/kdd18a.pdf&#34;&gt;TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering&lt;/a&gt;&lt;br /&gt;
 &lt;em&gt;Chao Zhang&lt;/em&gt;, Fangbo Tao, Xiusi Chen, Jiaming Shen, Meng Jiang, Brian Sadler, Michelle Vanni, Jiawei Han&lt;br /&gt;
 ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (&lt;strong&gt;KDD&lt;/strong&gt;), 2018&lt;br /&gt;
