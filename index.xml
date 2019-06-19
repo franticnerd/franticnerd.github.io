@@ -24,7 +24,6 @@
 a label-efficient and robust way. Revolving around this goal, we study the
 following topics in data mining and machine learning:&lt;br /&gt;
   - Low-resource text mining&lt;br /&gt;
-  - Time series and sequential data analysis&lt;br /&gt;
   - Learning with less labeled data&lt;br /&gt;
   - Probabilistic modeling and uncertainty quantification&lt;/p&gt;
 
@@ -520,7 +519,59 @@ Python.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Multimodal Data Analytics</title>
+      <title></title>
+      <link>http://chaozhang.org/unused/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://chaozhang.org/unused/</guid>
+      <description>
+
+&lt;h2 id=&#34;recent-representative-publications&#34;&gt;Recent &amp;amp; Representative Publications:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/cikm18a.pdf&#34;&gt;Weakly-Supervised Neural Text Classification&lt;/a&gt;&lt;br /&gt;
+Yu Meng, Jiaming Shen, &lt;em&gt;Chao Zhang&lt;/em&gt;, Jiawei Han&lt;br /&gt;
+ACM International Conference on Information and Knowledge Management (&lt;strong&gt;CIKM&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/kdd18a.pdf&#34;&gt;TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering&lt;/a&gt;&lt;br /&gt;
+&lt;em&gt;Chao Zhang&lt;/em&gt;, Fangbo Tao, Xiusi Chen, Jiaming Shen, Meng Jiang, Brian Sadler, Michelle Vanni, Jiawei Han&lt;br /&gt;
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (&lt;strong&gt;KDD&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/icdm18.pdf&#34;&gt;Doc2Cube: Allocating Documents to Text Cube without Labeled Data&lt;/a&gt;&lt;br /&gt;
+Fangbo Tao*, &lt;em&gt;Chao Zhang&lt;/em&gt;*, Xiusi Chen, Meng Jiang, Tim Hanratty, Lance Kaplan, Jiawei Han&lt;br /&gt;
+IEEE International Conference on Data Mining (&lt;strong&gt;ICDM&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/aaai18a.pdf&#34;&gt;Spatiotemporal Activity Modeling Under Data Scarcity: A Graph-Regularized Cross-Modal Embedding Approach&lt;/a&gt;&lt;br /&gt;
+&lt;em&gt;Chao Zhang&lt;/em&gt;, Mengxiong Liu, Zhengchao Liu, Carl Yang, Luming Zhang, and Jiawei Han.&lt;br /&gt;
+AAAI Conference on Artificial Intelligence (&lt;strong&gt;AAAI&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://dl.acm.org/citation.cfm?id=3264954&#34; target=&#34;_blank&#34;&gt;SenseGAN: Enabling Deep Learning for Internet of Things with a Semi-Supervised Framework&lt;/a&gt;&lt;br /&gt;
+Shuochao Yao, Yiran Zhao, Huajie Shao, &lt;em&gt;Chao Zhang&lt;/em&gt;, Aston Zhang, Shaohan Hu, Dongxin Liu, Shengzhong Liu, and Tarek Abdelzaher&lt;br /&gt;
+Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (&lt;strong&gt;IMWUT&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/kdd17a.pdf&#34;&gt;Bridging Collaborative Filtering and Semi-Supervised Learning: A Neural Approach for POI Recommendation&lt;/a&gt;&lt;br /&gt;
+Carl Yang, Lanxiao Bai, &lt;em&gt;Chao Zhang&lt;/em&gt;, Quan Yuan and Jiawei Han&lt;br /&gt;
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (&lt;strong&gt;KDD&lt;/strong&gt;), 2017&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/www17.pdf&#34;&gt;Regions, Periods, Activities: Uncovering Urban Dynamics via Cross-Modal Representation Learning&lt;/a&gt;&lt;br /&gt;
+&lt;em&gt;Chao Zhang&lt;/em&gt;*, Keyang Zhang*, Quan Yuan, Haoruo Peng, Yu Zheng, Tim Hanratty, Shaowen Wang, and Jiawei Han&lt;br /&gt;
+International World Wide Web Conference (&lt;strong&gt;WWW&lt;/strong&gt;), 2017&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/kdd16.pdf&#34;&gt;GMove: Group-Level Mobility Modeling Using Geo-Tagged Social Media&lt;/a&gt;&lt;br /&gt;
+&lt;em&gt;Chao Zhang&lt;/em&gt;, Keyang Zhang, Quan Yuan, Luming Zhang, Tim Hanratty, and Jiawei Han&lt;br /&gt;
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (&lt;strong&gt;KDD&lt;/strong&gt;), 2016&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/sigir16.pdf&#34;&gt;GeoBurst: Real-Time Local Event Detection in Geo-Tagged Tweet Streams&lt;/a&gt;&lt;br /&gt;
+&lt;em&gt;Chao Zhang&lt;/em&gt;, Guangyu Zhou, Quan Yuan, Honglei Zhuang, Yu Zheng, Lance Kaplan, Shaowen Wang, Jiawei Han.&lt;br /&gt;
+ACM SIGIR Conference on Research and Development in Information Retrieval (&lt;strong&gt;SIGIR&lt;/strong&gt;), 2016&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;full-publication-list&#34;&gt;Full Publication List:&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mining Text-Rich Spatiotemporal Data</title>
       <link>http://chaozhang.org/project/multimodal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -565,48 +616,6 @@ with massive social media data.&lt;/p&gt;
 
 &lt;p&gt;(* indicates equal contribution)&lt;/p&gt;
 
-&lt;h2 id=&#34;recent-representative-publications&#34;&gt;Recent &amp;amp; Representative Publications:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/cikm18a.pdf&#34;&gt;Weakly-Supervised Neural Text Classification&lt;/a&gt;&lt;br /&gt;
-Yu Meng, Jiaming Shen, &lt;em&gt;Chao Zhang&lt;/em&gt;, Jiawei Han&lt;br /&gt;
-ACM International Conference on Information and Knowledge Management (&lt;strong&gt;CIKM&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/kdd18a.pdf&#34;&gt;TaxoGen: Unsupervised Topic Taxonomy Construction by Adaptive Term Embedding and Clustering&lt;/a&gt;&lt;br /&gt;
-&lt;em&gt;Chao Zhang&lt;/em&gt;, Fangbo Tao, Xiusi Chen, Jiaming Shen, Meng Jiang, Brian Sadler, Michelle Vanni, Jiawei Han&lt;br /&gt;
-ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (&lt;strong&gt;KDD&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/icdm18.pdf&#34;&gt;Doc2Cube: Allocating Documents to Text Cube without Labeled Data&lt;/a&gt;&lt;br /&gt;
-Fangbo Tao*, &lt;em&gt;Chao Zhang&lt;/em&gt;*, Xiusi Chen, Meng Jiang, Tim Hanratty, Lance Kaplan, Jiawei Han&lt;br /&gt;
-IEEE International Conference on Data Mining (&lt;strong&gt;ICDM&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/aaai18a.pdf&#34;&gt;Spatiotemporal Activity Modeling Under Data Scarcity: A Graph-Regularized Cross-Modal Embedding Approach&lt;/a&gt;&lt;br /&gt;
-&lt;em&gt;Chao Zhang&lt;/em&gt;, Mengxiong Liu, Zhengchao Liu, Carl Yang, Luming Zhang, and Jiawei Han.&lt;br /&gt;
-AAAI Conference on Artificial Intelligence (&lt;strong&gt;AAAI&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://dl.acm.org/citation.cfm?id=3264954&#34; target=&#34;_blank&#34;&gt;SenseGAN: Enabling Deep Learning for Internet of Things with a Semi-Supervised Framework&lt;/a&gt;&lt;br /&gt;
-Shuochao Yao, Yiran Zhao, Huajie Shao, &lt;em&gt;Chao Zhang&lt;/em&gt;, Aston Zhang, Shaohan Hu, Dongxin Liu, Shengzhong Liu, and Tarek Abdelzaher&lt;br /&gt;
-Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (&lt;strong&gt;IMWUT&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/kdd17a.pdf&#34;&gt;Bridging Collaborative Filtering and Semi-Supervised Learning: A Neural Approach for POI Recommendation&lt;/a&gt;&lt;br /&gt;
-Carl Yang, Lanxiao Bai, &lt;em&gt;Chao Zhang&lt;/em&gt;, Quan Yuan and Jiawei Han&lt;br /&gt;
-ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (&lt;strong&gt;KDD&lt;/strong&gt;), 2017&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/www17.pdf&#34;&gt;Regions, Periods, Activities: Uncovering Urban Dynamics via Cross-Modal Representation Learning&lt;/a&gt;&lt;br /&gt;
-&lt;em&gt;Chao Zhang&lt;/em&gt;*, Keyang Zhang*, Quan Yuan, Haoruo Peng, Yu Zheng, Tim Hanratty, Shaowen Wang, and Jiawei Han&lt;br /&gt;
-International World Wide Web Conference (&lt;strong&gt;WWW&lt;/strong&gt;), 2017&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/kdd16.pdf&#34;&gt;GMove: Group-Level Mobility Modeling Using Geo-Tagged Social Media&lt;/a&gt;&lt;br /&gt;
-&lt;em&gt;Chao Zhang&lt;/em&gt;, Keyang Zhang, Quan Yuan, Luming Zhang, Tim Hanratty, and Jiawei Han&lt;br /&gt;
-ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (&lt;strong&gt;KDD&lt;/strong&gt;), 2016&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/sigir16.pdf&#34;&gt;GeoBurst: Real-Time Local Event Detection in Geo-Tagged Tweet Streams&lt;/a&gt;&lt;br /&gt;
-&lt;em&gt;Chao Zhang&lt;/em&gt;, Guangyu Zhou, Quan Yuan, Honglei Zhuang, Yu Zheng, Lance Kaplan, Shaowen Wang, Jiawei Han.&lt;br /&gt;
-ACM SIGIR Conference on Research and Development in Information Retrieval (&lt;strong&gt;SIGIR&lt;/strong&gt;), 2016&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;full-publication-list&#34;&gt;Full Publication List:&lt;/h2&gt;
-
 &lt;h3 id=&#34;2019&#34;&gt;2019&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -618,11 +627,19 @@ Synthesis Lectures on Data Mining and Knowledge Discovery, Morgan &amp;amp; Clay
 Hongzhi Shi, &lt;em&gt;Chao Zhang&lt;/em&gt;, Mingquan Yao, Yong Li, Funing Sun, Depeng Jin&lt;br /&gt;
 ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (&lt;strong&gt;KDD&lt;/strong&gt;), 2019&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;A Gradual, Semi-Discrete Approach to Generative Network Training via Explicit Wasserstein Minimization&lt;/a&gt;&lt;br /&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;TopicMine: User-Guided Topic Mining by Category-Oriented Embedding&lt;/a&gt;&lt;br /&gt;
+Yu Meng, Jiaxin Huang, Zihan Wang, Chenyu Fan, Guangyuan Wang, &lt;em&gt;Chao Zhang&lt;/em&gt;, Jingbo Shang, Lance Kaplan, Jiawei Han.&lt;br /&gt;
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (&lt;strong&gt;KDD&lt;/strong&gt;), Demo Paper, 2019.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;CubeNet: Multi-Facet Hierarchical Heterogeneous Network Construction, Analysis, and Mining&lt;/a&gt;&lt;br /&gt;
+Carl Yang, Dai Teng, Siyang Liu, Sayantani Basu, Jieyu Zhang, Jiaming Shen, &lt;em&gt;Chao Zhang&lt;/em&gt;, Jingbo Shang, Lance Kaplan, Timothy Harratty, and Jiawei Han.&lt;br /&gt;
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (&lt;strong&gt;KDD&lt;/strong&gt;), Demo Paper, 2019.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://proceedings.mlr.press/v97/chen19h.html&#34; target=&#34;_blank&#34;&gt;A Gradual, Semi-Discrete Approach to Generative Network Training via Explicit Wasserstein Minimization&lt;/a&gt;&lt;br /&gt;
 Yucheng Chen, Matus Telgarsky, &lt;em&gt;Chao Zhang&lt;/em&gt;, Bolton Bailey, Daniel Hsu, Jian Peng&lt;br /&gt;
 International Conference on Machine Learning (&lt;strong&gt;ICML&lt;/strong&gt;), 2019&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;DPLink: User Identity Linkage via Deep Neural Network From Heterogeneous Mobility Data&lt;/a&gt;&lt;br /&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://dl.acm.org/citation.cfm?id=3313424&#34; target=&#34;_blank&#34;&gt;DPLink: User Identity Linkage via Deep Neural Network From Heterogeneous Mobility Data&lt;/a&gt;&lt;br /&gt;
 Jie Feng, Mingyang Zhang, Huandong Wang, Zeyu Yang, &lt;em&gt;Chao Zhang&lt;/em&gt;,  Yong Li, Depeng Jin&lt;br /&gt;
 The Web Conference (&lt;strong&gt;WWW&lt;/strong&gt;), 2019&lt;/p&gt;&lt;/li&gt;
 
@@ -630,11 +647,11 @@ The Web Conference (&lt;strong&gt;WWW&lt;/strong&gt;), 2019&lt;/p&gt;&lt;/li&gt;
 Yu Meng, Jiaming Shen, &lt;em&gt;Chao Zhang&lt;/em&gt;, Jiawei Han&lt;br /&gt;
 AAAI Conference on Artificial Intelligence (&lt;strong&gt;AAAI&lt;/strong&gt;), 2019&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;Computing Trajectory Similarity in Linear Time: A Generic Seed-Guided Neural Metric Learning Approach&lt;/a&gt;&lt;br /&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ieeexplore.ieee.org/document/8731427&#34; target=&#34;_blank&#34;&gt;Computing Trajectory Similarity in Linear Time: A Generic Seed-Guided Neural Metric Learning Approach&lt;/a&gt;&lt;br /&gt;
 Di Yao, Gao Cong, &lt;em&gt;Chao Zhang&lt;/em&gt;, Jingping Bi&lt;br /&gt;
 IEEE International Conference on Data Engineering (&lt;strong&gt;ICDE&lt;/strong&gt;), 2019&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/publication&#34;&gt;GeoAttn: Localization of Social Media Messages Via Attentional Memory Network&lt;/a&gt;&lt;br /&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://epubs.siam.org/doi/pdf/10.1137/1.9781611975673.8&#34; target=&#34;_blank&#34;&gt;GeoAttn: Localization of Social Media Messages Via Attentional Memory Network&lt;/a&gt;&lt;br /&gt;
 Sha Li, &lt;em&gt;Chao Zhang&lt;/em&gt;, Dongming Lei, Ji Li, Jiawei Han&lt;br /&gt;
 SIAM International Conference on Data Mining (&lt;strong&gt;SDM&lt;/strong&gt;), 2019&lt;/p&gt;&lt;/li&gt;
 
