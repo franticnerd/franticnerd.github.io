@@ -20,9 +20,10 @@
 
 &lt;h3 id=&#34;research-interests&#34;&gt;Research interests&lt;/h3&gt;
 
-&lt;p&gt;Our research goal is to enable machines to turn massive data into knowledge in
-a label-efficient and robust way. Revolving around this goal, we study the
-following topics in data mining and machine learning:&lt;br /&gt;
+&lt;p&gt;We aim to enable machines to acquire knowledge from massive data in a
+label-efficient and robust way, as well as use the acquired knowledge for task
+support and decision making. Revolving around this goal, we study the following
+topics:&lt;br /&gt;
   - Low-resource text mining&lt;br /&gt;
   - Learning with less labeled data&lt;br /&gt;
   - Probabilistic modeling and uncertainty quantification&lt;/p&gt;
@@ -722,7 +723,11 @@ Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technolog
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ieeexplore.ieee.org/document/8364644/&#34; target=&#34;_blank&#34;&gt;Deep Learning for the Internet of Things&lt;/a&gt;&lt;br /&gt;
 Shuochao Yao, Yiran Zhao, Aston Zhang, Huajie Shao, &lt;em&gt;Chao Zhang&lt;/em&gt;, Lu Su, Tarek Abdelzaher&lt;br /&gt;
-To appear in IEEE Computer, 2018&lt;/p&gt;&lt;/li&gt;
+IEEE Computer, 2018&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://onlinelibrary.wiley.com/doi/full/10.1111/exsy.12252&#34; target=&#34;_blank&#34;&gt;Learning deep representation for trajectory clustering&lt;/a&gt;&lt;br /&gt;
+Di Yao, &lt;em&gt;Chao Zhang&lt;/em&gt;, Zhihua Zhu, Qin Hu, Zheng Wang, Jianhui Huang, Jingping Bi&lt;br /&gt;
+Expert Systems, 2018.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/asonam18.pdf&#34;&gt;Leveraging the Power of Informative Users for Local Event Detection&lt;/a&gt;&lt;br /&gt;
 Hengtong Zhang, Fenglong Ma, Yaliang Li, &lt;em&gt;Chao Zhang&lt;/em&gt;, Tianqi Wang, Yaqing Wang, Jing Gao, Lu Su&lt;br /&gt;
@@ -731,6 +736,10 @@ IEEE/ACM International Conference on Advances in Social Networks Analysis and Mi
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/1709.02980.pdf&#34; target=&#34;_blank&#34;&gt;RDeepSense: Reliable Deep Mobile Computing Models with Uncertainty Estimations&lt;/a&gt;&lt;br /&gt;
 Shuochao Yao, Yiran Zhao, Huajie Shao, Aston Zhang, &lt;em&gt;Chao Zhang&lt;/em&gt;, Shen Li, and Tarek Abdelzaher.&lt;br /&gt;
 ACM International Joint Conference on Pervasive and Ubiquitous Computing (&lt;strong&gt;UbiComp&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/8416304/&#34; target=&#34;_blank&#34;&gt;ApDeepSense: Deep Learning Uncertainty Estimation without the Pain for IoT Applications&lt;/a&gt;&lt;br /&gt;
+Shuochao Yao, Yiran Zhao, Huajie Shao, &lt;em&gt;Chao Zhang&lt;/em&gt;, Aston Zhang, Dongxin Liu, Shengzhong Liu, Lu Su, Tarek Abdelzaher&lt;br /&gt;
+IEEE International Conference on Distributed Computing Systems (&lt;strong&gt;ICDCS&lt;/strong&gt;), 2018&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://chaozhang.org/papers/infocom18.pdfj&#34;&gt;A Constrained Maximum Likelihood Estimator for Unguided Social Sensing&lt;/a&gt;&lt;br /&gt;
 Huajie Shao, Shuochao Yao, Yiran Zhao, &lt;em&gt;Chao Zhang&lt;/em&gt;, Jinda Han, Lance Kaplan, Su Lu, and Tarek Abdelzaher&lt;br /&gt;
