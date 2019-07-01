@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chao Zhang on Chao Zhang</title>
@@ -7,7 +6,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Chao Zhang</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -100,6 +99,461 @@ multi-granular fashion. Text cube
 
 &lt;/figure&gt; 
 --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://chaozhang.org/course/19f-cse8803/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://chaozhang.org/course/19f-cse8803/</guid>
+      <description>
+
+&lt;h1 id=&#34;cse-8803-dlt-deep-learning-for-text-data&#34;&gt;CSE 8803 DLT: Deep Learning for Text Data&lt;/h1&gt;
+
+&lt;h3 id=&#34;logistics&#34;&gt;Logistics&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Lecture time&lt;/strong&gt;: Monday &amp;amp; Wednesday 3:00PM&amp;ndash;4:15PM&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Location&lt;/strong&gt;: CoC Room 52&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Instructor&lt;/strong&gt;: &lt;a href=&#34;http://chaozhang.org/&#34; target=&#34;_blank&#34;&gt;Chao Zhang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Teaching Assistant&lt;/strong&gt;: TBD&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Piazza&lt;/strong&gt;: TBD
+
+&lt;ul&gt;
+&lt;li&gt;Piazza will be the main place for course discussions and announcements. If you have questions, please &lt;strong&gt;ask it on Piazza first&lt;/strong&gt; because 1) other students may have the same question; 2) you will get help faster compared to sending emails.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Office Hours&lt;/strong&gt;:
+
+&lt;ul&gt;
+&lt;li&gt;Instructor Office Hour: TBD&lt;/li&gt;
+&lt;li&gt;TA Office Hour: TBD&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
+
+&lt;p&gt;This course will introduce state-of-the-art machine learning techniques for
+mainstay problems in text data analysis, with particular emphasis on deep
+learning methods that have achieved enormous success recently. Students will
+learn about trending problems in this field, key methods for solving these
+problems, and their advantages and disadvantages. The course will provide
+useful techniques for students who want to solve practical problems involving
+text data, and better prepare those who want to do edge-cutting research in
+text mining, information retrieval, natural language processing, and text-rich
+interdisciplinary research. The learning objective is that by the end of this
+course, the students are able to formulate their text analysis problems at
+hand, choose appropriate statistical models for the problems, and even come up
+with innovative solutions for solving open research problems in this field.&lt;/p&gt;
+
+&lt;p&gt;In the task space, we will cover a range of text data analysis tasks,
+including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Text classification (sentiment analysis, document classification)&lt;/li&gt;
+&lt;li&gt;Sequence labeling (POS tagging, NER, event extraction)&lt;/li&gt;
+&lt;li&gt;Knowledge graph construction and reasoning&lt;/li&gt;
+&lt;li&gt;Text generation (text summarization, image captioning)&lt;/li&gt;
+&lt;li&gt;A number of other trending topics in this area.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the methodology space, we will introduce state-of-the-art deep learning
+techniques for these problems, including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Deep representation learning (Word2Vec, Transformer, BERT)&lt;/li&gt;
+&lt;li&gt;Sequence labeling models (CRF, LSTM-CRF)&lt;/li&gt;
+&lt;li&gt;Deep transfer/multi-task learning&lt;/li&gt;
+&lt;li&gt;Neural symbolic methods&lt;/li&gt;
+&lt;li&gt;Deep generative models (GAN, VAE, and their variants)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Prerequisites for this course: (1) the students should be have basic knowledge
+in machine learning and taken a relevant course before (e.g., CX4240, CSE6740,
+CS4641); (2) the students should have solid programming skills&amp;mdash;both the
+assignments and the course project can be programming demanding.&lt;/p&gt;
+
+&lt;h3 id=&#34;content-outline&#34;&gt;Content Outline&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Background knowledge
+
+&lt;ul&gt;
+&lt;li&gt;Course overview and logistics&lt;/li&gt;
+&lt;li&gt;Text data analysis: tasks and applications&lt;/li&gt;
+&lt;li&gt;ML/DL review&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Text representation learning
+
+&lt;ul&gt;
+&lt;li&gt;Bag-of-words, n-gram, TF-IDF&lt;/li&gt;
+&lt;li&gt;Dimension reduction, matrix factorization, topic models&lt;/li&gt;
+&lt;li&gt;Word2vec, Glove&lt;/li&gt;
+&lt;li&gt;Transformer and BERT&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Deep text classification
+
+&lt;ul&gt;
+&lt;li&gt;Traditional text classifiers: naive Bayes, logistic regression, SVM&lt;/li&gt;
+&lt;li&gt;Deep classifiers: CNN, RNN and their variants&lt;/li&gt;
+&lt;li&gt;Attention models&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Learning with less labeled data
+
+&lt;ul&gt;
+&lt;li&gt;Transfer learning and fine-tuning&lt;/li&gt;
+&lt;li&gt;Multitask learning&lt;/li&gt;
+&lt;li&gt;Semi-supervised learning&lt;/li&gt;
+&lt;li&gt;Weakly supervised learning&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Sequence labeling and structured prediction
+
+&lt;ul&gt;
+&lt;li&gt;Motivating tasks: POS tagging, NER, event extraction&lt;/li&gt;
+&lt;li&gt;Conditional random fields for sequence labeling&lt;/li&gt;
+&lt;li&gt;Deep latent variable models for sequence labeling&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Text generation
+
+&lt;ul&gt;
+&lt;li&gt;Motivating tasks: summarization, image captioning, translation&lt;/li&gt;
+&lt;li&gt;Deep language models&lt;/li&gt;
+&lt;li&gt;VAE and GAN for text generation&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Knowledge representation and reasoning
+
+&lt;ul&gt;
+&lt;li&gt;Knowledge graph construction&lt;/li&gt;
+&lt;li&gt;Knowledger graph reasoning&lt;/li&gt;
+&lt;li&gt;Combining logic and neural models&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Other tending topics in text data analysis
+
+&lt;ul&gt;
+&lt;li&gt;Multimodal analytics of text and other data&lt;/li&gt;
+&lt;li&gt;Adversarial learning and model robustness&lt;/li&gt;
+&lt;li&gt;Question answering and dialogue systems&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Project presentations&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;th&gt;Topic&lt;/th&gt;
+&lt;th&gt;Assignment&lt;/th&gt;
+&lt;th&gt;Due&lt;/th&gt;
+&lt;th&gt;Readings&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;8/19/19&lt;/td&gt;
+&lt;td&gt;Course Overview&lt;/td&gt;
+&lt;td&gt;Sign up for Piazza&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;8/21/19&lt;/td&gt;
+&lt;td&gt;Text Analysis Basics&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;8/26/19&lt;/td&gt;
+&lt;td&gt;Machine Learning Review&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;8/28/19&lt;/td&gt;
+&lt;td&gt;Bag-of-words, N-Grams, TF-IDF&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;9/2/19&lt;/td&gt;
+&lt;td&gt;No Class (Labor Day)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;9/4/19&lt;/td&gt;
+&lt;td&gt;Dimension Reduction and Topic Models&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Proposal Due&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;9/9/19&lt;/td&gt;
+&lt;td&gt;Word Embedding, Word2Vec, Glove&lt;/td&gt;
+&lt;td&gt;HW1 Out&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;9/11/19&lt;/td&gt;
+&lt;td&gt;Transformer and BERT&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;9/16/19&lt;/td&gt;
+&lt;td&gt;Traditional Text Classifiers&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;9/18/19&lt;/td&gt;
+&lt;td&gt;Deep Text Classification&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;9/23/19&lt;/td&gt;
+&lt;td&gt;Attention Models&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;HW1 Due&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;9/25/19&lt;/td&gt;
+&lt;td&gt;Transfer Learning and Fine-Tuning&lt;/td&gt;
+&lt;td&gt;HW2 Out&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;9/30/19&lt;/td&gt;
+&lt;td&gt;Multitask Learning&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;10/2/19&lt;/td&gt;
+&lt;td&gt;Semi-Supervised Learning&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;10/7/19&lt;/td&gt;
+&lt;td&gt;Weakly Supervised Learning&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;10/9/19&lt;/td&gt;
+&lt;td&gt;Sequence Labeling Tasks&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;HW2 Due&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;10/14/19&lt;/td&gt;
+&lt;td&gt;No Class (Fall Recess)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;10/16/19&lt;/td&gt;
+&lt;td&gt;Conditional Random Fields&lt;/td&gt;
+&lt;td&gt;HW3 Out&lt;/td&gt;
+&lt;td&gt;Mid Report Due&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;10/21/19&lt;/td&gt;
+&lt;td&gt;Deep Models for Sequence Labeling&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;10/23/19&lt;/td&gt;
+&lt;td&gt;Text Generation Tasks&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;10/28/19&lt;/td&gt;
+&lt;td&gt;Deep Language Models&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;10/30/19&lt;/td&gt;
+&lt;td&gt;GAN and VAE for Text Generation&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;HW3 Out&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;11/4/19&lt;/td&gt;
+&lt;td&gt;Knowledge Graph Construction&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;11/6/19&lt;/td&gt;
+&lt;td&gt;Knowledge Graph Reasoning&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;11/11/19&lt;/td&gt;
+&lt;td&gt;Neural Symbolic Methods&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;11/13/19&lt;/td&gt;
+&lt;td&gt;Other Trending Topics&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;HW3 Due&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;11/18/19&lt;/td&gt;
+&lt;td&gt;Project Presentations&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;11/20/19&lt;/td&gt;
+&lt;td&gt;Project Presentations&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;11/25/19&lt;/td&gt;
+&lt;td&gt;Project Presentations&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;11/27/19&lt;/td&gt;
+&lt;td&gt;No Class&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;12/2/19&lt;/td&gt;
+&lt;td&gt;No Class&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Final Report Due&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;12/4/19&lt;/td&gt;
+&lt;td&gt;Reading Day&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;grading&#34;&gt;Grading&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Homeworks (45%)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There will be three assignments. Each one is designed for testing your understanding of the taught algorithms. It could be either programming or written analysis.&lt;/li&gt;
+&lt;li&gt;All assignments follow the &amp;ldquo;no-late&amp;rdquo; policy. Assignments received after the due time will receive zero credit.&lt;/li&gt;
+&lt;li&gt;All students are expected to follow the &lt;a href=&#34;http://policylibrary.gatech.edu/student-affairs/academic-honor-code&#34; target=&#34;_blank&#34;&gt;Georgia Tech Academic Honor Code&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Project (50%)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You are expected to complete a project on machine learning for text data. Your project needs to be clear about 1) the problem you are attempting to solve; 2) a survey of existing literature for the problem and the technical method you propose to solve the problem; 3) the results and conclusion you attain.&lt;/li&gt;
+&lt;li&gt;Each project needs to be completed in a team of 2-3 people. Team members need to clearly claim their contributions in the project report.&lt;/li&gt;
+&lt;li&gt;You will need to submit the following:
+
+&lt;ul&gt;
+&lt;li&gt;Project proposal (10%): formulation of the problem and expected outcome&lt;/li&gt;
+&lt;li&gt;Mid-term report (10%): literature survey and technical roadmap&lt;/li&gt;
+&lt;li&gt;Presentation (15%): group-wise in-class project presentation&lt;/li&gt;
+&lt;li&gt;Final report (15%): a complete and final project report&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Class participation (5%)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Your class participation score will be graded based on attendance and in-class quizzes.&lt;/li&gt;
+&lt;li&gt;Participation in class discussions (including asking relevant questions in class, volunteering to answer questions on Piazza) will be considered when determining your final grade. It will be especially useful when you are right on the edge of two letter grades.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://web.stanford.edu/~jurafsky/slp3/&#34; target=&#34;_blank&#34;&gt;Speech and Language Processing&lt;/a&gt;, by Dan Jurafsky and James H. Martin&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://web.stanford.edu/class/cs224n/&#34; target=&#34;_blank&#34;&gt;Deep Learning for NLP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.deeplearningbook.org/&#34; target=&#34;_blank&#34;&gt;Deep Learning&lt;/a&gt;, by Ian Goodfellow, Yoshua Bengio, and Aaron Courville&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://d2l.ai/&#34; target=&#34;_blank&#34;&gt;Dive into Deep Learning&lt;/a&gt;, by Aston Zhang, Zack C. Lipton, Mu Li, and Alex Smola&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Other resources, such as deep learning toolboxes and datasets, will be provided throughout the course.&lt;/p&gt;
 </description>
     </item>
     
@@ -937,6 +1391,13 @@ ACM SIGIR Conference on Research and Development in Information Retrieval (&lt;s
 &lt;/thead&gt;
 
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2019 Fall&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://chaozhang.org/course/19f-cse8803&#34;&gt;CSE8803-DLT: Deep Learning for Text Data&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;GaTech&lt;/td&gt;
+&lt;td&gt;Instructor&lt;/td&gt;
+&lt;/tr&gt;
+
 &lt;tr&gt;
 &lt;td&gt;2019 Spring&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;http://chaozhang.org/course/19s-cx4240&#34;&gt;CX4240: Introduction to Computational Data Analysis&lt;/a&gt;&lt;/td&gt;

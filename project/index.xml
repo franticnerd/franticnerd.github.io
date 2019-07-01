@@ -18,7 +18,7 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>http://chaozhang.org/project/low-resource/</guid>
-      <description>Text data account for more than 80% of all data in organizations and play a critical role in countless domains. But success stories of existing text mining and natural language processing tools still rely on excessive labeled data, which are often too costly to obtain in practice. The goal of this project is to develop next-generation text mining methods that turn massive text data into actionable knowledge with limited human supervision.</description>
+      <description>Leverage weak supervision for text mining tasks such as text classification, event extraction, and taxonomy construction.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://chaozhang.org/project/multimodal/</guid>
-      <description>Text&amp;ndash;—the major data form for encoding information, and space and time—&amp;ndash;the two most important contexts of our physical world, are increasingly converging. Existing text mining and spatiotemporal data mining techniques operate separately and quickly become obsolete in dealing with such complex data. How do we unveil the subtle correlations between different modalities? How do we discover interesting patterns in the multidimensional space? Can we integrate different modalities to make more accurate predictions?</description>
+      <description>Integrating unstructured text and structured spatiotemporal data for knowledge discovery.</description>
     </item>
     
   </channel>
