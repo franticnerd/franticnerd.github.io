@@ -1,0 +1,124 @@
+#+TITLE: CX4240: Introduction to Computational Data Analysis
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../main.css" />
+#+OPTIONS: html-postamble:nil
+#+OPTIONS: num:nil
+
+* Logistics
+
+- *Lecture time*: Mons and Weds, 4:30pm-5:45pm
+- *Location*: Klaus 1447
+- *Instructors*: M. Mahdi Roozbahani and [[http://chaozhang.org][Chao Zhang]]
+- *Teaching Assistant*: Hanjun Dai (hanjundai@gatech.edu) and Wendi Ren (wren44@gatech.edu)
+- *Office Hours*:
+  - Instructor: Weds 3:30-4:20pm
+  - TA Office Hour I: Mons 3:30-4:20pm
+  - TA Office Hour II: Fris 10:30-11:20am
+- *Piazza*: https://piazza.com/class/jqeo3f7s5vc426
+  - *Piazza* will be the main place for course discussions and announcements. If you have questions, please *ask it on Piazza first* because 1) other students may have the same question; 2) you will get help faster compared to sending emails.
+  - If it's something you do not like to discuss publicly on Piazza, send an email with *CX4240* in the subject.
+
+* Course Content
+
+This course introduces techniques for computational data analysis, with an
+emphasis on *machine learning algorithms and their applications to real-world
+data*. We will investigate the following question: how to extract useful
+knowledge from data computationally for decision making and task support? We
+will focus on on machine learning methods for computational data analysis,
+which are organized into three parts:
+
+1. **Basic math for data science and machine learning**
+   - Linear algebra
+   - Probability and statistics
+   - Information theory
+
+1. **Unsupervised machine learning for data exploration**
+   - Clustering analysis
+   - Dimension reduction
+   - Kernel density estimation
+
+1. **Supervised learning for predictive data analysis**
+   - Tree-based models
+   - Linear classification and regression
+   - Neural networks
+
+Prerequisites for this course include 1) basic knowledge of probability,
+statistics, and linear algebra; 2) basic programming experience, preferably in
+Python.
+
+
+
+* Schedule
+
+| Date    | Topic                                           | Assignment         | Due     | Readings |
+|---------|-------------------------------------------------|--------------------|---------|----------|
+| 1/7/19  | Course Overview                                 | Piazza Signup |         | [[https://policylibrary.gatech.edu/student-affairs/academic-honor-code][GT Honor Code]] |
+| 1/9/19  | Math Basics: Linear Algebra       |                    |         |  [[http://cs229.stanford.edu/section/cs229-linalg.pdf][Linear Algebra Review by Zico Kolter]] |
+| 1/14/19 | Math Basics: Probability and Statistics   |                    |         |   [[http://www.cs.cmu.edu/~./awm/tutorials/prob.html][Probability Theory Review by Andrew Moore]]    |
+| 1/16/19 | Math Basics: Information Theory       | AS1 Out            |         |   [[http://colah.github.io/posts/2015-09-Visual-Information/][Visual Information Theory by Chris Olah]] |
+| 1/21/19 | **No Class** (Martin Luther King Day)               |                    |         |          |
+| 1/23/19 | Data Analysis Toolbox                           |                    |         | [[http://cs231n.github.io/python-numpy-tutorial/][NumPy Tutorial]]; [[https://www.labri.fr/perso/nrougier/teaching/matplotlib/][Matplotlib Tutorial]]    |
+| 1/28/19 | Clustering Analysis and K-Means |                    | AS1 Due |          |
+| 1/30/19 | Hierarchical Clustering                          |                    |         |          |
+| 2/4/19  | Density-Based Clustering                        |                    |         |          |
+| 2/6/19  | Gaussian Mixture Model                        | AS2 Out            |         |          |
+| 2/11/19 | Evaluation of Clustering Algorithms             |                    |         |          |
+| 2/13/19 | Density Estimation                             |                    |         |          |
+| 2/18/19 | Dimension Reduction                    |                    |         |          |
+| 2/20/19 | Midterm Review                                  |                    | AS2 Due |          |
+| 2/25/19 | **Midterm Exam**                                    |                    |         |          |
+| 2/27/19 | Linear Regression                   |         |         | |
+| 3/4/19  | Linear Regression                   |         |         | |
+| 3/6/19  | Naïve Bayes and Logistic Regression |         |         | |
+| 3/11/19 | Support Vector Machine              | AS3 Out |         | |
+| 3/13/19 | Support Vector Machine              |         |         | |
+| 3/18/19 | **No Class** (Spring Break)             |         |         | |
+| 3/20/19 | **No Class** (Spring Break)             |         |         | |
+| 3/25/19 | Neural Networks                     |         |    |    |
+| 3/27/19 | Neural Networks                     |         | AS3 Due | |
+| 4/1/19  | Decision Tree and Random Forest     |         |         | |
+| 4/3/19  | Decision Tree and Random Forest     | AS4 Out |         | |
+| 4/8/19  | Model Selection                     |         |         | |
+| 4/10/19 | **No Class** (Project Preparation)                  |                    |         |          |
+| 4/15/19 | Project Presentation                            |                    |         |          |
+| 4/17/19 | Project Presentation                            |                    | AS4 Due |          |
+| 4/22/19 | Course Review                                   |                    |         |          |
+| 4/24/19 | Reading Day                                     |                    | Report Due      |          |
+
+
+* Grading
+
+- *Assignments (50%)*
+  - There will be four assignments. Each one is designed for testing your understanding of the taught algorithms. It could be either programming or written analysis.
+  - You will need to hand in the assignments at the beginning of the class on the due date.
+  - All assignments follow the "no-late" policy. Assignments received after the due time will receive zero credit.
+  - All students are expected to follow the Georgia Tech Academic Honor Code.
+
+- *Project (20%)*
+  - You are expected to complete a project on computational data analysis with real-life data. Your project needs to be clear about 1) the data you are using; 2) the problem you are attempting to solve; 3) the method you are using; 4) the results and conclusion you attain.
+  - You will need to turn in a project report and also give an in-class presentation for your project. The project report and the presentation will each count for 10% of your final grade.
+  - Each project needs to be completed in a team of 2-4 people. Team members need to clearly claim their contributions in the project report.
+
+- *Class participation (5%)*
+  - Your class participation score will be graded based on attendance and in-class quizzes. 
+  - Participation in class discussions (including asking relevant questions in class, volunteering to answer questions on Piazza) will be considered when determining your final grade. It will be especially useful when you are right on the edge of two letter grades. 
+
+- *Midterm Exam (10%)*
+  - The midterm exam will take place on Feb 25th in lieu of the regular class. 
+  - The midterm exam will be a written and open-book exam, but Internet usage will not be allowed. 
+  - There will be no make-up exams. You will get zero credit for your missed midterm exam.
+
+- *Final Exam (15%)*
+  - The final exam will be at whatever time is scheduled for this class.
+  - The final exam will be a written and open-book exam, but no Internet usage will be allowed. 
+  - Again, there will be no make-up exams. You will get zero credit for your missed final exam.
+
+* Resources
+
+- [[http://www.cs.cmu.edu/~tom/mlbook.html][Machine learning]], by Tom Mitchell
+- [[https://www.springer.com/us/book/9780387310732][Pattern recognition and machine learning]], by Christopher Bishop
+- [[https://www.elsevier.com/books/data-mining-concepts-and-techniques/han/978-0-12-381479-1][Data Mining: Concepts and Techniques]], by Jiawei Han, Micheline Kamber, and Jian Pei
+- [[https://web.stanford.edu/~hastie/ElemStatLearn/][The Elements of Statistical Learning]], by Trevor Hastie, Robert Tibshirani, and Jerome Friedman
+- [[http://www.deeplearningbook.org/][Deep Learning]], by Ian Goodfellow, Yoshua Bengio, and Aaron Courville
+- [[https://d2l.ai/][Dive into Deep Learning]], by Aston Zhang, Zack C. Lipton, Mu Li, and Alex Smola
+
+Other resources, such as machine learning toolboxes and datasets, will be provided throughout the course.
