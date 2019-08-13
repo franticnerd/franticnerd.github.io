@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-08-13 Tue 13:16 -->
+<!-- 2019-08-13 Tue 15:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CSE 8803 DLT: Deep Learning for Text Data</title>
@@ -235,28 +235,25 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org7b71b1c">Logistics</a></li>
-<li><a href="#orgd84eba2">Overview</a></li>
-<li><a href="#org09320e1">Content</a></li>
-<li><a href="#org7674757">Schedule</a></li>
-<li><a href="#org43fffb6">Grading</a></li>
-<li><a href="#org9bade5b">Resources</a></li>
+<li><a href="#org98146d0">Logistics</a></li>
+<li><a href="#orgd1bd999">Overview</a></li>
+<li><a href="#org58e7f0d">Content</a></li>
+<li><a href="#org825cd3d">Schedule</a></li>
+<li><a href="#org132753a">Grading</a></li>
+<li><a href="#org0d24102">Resources</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org7b71b1c" class="outline-2">
-<h2 id="org7b71b1c">Logistics</h2>
-<div class="outline-text-2" id="text-org7b71b1c">
+<div id="outline-container-org98146d0" class="outline-2">
+<h2 id="org98146d0">Logistics</h2>
+<div class="outline-text-2" id="text-org98146d0">
 <ul class="org-ul">
 <li><b>Lecture time</b>: Monday &amp; Wednesday 3:00PM&#x2013;4:15PM</li>
 <li><b>Location</b>: CoC Room 52</li>
 <li><b>Instructor</b>: <a href="http://chaozhang.org/">Chao Zhang</a></li>
 <li><b>Teaching Assistant</b>: TBD</li>
-<li><b>Piazza</b>: TBD
-<ul class="org-ul">
-<li>Piazza will be the main place for course discussions and announcements. If you have questions, please <b>ask it on Piazza first</b> because 1) other students may have the same question; 2) you will get help faster compared to sending emails.</li>
-</ul></li>
+<li><b>Piazza</b>: Piazza will be the main place for course discussions and announcements. If you have questions, please <b>ask it on Piazza first</b> because 1) other students may have the same question; 2) you will get help faster compared to sending emails.</li>
 <li><b>Office Hours</b>:
 <ul class="org-ul">
 <li>Instructor Office Hour: TBD</li>
@@ -266,11 +263,11 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgd84eba2" class="outline-2">
-<h2 id="orgd84eba2">Overview</h2>
-<div class="outline-text-2" id="text-orgd84eba2">
+<div id="outline-container-orgd1bd999" class="outline-2">
+<h2 id="orgd1bd999">Overview</h2>
+<div class="outline-text-2" id="text-orgd1bd999">
 <p>
-This course will introduce state-of-the-art machine learning techniques for mainstay problems in text data analysis, with particular emphasis on deep learning methods that have achieved enormous success recently. The students will learn about trending problems in this field, key methods for solving these problems, and their advantages and disadvantages. The students are also expected to read and present cutting edge research papers, as well as conduct a research oriented course project. The course will provide useful techniques for students who want to solve practical problems involving text data, and better prepare those who want to do edge-cutting research in text mining, information retrieval, natural language processing, and text-rich interdisciplinary research. The learning objective is that by the end of this course, the students are able to formulate their text analysis problems at hand, choose appropriate statistical models for the problems, and even come up with innovative solutions for solving open research problems in this field.
+This course will introduce state-of-the-art machine learning techniques for mainstay problems in text data analysis, with particular emphasis on deep learning methods that have recently achieved enormous success. The students will learn about trending problems in this field, key methods for solving these problems, and their advantages and disadvantages. The students are also expected to read and present cutting edge research papers, as well as conduct a research oriented course project. The course will provide useful techniques for students who want to solve practical problems involving text data, and better prepare those who want to do edge-cutting research in text mining, information retrieval, natural language processing, and text-rich interdisciplinary research. The learning objective is that by the end of this course, the students are able to formulate their text analysis problems at hand, choose appropriate statistical models for the problems, and even come up with innovative solutions for solving open research problems in this field.
 </p>
 
 <p>
@@ -279,11 +276,12 @@ including:
 </p>
 
 <ul class="org-ul">
+<li>Text representation learning</li>
 <li>Text classification (sentiment analysis, document classification)</li>
 <li>Sequence labeling (POS tagging, NER, event extraction)</li>
 <li>Knowledge graph construction and reasoning</li>
 <li>Text generation (text summarization, image captioning)</li>
-<li>A number of other trending topics in this area.</li>
+<li>Question answering and dialogue systems</li>
 </ul>
 
 
@@ -297,24 +295,23 @@ techniques for these problems, including:
 <li>Sequence labeling models (CRF, LSTM-CRF)</li>
 <li>Deep transfer/multi-task learning</li>
 <li>Neural symbolic methods</li>
-<li>Deep generative models (GAN, VAE, and their variants)</li>
+<li>Deep generative models (VAE, GAN, and their variants)</li>
 </ul>
 
 
 <p>
-Prerequisites for this course: (1) the students should be have basic knowledge in machine learning and taken a relevant course before (e.g., CX4240, CSE6740, CS4641); (2) the students should be comfortable with reading research papers and giving presentations; (3) the students should have solid programming skills&#x2014;both the assignments and the course project can be programming demanding.
+Prerequisites for this course: (1) the students should be have basic knowledge in machine learning and taken a relevant course before (e.g., CX4240, CSE6740, CS4641); (2) the students should be comfortable with reading research papers and giving presentations; (3) the students should have solid programming skills&#x2014;the course project can be programming demanding.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org09320e1" class="outline-2">
-<h2 id="org09320e1">Content</h2>
-<div class="outline-text-2" id="text-org09320e1">
+<div id="outline-container-org58e7f0d" class="outline-2">
+<h2 id="org58e7f0d">Content</h2>
+<div class="outline-text-2" id="text-org58e7f0d">
 <ul class="org-ul">
 <li>Background knowledge
 <ul class="org-ul">
 <li>Course overview and logistics</li>
-<li>Text data analysis: tasks and applications</li>
 <li>ML/DL review</li>
 </ul></li>
 <li>Text representation learning
@@ -347,7 +344,7 @@ Prerequisites for this course: (1) the students should be have basic knowledge i
 <ul class="org-ul">
 <li>Motivating tasks: summarization, image captioning, translation</li>
 <li>Deep language models</li>
-<li>VAE and GAN for text generation</li>
+<li>VAE for text generation</li>
 </ul></li>
 <li>Knowledge representation and reasoning
 <ul class="org-ul">
@@ -355,26 +352,23 @@ Prerequisites for this course: (1) the students should be have basic knowledge i
 <li>Knowledger graph reasoning</li>
 <li>Combining logic and neural models</li>
 </ul></li>
-<li>Other tending topics in text data analysis
+<li>QA and dialogue systems
 <ul class="org-ul">
-<li>Multimodal analytics of text and other data</li>
-<li>Adversarial learning and model robustness</li>
-<li>Question answering and dialogue systems</li>
+<li>Question answering with knowledge bases</li>
+<li>Dialogue systems</li>
 </ul></li>
 <li>Project presentations</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org7674757" class="outline-2">
-<h2 id="org7674757">Schedule</h2>
-<div class="outline-text-2" id="text-org7674757">
+<div id="outline-container-org825cd3d" class="outline-2">
+<h2 id="org825cd3d">Schedule</h2>
+<div class="outline-text-2" id="text-org825cd3d">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="org-left" />
-
 <col  class="org-left" />
 
 <col  class="org-left" />
@@ -387,41 +381,36 @@ Prerequisites for this course: (1) the students should be have basic knowledge i
 <tr>
 <th scope="col" class="org-left">Date</th>
 <th scope="col" class="org-left">Topic</th>
-<th scope="col" class="org-left">Assignment</th>
+<th scope="col" class="org-left">Presentation</th>
 <th scope="col" class="org-left">Due</th>
-<th scope="col" class="org-left">Readings</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="org-left">8/19/19</td>
-<td class="org-left">Course Overview</td>
-<td class="org-left">Sign up for Piazza</td>
+<td class="org-left"><b>Course Overview</b></td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Piazza Signup</td>
 </tr>
 
 <tr>
 <td class="org-left">8/21/19</td>
-<td class="org-left">Text Analysis Basics</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Machine Learning Review</b></td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">8/26/19</td>
-<td class="org-left">Machine Learning Review</td>
+<td class="org-left"><b>Text Representation Learning</b></td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Presentation Signup</td>
 </tr>
 
 <tr>
 <td class="org-left">8/28/19</td>
-<td class="org-left">Bag-of-words, N-Grams, TF-IDF</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Word2Vec and Glove</td>
+<td class="org-left">P1 and P2</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
@@ -430,95 +419,83 @@ Prerequisites for this course: (1) the students should be have basic knowledge i
 <td class="org-left">No Class (Labor Day)</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">9/4/19</td>
-<td class="org-left">Dimension Reduction and Topic Models</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">ELMo and BERT</td>
+<td class="org-left">P3 and P4</td>
 <td class="org-left">Proposal Due</td>
-<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">9/9/19</td>
-<td class="org-left">Word Embedding, Word2Vec, Glove</td>
+<td class="org-left"><b>Deep Text Classification</b></td>
+<td class="org-left">&#xa0;</td>
 <td class="org-left">HW1 Out</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">9/11/19</td>
-<td class="org-left">Transformer and BERT</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Embedding-based Classifiers</td>
+<td class="org-left">P5 and P6</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">9/16/19</td>
-<td class="org-left">Traditional Text Classifiers</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">CNN and RNN</td>
+<td class="org-left">P7 and P8</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">9/18/19</td>
-<td class="org-left">Deep Text Classification</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Attention Models</td>
+<td class="org-left">P9 and P10</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">9/23/19</td>
-<td class="org-left">Attention Models</td>
+<td class="org-left"><b>Learn with limited supervision</b></td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">HW1 Due</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">9/25/19</td>
 <td class="org-left">Transfer Learning and Fine-Tuning</td>
-<td class="org-left">HW2 Out</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">P11 and P12</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">9/30/19</td>
-<td class="org-left">Multitask Learning</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Semi-Supervised Learning and Active Learning</td>
+<td class="org-left">P13 and P14</td>
+<td class="org-left">HW1 Due</td>
 </tr>
 
 <tr>
 <td class="org-left">10/2/19</td>
-<td class="org-left">Semi-Supervised Learning</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Multitask and Weakly Supervised Learning</td>
+<td class="org-left">P15 and P16</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">10/7/19</td>
-<td class="org-left">Weakly Supervised Learning</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Sequence Labeling</b></td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">10/9/19</td>
-<td class="org-left">Sequence Labeling Tasks</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">HW2 Due</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">CRF and Structured Perceptron</td>
+<td class="org-left">P17 and P18</td>
+<td class="org-left">HW2 Out</td>
 </tr>
 
 <tr>
@@ -526,94 +503,82 @@ Prerequisites for this course: (1) the students should be have basic knowledge i
 <td class="org-left">No Class (Fall Recess)</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">10/16/19</td>
-<td class="org-left">Conditional Random Fields</td>
-<td class="org-left">HW3 Out</td>
-<td class="org-left">Mid Report Due</td>
+<td class="org-left">Deep Models for Sequence Labeling</td>
+<td class="org-left">P19 and P20</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">10/21/19</td>
-<td class="org-left">Deep Models for Sequence Labeling</td>
+<td class="org-left"><b>Deep Text Generation</b></td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Mid Report Due</td>
 </tr>
 
 <tr>
 <td class="org-left">10/23/19</td>
-<td class="org-left">Text Generation Tasks</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Sequence-to-sequence models</td>
+<td class="org-left">P21 and P22</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">10/28/19</td>
-<td class="org-left">Deep Language Models</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">VAE for Text Generation</td>
+<td class="org-left">P23 and P24</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">10/30/19</td>
-<td class="org-left">GAN and VAE for Text Generation</td>
+<td class="org-left"><b>Knowledge representation and reasoning</b></td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">HW3 Out</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">11/4/19</td>
 <td class="org-left">Knowledge Graph Construction</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">P25 and P26</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">11/6/19</td>
 <td class="org-left">Knowledge Graph Reasoning</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">P27 and P28</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">11/11/19</td>
 <td class="org-left">Neural Symbolic Methods</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">P29 and P30</td>
+<td class="org-left">HW2 Due</td>
 </tr>
 
 <tr>
 <td class="org-left">11/13/19</td>
-<td class="org-left">Other Trending Topics</td>
+<td class="org-left"><b>QA and dialogue</b></td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">HW3 Due</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">11/18/19</td>
-<td class="org-left">Project Presentations</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">QA with Knowledge Bases</td>
+<td class="org-left">P31 and P32</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">11/20/19</td>
-<td class="org-left">Project Presentations</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Dialogue Systems</td>
+<td class="org-left">P33 and P34</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
@@ -622,13 +587,11 @@ Prerequisites for this course: (1) the students should be have basic knowledge i
 <td class="org-left">Project Presentations</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">11/27/19</td>
-<td class="org-left">No Class</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Project Presentations</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 </tr>
@@ -638,13 +601,11 @@ Prerequisites for this course: (1) the students should be have basic knowledge i
 <td class="org-left">No Class</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">Final Report Due</td>
-<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">12/4/19</td>
 <td class="org-left">Reading Day</td>
-<td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 </tr>
@@ -653,14 +614,13 @@ Prerequisites for this course: (1) the students should be have basic knowledge i
 </div>
 </div>
 
-
-<div id="outline-container-org43fffb6" class="outline-2">
-<h2 id="org43fffb6">Grading</h2>
-<div class="outline-text-2" id="text-org43fffb6">
+<div id="outline-container-org132753a" class="outline-2">
+<h2 id="org132753a">Grading</h2>
+<div class="outline-text-2" id="text-org132753a">
 <ul class="org-ul">
-<li>Homeworks (30%)
+<li>Homework (20%)
 <ul class="org-ul">
-<li>There will be three assignments. Each one is designed for testing your understanding of the taught algorithms. It could be either programming or written analysis.</li>
+<li>There will be two assignments. Each one is designed for testing your understanding of the taught algorithms.</li>
 <li>All assignments follow the "no-late" policy. Assignments received after the due time will receive zero credit.</li>
 <li>All students are expected to follow the <a href="http://policylibrary.gatech.edu/student-affairs/academic-honor-code">Georgia Tech Academic Honor Code</a>.</li>
 </ul></li>
@@ -676,29 +636,35 @@ Prerequisites for this course: (1) the students should be have basic knowledge i
 <li>Final report (15%): a complete and final project report</li>
 </ul></li>
 </ul></li>
-<li>Paper Presentation (20%)
+<li>Paper Presentation (30%)
 <ul class="org-ul">
-<li>Each student is expected to read and present at least one research paper. The presentation will be graded by the instructor and the TA.</li>
+<li>Each student is expected to read and present 1-2 research paper(s). The presentation will be graded by the instructor and the TA.</li>
+<li>You need to email your slides to the instructor and TA by 9pm EST the night before your presentation.</li>
+<li>The grading of your presentation will be based on quality of slides (10%), presentation clearness (10%), critical and insightful comments (5%), and handling of questions (5%).</li>
+<li>The list of papers and the sign-up sheet are available <a href="https://docs.google.com/spreadsheets/d/1iOxUGrHKY2Cyz1UlGfc6IzZej08qkOAqG5qF2EbHuoQ/edit?usp=sharing">here</a>.</li>
+<li>Useful tips for presentation:
+<ul class="org-ul">
+<li><a href="http://www.kumc.edu/SAH/OTEd/jradel/Preparing_talks/103.html">Presentation Tips</a> by Jeff Radel</li>
+<li><a href="http://pages.cs.wisc.edu/~markhill/conference-talk.html">Oral Presentation Advice</a> by Mark D. Hill</li>
+</ul></li>
 </ul></li>
 <li>Class participation (5%)
 <ul class="org-ul">
-<li>Your class participation score will be graded based on attendance and in-class discussions.</li>
-<li>Participation in class discussions (including asking relevant questions in class, volunteering to answer questions on Piazza) will be considered when determining your final grade. It will be especially useful when you are right on the edge of two letter grades.</li>
+<li>Participation in class (including attendance, asking relevant questions in class, volunteering to answer questions on Piazza) will be considered when determining your final grade. It will be especially useful when you are right on the edge of two letter grades.</li>
 </ul></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org9bade5b" class="outline-2">
-<h2 id="org9bade5b">Resources</h2>
-<div class="outline-text-2" id="text-org9bade5b">
+<div id="outline-container-org0d24102" class="outline-2">
+<h2 id="org0d24102">Resources</h2>
+<div class="outline-text-2" id="text-org0d24102">
 <ul class="org-ul">
 <li><a href="https://web.stanford.edu/~jurafsky/slp3/">Speech and Language Processing</a>, by Dan Jurafsky and James H. Martin</li>
 <li><a href="http://web.stanford.edu/class/cs224n/">Deep Learning for NLP</a></li>
 <li><a href="http://www.deeplearningbook.org/">Deep Learning</a>, by Ian Goodfellow, Yoshua Bengio, and Aaron Courville</li>
 <li><a href="https://d2l.ai/">Dive into Deep Learning</a>, by Aston Zhang, Zack C. Lipton, Mu Li, and Alex Smola</li>
 </ul>
-
 <p>
 Other resources, such as deep learning toolboxes and datasets, will be provided throughout the course.
 </p>
