@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-01-05 Sun 16:41 -->
+<!-- 2020-01-05 Sun 16:37 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CX4240: Introduction to Computational Data Analysis</title>
@@ -161,6 +161,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -235,94 +248,73 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgce7815c">Logistics</a></li>
-<li><a href="#orgf25784f">Course Content</a></li>
-<li><a href="#org0fb3bd6">Schedule</a></li>
-<li><a href="#org81c6c79">Grading</a></li>
-<li><a href="#org7566bb6">Resources</a></li>
+<li><a href="#orgdd194dc">Logistics</a></li>
+<li><a href="#org121dd50">Course Content</a></li>
+<li><a href="#orge091afb">Schedule</a></li>
+<li><a href="#orgb5ee849">Grading</a>
+<ul>
+<li><a href="#orgaa5aa4d">Homework (40%)</a></li>
+<li><a href="#org082efa6">Project (20%)</a></li>
+<li><a href="#orgbccf8e1">Class participation (15%)</a></li>
+<li><a href="#orge7f11df">Midterm Exam (10%)</a></li>
+<li><a href="#org7d64fa1">Final Exam (15%)</a></li>
+</ul>
+</li>
+<li><a href="#org2456631">Resources</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgce7815c" class="outline-2">
-<h2 id="orgce7815c">Logistics</h2>
-<div class="outline-text-2" id="text-orgce7815c">
+<div id="outline-container-orgdd194dc" class="outline-2">
+<h2 id="orgdd194dc">Logistics</h2>
+<div class="outline-text-2" id="text-orgdd194dc">
 <ul class="org-ul">
 <li><b>Lecture time</b>: Mons and Weds, 4:30pm-5:45pm</li>
-<li><b>Location</b>: Klaus 1447</li>
-<li><b>Instructors</b>: M. Mahdi Roozbahani and <a href="http://chaozhang.org">Chao Zhang</a></li>
-<li><b>Teaching Assistant</b>: Hanjun Dai (hanjundai@gatech.edu) and Wendi Ren (wren44@gatech.edu)</li>
+<li><b>Location</b>: Klaus 2456</li>
+<li><b>Instructors</b>: <a href="http://chaozhang.org">Chao Zhang</a></li>
+<li><b>Teaching Assistant</b>: Yue Yu (yyu414@gatech.edu) and Rui Feng (rfeng44@gatech.edu)</li>
 <li><b>Office Hours</b>:
 <ul class="org-ul">
-<li>Instructor: Weds 3:30-4:20pm</li>
-<li>TA Office Hour I: Mons 3:30-4:20pm</li>
-<li>TA Office Hour II: Fris 10:30-11:20am</li>
+<li>Instructor: Weds 3:30-4:20pm @ CODA 1309</li>
+<li>TA Office Hour: Mons 3:30-4:20pm, TBD</li>
 </ul></li>
-<li><b>Piazza</b>: <a href="https://piazza.com/class/jqeo3f7s5vc426">https://piazza.com/class/jqeo3f7s5vc426</a>
+<li><b>Piazza</b>: <a href="https://piazza.com/class/k51ginmjc0446">https://piazza.com/class/k51ginmjc0446</a>
 <ul class="org-ul">
-<li><b>Piazza</b> will be the main place for course discussions and announcements. If you have questions, please <b>ask it on Piazza first</b> because 1) other students may have the same question; 2) you will get help faster compared to sending emails.</li>
-<li>If it's something you do not like to discuss publicly on Piazza, send an email with <b>CX4240</b> in the subject.</li>
+<li>Piazza will be the main place for course discussions and announcements. If you have questions, please <i>ask it on Piazza first</i> because 1) other students may have the same question; 2) you will get help faster than emails.</li>
+<li>If it's something you do not like to discuss publicly on Piazza, send an email with <i>CX4240</i> in the subject.</li>
 </ul></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgf25784f" class="outline-2">
-<h2 id="orgf25784f">Course Content</h2>
-<div class="outline-text-2" id="text-orgf25784f">
+<div id="outline-container-org121dd50" class="outline-2">
+<h2 id="org121dd50">Course Content</h2>
+<div class="outline-text-2" id="text-org121dd50">
 <p>
-This course introduces techniques for computational data analysis, with an
-emphasis on <b>machine learning algorithms and their applications to real-world
-data</b>. We will investigate the following question: how to extract useful
-knowledge from data computationally for decision making and task support? We
-will focus on on machine learning methods for computational data analysis,
-which are organized into three parts:
+Q: <b><i>What will be covered in this course?</i></b>
+A: This course will introduce techniques for computational data analysis, with an emphasis on machine learning algorithms and their applications to real-world data. On the technique side, we will cover key supervised methods (linear regression, logistic regression, neural networks, tree-based models) and unsupervised methods (k-means, Gaussian mixture models, expectation-maximization, dimension reduction). On the application side, we will introduce various applications of these techniques, particularly on text data analysis and natural language processing. We will demonstrate how to formulate real-world tasks as data analysis problems, key methods for solving these problems, and their advantages and disadvantages.
 </p>
 
-<ol class="org-ol">
-<li><b><b>Basic math for data science and machine learning</b></b>
-<ul class="org-ul">
-<li>Linear algebra</li>
-<li>Probability and statistics</li>
-<li>Information theory</li>
-</ul></li>
-
-<li><b><b>Unsupervised machine learning for data exploration</b></b>
-<ul class="org-ul">
-<li>Clustering analysis</li>
-<li>Dimension reduction</li>
-<li>Kernel density estimation</li>
-</ul></li>
-
-<li><b><b>Supervised learning for predictive data analysis</b></b>
-<ul class="org-ul">
-<li>Tree-based models</li>
-<li>Linear classification and regression</li>
-<li>Neural networks</li>
-</ul></li>
-</ol>
+<p>
+Q: <b><i>Who will benefit from this course?</i></b>
+A: The learning objective is that by the end of this course, the students are able to formulate their data analysis problems at hand, choose appropriate computational models to acquire insights from data automatically, and even come up with innovative solutions for solving open problems in this field. The course will be helpful for students who want to solve practical problems using machine learning and data science techniques. The course will also be helpful for students who want to do edge-cutting research in data mining, machine learning, natural language processing, and others. 
+</p>
 
 <p>
-Prerequisites for this course include 1) basic knowledge of probability,
-statistics, and linear algebra; 2) basic programming experience, preferably in
-Python.
+Q: <b><i>What are the prerequisites?</i></b>
+A: This course is math and programming demanding. As prerequisites, you are expected to have 1) solid knowledge of probability, statistics, and linear algebra; 2) basic knowledge of machine learning; 3) solid programming skills, preferably in Python. 
 </p>
 </div>
 </div>
 
 
-
-<div id="outline-container-org0fb3bd6" class="outline-2">
-<h2 id="org0fb3bd6">Schedule</h2>
-<div class="outline-text-2" id="text-org0fb3bd6">
+<div id="outline-container-orge091afb" class="outline-2">
+<h2 id="orge091afb">Schedule</h2>
+<div class="outline-text-2" id="text-orge091afb">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
 <col  class="org-left" />
 
 <col  class="org-left" />
@@ -333,266 +325,200 @@ Python.
 <tr>
 <th scope="col" class="org-left">Date</th>
 <th scope="col" class="org-left">Topic</th>
-<th scope="col" class="org-left">Assignment</th>
-<th scope="col" class="org-left">Due</th>
-<th scope="col" class="org-left">Readings</th>
+<th scope="col" class="org-left">&#xa0;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="org-left">1/7/19</td>
+<td class="org-left">1/6/20</td>
 <td class="org-left">Course Overview</td>
 <td class="org-left">Piazza Signup</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left"><a href="https://policylibrary.gatech.edu/student-affairs/academic-honor-code">GT Honor Code</a></td>
 </tr>
 
 <tr>
-<td class="org-left">1/9/19</td>
-<td class="org-left">Math Basics: Linear Algebra</td>
+<td class="org-left">1/8/20</td>
+<td class="org-left">Math Basics I</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left"><a href="http://cs229.stanford.edu/section/cs229-linalg.pdf">Linear Algebra Review by Zico Kolter</a></td>
 </tr>
 
 <tr>
-<td class="org-left">1/14/19</td>
-<td class="org-left">Math Basics: Probability and Statistics</td>
+<td class="org-left">1/13/20</td>
+<td class="org-left">Math Basics II</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left"><a href="http://www.cs.cmu.edu/~./awm/tutorials/prob.html">Probability Theory Review by Andrew Moore</a></td>
 </tr>
 
 <tr>
-<td class="org-left">1/16/19</td>
-<td class="org-left">Math Basics: Information Theory</td>
-<td class="org-left">AS1 Out</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left"><a href="http://colah.github.io/posts/2015-09-Visual-Information/">Visual Information Theory by Chris Olah</a></td>
+<td class="org-left">1/15/20</td>
+<td class="org-left">Data Analysis Toolbox</td>
+<td class="org-left">HW1 Out</td>
 </tr>
 
 <tr>
-<td class="org-left">1/21/19</td>
+<td class="org-left">1/20/20</td>
 <td class="org-left"><b><b>No Class</b></b> (Martin Luther King Day)</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">1/23/19</td>
-<td class="org-left">Data Analysis Toolbox</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left"><a href="http://cs231n.github.io/python-numpy-tutorial/">NumPy Tutorial</a>; <a href="https://www.labri.fr/perso/nrougier/teaching/matplotlib/">Matplotlib Tutorial</a></td>
-</tr>
-
-<tr>
-<td class="org-left">1/28/19</td>
-<td class="org-left">Clustering Analysis and K-Means</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">AS1 Due</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">1/30/19</td>
-<td class="org-left">Hierarchical Clustering</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">2/4/19</td>
-<td class="org-left">Density-Based Clustering</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">2/6/19</td>
-<td class="org-left">Gaussian Mixture Model</td>
-<td class="org-left">AS2 Out</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">2/11/19</td>
-<td class="org-left">Evaluation of Clustering Algorithms</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">2/13/19</td>
-<td class="org-left">Density Estimation</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">2/18/19</td>
-<td class="org-left">Dimension Reduction</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">2/20/19</td>
-<td class="org-left">Midterm Review</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">AS2 Due</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">2/25/19</td>
-<td class="org-left"><b><b>Midterm Exam</b></b></td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">2/27/19</td>
+<td class="org-left">1/22/20</td>
 <td class="org-left">Linear Regression</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">3/4/19</td>
+<td class="org-left">1/27/20</td>
 <td class="org-left">Linear Regression</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">HW1 Due</td>
 </tr>
 
 <tr>
-<td class="org-left">3/6/19</td>
+<td class="org-left">1/29/20</td>
+<td class="org-left">Example Projects</td>
+<td class="org-left">Start Project Team Formation</td>
+</tr>
+
+<tr>
+<td class="org-left">2/3/20</td>
 <td class="org-left">Naïve Bayes and Logistic Regression</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">3/11/19</td>
+<td class="org-left">2/5/20</td>
 <td class="org-left">Support Vector Machine</td>
-<td class="org-left">AS3 Out</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">HW2 Out</td>
 </tr>
 
 <tr>
-<td class="org-left">3/13/19</td>
-<td class="org-left">Support Vector Machine</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">3/18/19</td>
-<td class="org-left"><b><b>No Class</b></b> (Spring Break)</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">3/20/19</td>
-<td class="org-left"><b><b>No Class</b></b> (Spring Break)</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">3/25/19</td>
+<td class="org-left">2/10/20</td>
 <td class="org-left">Neural Networks</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">3/27/19</td>
+<td class="org-left">2/12/20</td>
 <td class="org-left">Neural Networks</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">AS3 Due</td>
+</tr>
+
+<tr>
+<td class="org-left">2/17/20</td>
+<td class="org-left">CNNs and RNNs</td>
+<td class="org-left">HW2 Due</td>
+</tr>
+
+<tr>
+<td class="org-left">2/19/20</td>
+<td class="org-left">Decision Trees</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">4/1/19</td>
-<td class="org-left">Decision Tree and Random Forest</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">2/24/20</td>
+<td class="org-left">Ensemble Methods and Random Forest</td>
+<td class="org-left">HW3 Out</td>
+</tr>
+
+<tr>
+<td class="org-left">2/26/20</td>
+<td class="org-left">Midterm Review</td>
+<td class="org-left">Project Proposal Due</td>
+</tr>
+
+<tr>
+<td class="org-left">3/2/20</td>
+<td class="org-left"><b><b>Midterm Exam</b></b></td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">4/3/19</td>
-<td class="org-left">Decision Tree and Random Forest</td>
-<td class="org-left">AS4 Out</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">3/4/20</td>
+<td class="org-left">Clustering Analysis and K-Means</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">4/8/19</td>
-<td class="org-left">Model Selection</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">03/09/20</td>
+<td class="org-left">Hierarchical Clustering</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">4/10/19</td>
-<td class="org-left"><b><b>No Class</b></b> (Project Preparation)</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">3/11/20</td>
+<td class="org-left">Gaussian Mixture Model</td>
+<td class="org-left">HW4 Out</td>
+</tr>
+
+<tr>
+<td class="org-left">3/16/20</td>
+<td class="org-left"><b><b>No Class</b></b> (Spring Break)</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">4/15/19</td>
+<td class="org-left">3/18/20</td>
+<td class="org-left"><b><b>No Class</b></b> (Spring Break)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">3/23/20</td>
+<td class="org-left">Dimension Reduction</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">3/25/20</td>
+<td class="org-left">Application: Text Embedding</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">3/30/20</td>
+<td class="org-left">Application: Text Classification</td>
+<td class="org-left">HW4 Due</td>
+</tr>
+
+<tr>
+<td class="org-left">4/1/20</td>
 <td class="org-left">Project Presentation</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">4/17/19</td>
+<td class="org-left">4/6/20</td>
 <td class="org-left">Project Presentation</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">AS4 Due</td>
+</tr>
+
+<tr>
+<td class="org-left">4/8/20</td>
+<td class="org-left">Project Presentation</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">4/22/19</td>
-<td class="org-left">Course Review</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">4/13/20</td>
+<td class="org-left">Project Presentation</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">4/24/19</td>
-<td class="org-left">Reading Day</td>
+<td class="org-left">4/15/20</td>
+<td class="org-left">Review Class</td>
 <td class="org-left">&#xa0;</td>
-<td class="org-left">Report Due</td>
+</tr>
+
+<tr>
+<td class="org-left">4/20/20</td>
+<td class="org-left"><b><b>Final Exam</b></b></td>
 <td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">4/22/20</td>
+<td class="org-left">No Class, Reading Day</td>
+<td class="org-left">Project Report Due</td>
 </tr>
 </tbody>
 </table>
@@ -600,51 +526,72 @@ Python.
 </div>
 
 
-<div id="outline-container-org81c6c79" class="outline-2">
-<h2 id="org81c6c79">Grading</h2>
-<div class="outline-text-2" id="text-org81c6c79">
-<ul class="org-ul">
-<li><b>Assignments (50%)</b>
+<div id="outline-container-orgb5ee849" class="outline-2">
+<h2 id="orgb5ee849">Grading</h2>
+<div class="outline-text-2" id="text-orgb5ee849">
+</div>
+<div id="outline-container-orgaa5aa4d" class="outline-3">
+<h3 id="orgaa5aa4d">Homework (40%)</h3>
+<div class="outline-text-3" id="text-orgaa5aa4d">
 <ul class="org-ul">
 <li>There will be four assignments. Each one is designed for testing your understanding of the taught algorithms. It could be either programming or written analysis.</li>
-<li>You will need to hand in the assignments at the beginning of the class on the due date.</li>
-<li>All assignments follow the "no-late" policy. Assignments received after the due time will receive zero credit.</li>
 <li>All students are expected to follow the Georgia Tech Academic Honor Code.</li>
-</ul></li>
-
-<li><b>Project (20%)</b>
-<ul class="org-ul">
-<li>You are expected to complete a project on computational data analysis with real-life data. Your project needs to be clear about 1) the data you are using; 2) the problem you are attempting to solve; 3) the method you are using; 4) the results and conclusion you attain.</li>
-<li>You will need to turn in a project report and also give an in-class presentation for your project. The project report and the presentation will each count for 10% of your final grade.</li>
-<li>Each project needs to be completed in a team of 2-4 people. Team members need to clearly claim their contributions in the project report.</li>
-</ul></li>
-
-<li><b>Class participation (5%)</b>
-<ul class="org-ul">
-<li>Your class participation score will be graded based on attendance and in-class quizzes.</li>
-<li>Participation in class discussions (including asking relevant questions in class, volunteering to answer questions on Piazza) will be considered when determining your final grade. It will be especially useful when you are right on the edge of two letter grades.</li>
-</ul></li>
-
-<li><b>Midterm Exam (10%)</b>
-<ul class="org-ul">
-<li>The midterm exam will take place on Feb 25th in lieu of the regular class.</li>
-<li>The midterm exam will be a written and open-book exam, but Internet usage will not be allowed.</li>
-<li>There will be no make-up exams. You will get zero credit for your missed midterm exam.</li>
-</ul></li>
-
-<li><b>Final Exam (15%)</b>
-<ul class="org-ul">
-<li>The final exam will be at whatever time is scheduled for this class.</li>
-<li>The final exam will be a written and open-book exam, but no Internet usage will be allowed.</li>
-<li>Again, there will be no make-up exams. You will get zero credit for your missed final exam.</li>
-</ul></li>
+<li>All assignments follow the "no-late" policy. Assignments received after the due time will receive zero credit.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org7566bb6" class="outline-2">
-<h2 id="org7566bb6">Resources</h2>
-<div class="outline-text-2" id="text-org7566bb6">
+<div id="outline-container-org082efa6" class="outline-3">
+<h3 id="org082efa6">Project (20%)</h3>
+<div class="outline-text-3" id="text-org082efa6">
+<ul class="org-ul">
+<li>You are expected to complete a project on computational data analysis. You can choose from one of the two options below for your project:
+<ul class="org-ul">
+<li>Tackle a real-life data analysis task using computational data analysis. Your need to be clear about the data you are using, the problem you are attempting to solve, the method you are using, and the results and conclusion you attain.</li>
+<li>Conduct a survey on a specific research topic. You need to select a research topic highly related to this course and read state-of-the-art research papers <i>comprehensively</i>. You need to organize existing techniques into different categories, introduce their key ideas, and critically comment on their advantages and disadvantages.</li>
+</ul></li>
+<li>You will need to turn in a project report and also give an in-class presentation for your project. The project report and the presentation will each count for 10% of your final grade.</li>
+<li>Each project needs to be completed in a team of 2-4 people. Team members need to clearly claim their contributions in the project report.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbccf8e1" class="outline-3">
+<h3 id="orgbccf8e1">Class participation (15%)</h3>
+<div class="outline-text-3" id="text-orgbccf8e1">
+<ul class="org-ul">
+<li>This class will have many in-class activities, your class participation score will be mainly graded based on attendance and performance of those in-class activities.</li>
+<li>Participation in class discussions (including asking relevant questions in class, volunteering to answer questions on Piazza) can give you bonus for your final grade. It will be especially useful when you are right on the edge of two letter grades.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge7f11df" class="outline-3">
+<h3 id="orge7f11df">Midterm Exam (10%)</h3>
+<div class="outline-text-3" id="text-orge7f11df">
+<ul class="org-ul">
+<li>The midterm exam will take place on March 02 in lieu of the regular class.</li>
+<li>The midterm exam will be a written and open-book exam, but no computer or Internet usage will not be allowed.</li>
+<li>There will be no make-up exams. You will get zero credit for your missed midterm exam.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7d64fa1" class="outline-3">
+<h3 id="org7d64fa1">Final Exam (15%)</h3>
+<div class="outline-text-3" id="text-org7d64fa1">
+<ul class="org-ul">
+<li>The final exam will be on April 20  in lieu of the regular class.</li>
+<li>The final exam will be a written and open-book exam, but no Internet usage will be allowed.</li>
+<li>Again, there will be no make-up exams. You will get zero credit for your missed final exam.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2456631" class="outline-2">
+<h2 id="org2456631">Resources</h2>
+<div class="outline-text-2" id="text-org2456631">
 <ul class="org-ul">
 <li><a href="http://www.cs.cmu.edu/~tom/mlbook.html">Machine learning</a>, by Tom Mitchell</li>
 <li><a href="https://www.springer.com/us/book/9780387310732">Pattern recognition and machine learning</a>, by Christopher Bishop</li>
