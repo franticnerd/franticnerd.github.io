@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/environment/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/environment/env-aws-docker/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/environment/env-azure-docker/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/environment/env-docker-compose/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/environment/env-local-docker-linux/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/environment/env-local-docker-macos/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/environment/env-local-docker-windows/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/environment/env-local-docker/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/sessions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/sessions/scala-basic/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/sessions/scala-intro/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/sessions/spark-application/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/sessions/spark-basic/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/sessions/spark-graphx/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/sessions/spark-mllib/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/sessions/spark-sql/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/sessions/spark/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/sessions/zeppelin-intro/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/sessions/zeppelin-tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/</loc>
+  </url>
+  
+  <url>
+    <loc>http://franticnerd.github.io/bigdata-bootcamp/tags/</loc>
+  </url>
+  
+</urlset>
