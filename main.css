@@ -2,7 +2,7 @@
 {
     html {
 	margin: 0;
-	font: .9em/1.6em  system-ui, Helvetica, Verdana, Georgia, "Droid Serif", Cambria, "DejaVu Serif", serif;
+	font: .9em/1.6em   Helvetica, "Droid Serif", Georgia, system-ui,  Verdana, Cambria, "DejaVu Serif", serif;
 	background-image: url(/img/org-mode-unicorn-logo-worg.png);
 	background-attachment: fixed;
 	background-position: right bottom;
@@ -15,8 +15,8 @@
 	color: black;
 	margin-top: 0;
 	/* line-height: 18pt; */
-        line-height: 1.5; 
-        font-weight: 300;
+        line-height: 1.5;
+        /* font-weight: 350; */
     }
     body #content {
 	/* padding: 2em; */
@@ -72,8 +72,8 @@
 	display: block;
 	max-width: 20em;
 	padding: 0.5em;
-	text-align: left; 
-        margin-top: -1.5em; 
+	text-align: left;
+        margin-top: -1.5em;
       }
     #table-of-contents:hover #text-table-of-contents {
 	display: block;
