@@ -2,7 +2,7 @@
 {
     html {
 	margin: 0;
-	font: .9em/1.6em   Helvetica, "Droid Serif", Georgia, system-ui,  Verdana, Cambria, "DejaVu Serif", serif;
+	font: .9em/1.6em  Lato, Sans-serif, Helvetica, "Droid Serif", Georgia, system-ui,  Verdana, Cambria, "DejaVu Serif", serif;
 	background-image: url(/img/org-mode-unicorn-logo-worg.png);
 	background-attachment: fixed;
 	background-position: right bottom;
