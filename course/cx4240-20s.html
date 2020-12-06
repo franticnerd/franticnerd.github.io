@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-10-06 Tue 23:22 -->
+<!-- 2020-12-06 Sun 17:32 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CX4240: Introduction to Computational Data Analysis</title>
@@ -161,6 +161,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -186,7 +199,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -235,26 +248,26 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org803dcff">Logistics</a></li>
-<li><a href="#orge47515c">Course Content</a></li>
-<li><a href="#org356f8d3">Schedule</a></li>
-<li><a href="#org48bd356">Grading</a>
+<li><a href="#orgc68a2a5">Logistics</a></li>
+<li><a href="#org8a3ddf6">Course Content</a></li>
+<li><a href="#org5dbfa92">Schedule</a></li>
+<li><a href="#org7bb7f23">Grading</a>
 <ul>
-<li><a href="#org4ad50e5">Homework (40%)</a></li>
-<li><a href="#org6d1e597">Project (20%)</a></li>
-<li><a href="#org025e670">Class participation (15%)</a></li>
-<li><a href="#orgc87ff35">Midterm Exam (10%)</a></li>
-<li><a href="#orgc63993c">Final Exam (15%)</a></li>
+<li><a href="#org3993966">Homework (40%)</a></li>
+<li><a href="#orgea9c0d4">Project (20%)</a></li>
+<li><a href="#org895dc4e">Class participation (15%)</a></li>
+<li><a href="#orgc6f4606">Midterm Exam (10%)</a></li>
+<li><a href="#org9ce69a2">Final Exam (15%)</a></li>
 </ul>
 </li>
-<li><a href="#org2bbd241">Resources</a></li>
+<li><a href="#org4766857">Resources</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org803dcff" class="outline-2">
-<h2 id="org803dcff">Logistics</h2>
-<div class="outline-text-2" id="text-org803dcff">
+<div id="outline-container-orgc68a2a5" class="outline-2">
+<h2 id="orgc68a2a5">Logistics</h2>
+<div class="outline-text-2" id="text-orgc68a2a5">
 <ul class="org-ul">
 <li><b>Lecture time</b>: Mons and Weds, 4:30pm-5:45pm</li>
 <li><b>Location</b>: Klaus 2456</li>
@@ -274,9 +287,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orge47515c" class="outline-2">
-<h2 id="orge47515c">Course Content</h2>
-<div class="outline-text-2" id="text-orge47515c">
+<div id="outline-container-org8a3ddf6" class="outline-2">
+<h2 id="org8a3ddf6">Course Content</h2>
+<div class="outline-text-2" id="text-org8a3ddf6">
 <p>
 Q: <b><i>What will be covered in this course?</i></b>
 A: This course will introduce techniques for computational data analysis, with an emphasis on machine learning algorithms and their applications to real-world data. On the technique side, we will cover key supervised methods (linear regression, logistic regression, neural networks, tree-based models) and unsupervised methods (k-means, Gaussian mixture models, expectation-maximization, dimension reduction). On the application side, we will introduce various applications of these techniques, particularly on text data analysis and natural language processing. We will demonstrate how to formulate real-world tasks as data analysis problems, key methods for solving these problems, and their advantages and disadvantages.
@@ -295,9 +308,9 @@ A: This course is math and programming demanding. As prerequisites, you are expe
 </div>
 
 
-<div id="outline-container-org356f8d3" class="outline-2">
-<h2 id="org356f8d3">Schedule</h2>
-<div class="outline-text-2" id="text-org356f8d3">
+<div id="outline-container-org5dbfa92" class="outline-2">
+<h2 id="org5dbfa92">Schedule</h2>
+<div class="outline-text-2" id="text-org5dbfa92">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -525,13 +538,13 @@ A: This course is math and programming demanding. As prerequisites, you are expe
 </div>
 
 
-<div id="outline-container-org48bd356" class="outline-2">
-<h2 id="org48bd356">Grading</h2>
-<div class="outline-text-2" id="text-org48bd356">
+<div id="outline-container-org7bb7f23" class="outline-2">
+<h2 id="org7bb7f23">Grading</h2>
+<div class="outline-text-2" id="text-org7bb7f23">
 </div>
-<div id="outline-container-org4ad50e5" class="outline-3">
-<h3 id="org4ad50e5">Homework (40%)</h3>
-<div class="outline-text-3" id="text-org4ad50e5">
+<div id="outline-container-org3993966" class="outline-3">
+<h3 id="org3993966">Homework (40%)</h3>
+<div class="outline-text-3" id="text-org3993966">
 <ul class="org-ul">
 <li>There will be four assignments. Each one is designed for testing your understanding of the taught algorithms. It could be either programming or written analysis.</li>
 <li>All students are expected to follow the Georgia Tech Academic Honor Code.</li>
@@ -540,9 +553,9 @@ A: This course is math and programming demanding. As prerequisites, you are expe
 </div>
 </div>
 
-<div id="outline-container-org6d1e597" class="outline-3">
-<h3 id="org6d1e597">Project (20%)</h3>
-<div class="outline-text-3" id="text-org6d1e597">
+<div id="outline-container-orgea9c0d4" class="outline-3">
+<h3 id="orgea9c0d4">Project (20%)</h3>
+<div class="outline-text-3" id="text-orgea9c0d4">
 <ul class="org-ul">
 <li>You are expected to complete a project on computational data analysis. You can choose from one of the two options below for your project:
 <ul class="org-ul">
@@ -555,9 +568,9 @@ A: This course is math and programming demanding. As prerequisites, you are expe
 </div>
 </div>
 
-<div id="outline-container-org025e670" class="outline-3">
-<h3 id="org025e670">Class participation (15%)</h3>
-<div class="outline-text-3" id="text-org025e670">
+<div id="outline-container-org895dc4e" class="outline-3">
+<h3 id="org895dc4e">Class participation (15%)</h3>
+<div class="outline-text-3" id="text-org895dc4e">
 <ul class="org-ul">
 <li>This class will have many in-class activities, your class participation score will be mainly graded based on attendance and performance of those in-class activities.</li>
 <li>Participation in class discussions (including asking relevant questions in class, volunteering to answer questions on Piazza) can give you bonus for your final grade. It will be especially useful when you are right on the edge of two letter grades.</li>
@@ -565,9 +578,9 @@ A: This course is math and programming demanding. As prerequisites, you are expe
 </div>
 </div>
 
-<div id="outline-container-orgc87ff35" class="outline-3">
-<h3 id="orgc87ff35">Midterm Exam (10%)</h3>
-<div class="outline-text-3" id="text-orgc87ff35">
+<div id="outline-container-orgc6f4606" class="outline-3">
+<h3 id="orgc6f4606">Midterm Exam (10%)</h3>
+<div class="outline-text-3" id="text-orgc6f4606">
 <ul class="org-ul">
 <li>The midterm exam will take place on March 02 in lieu of the regular class.</li>
 <li>The midterm exam will be a written and open-book exam, but no computer or Internet usage will not be allowed.</li>
@@ -576,9 +589,9 @@ A: This course is math and programming demanding. As prerequisites, you are expe
 </div>
 </div>
 
-<div id="outline-container-orgc63993c" class="outline-3">
-<h3 id="orgc63993c">Final Exam (15%)</h3>
-<div class="outline-text-3" id="text-orgc63993c">
+<div id="outline-container-org9ce69a2" class="outline-3">
+<h3 id="org9ce69a2">Final Exam (15%)</h3>
+<div class="outline-text-3" id="text-org9ce69a2">
 <ul class="org-ul">
 <li>The final exam will be on April 20  in lieu of the regular class.</li>
 <li>The final exam will be a written and open-book exam, but no Internet usage will be allowed.</li>
@@ -588,9 +601,9 @@ A: This course is math and programming demanding. As prerequisites, you are expe
 </div>
 </div>
 
-<div id="outline-container-org2bbd241" class="outline-2">
-<h2 id="org2bbd241">Resources</h2>
-<div class="outline-text-2" id="text-org2bbd241">
+<div id="outline-container-org4766857" class="outline-2">
+<h2 id="org4766857">Resources</h2>
+<div class="outline-text-2" id="text-org4766857">
 <ul class="org-ul">
 <li><a href="http://www.cs.cmu.edu/~tom/mlbook.html">Machine learning</a>, by Tom Mitchell</li>
 <li><a href="https://www.springer.com/us/book/9780387310732">Pattern recognition and machine learning</a>, by Christopher Bishop</li>
