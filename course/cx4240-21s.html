@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-05 Tue 23:49 -->
+<!-- 2021-01-06 Wed 12:27 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CX4240: Introduction to Computational Data Analysis (2021 Spring)</title>
@@ -39,7 +39,7 @@
   }
   pre.src {
     position: relative;
-    overflow: auto;
+    overflow: visible;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -51,7 +51,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
+  pre.src:hover:before { display: inline;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -194,26 +194,50 @@
 </style>
 <link rel="stylesheet" type="text/css" href="../main.css" />
 <script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
 <!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
 </script>
 </head>
 <body>
@@ -223,26 +247,26 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb9cd67c">Logistics</a></li>
-<li><a href="#org5cfd8f8">Course Content</a></li>
-<li><a href="#org24c70a5">Schedule</a></li>
-<li><a href="#org1d99133">Grading</a>
+<li><a href="#org9a70463">Logistics</a></li>
+<li><a href="#org6a9a0b5">Course Content</a></li>
+<li><a href="#org1836b64">Schedule</a></li>
+<li><a href="#org5bd4229">Grading</a>
 <ul>
-<li><a href="#orgc873e41">Homework (40%)</a></li>
-<li><a href="#org543b472">Project (30%)</a></li>
-<li><a href="#org16e8c27">Midterm Exam (15%)</a></li>
-<li><a href="#org9f8b6e3">Final Exam (15%)</a></li>
+<li><a href="#org831c4ef">Homework (40%)</a></li>
+<li><a href="#org4c70d2b">Project (30%)</a></li>
+<li><a href="#org956ab15">Midterm Exam (15%)</a></li>
+<li><a href="#orgd447737">Final Exam (15%)</a></li>
 </ul>
 </li>
-<li><a href="#orgf8c3223">FAQs</a></li>
-<li><a href="#org762dbb6">Resources</a></li>
+<li><a href="#org6b15ba8">FAQs</a></li>
+<li><a href="#orgdb029f1">Resources</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgb9cd67c" class="outline-2">
-<h2 id="orgb9cd67c">Logistics</h2>
-<div class="outline-text-2" id="text-orgb9cd67c">
+<div id="outline-container-org9a70463" class="outline-2">
+<h2 id="org9a70463">Logistics</h2>
+<div class="outline-text-2" id="text-org9a70463">
 <ul class="org-ul">
 <li><b>Lecture time</b>: Mons and Weds, 3:30pm-4:45pm</li>
 <li><b>Location</b>: <a href="https://bluejeans.com/5341114422">https://bluejeans.com/5341114422</a></li>
@@ -262,9 +286,9 @@
 </div>
 </div>
 
-<div id="outline-container-org5cfd8f8" class="outline-2">
-<h2 id="org5cfd8f8">Course Content</h2>
-<div class="outline-text-2" id="text-org5cfd8f8">
+<div id="outline-container-org6a9a0b5" class="outline-2">
+<h2 id="org6a9a0b5">Course Content</h2>
+<div class="outline-text-2" id="text-org6a9a0b5">
 <p>
 Q: <i>What will be covered in this course?</i>
 A: This course introduces techniques for computational data analysis, with an emphasis on machine learning algorithms and their applications to real-world data. On the technique side, we will cover key supervised machine learning methods (linear regression, logistic regression, neural networks, tree-based models) and unsupervised  method (k-means, Gaussian mixture models, expectation-maximization, dimension reduction). On the application side, it will introduce various applications of these techniques, particularly on text data analysis and natural language processing. It will introduce how to formulate real-world tasks as data analysis problems, key methods for solving these problems, and their advantages and disadvantages.
@@ -282,9 +306,9 @@ A: Prerequisites for this course include 1) solid knowledge of probability, stat
 </div>
 </div>
 
-<div id="outline-container-org24c70a5" class="outline-2">
-<h2 id="org24c70a5">Schedule</h2>
-<div class="outline-text-2" id="text-org24c70a5">
+<div id="outline-container-org1836b64" class="outline-2">
+<h2 id="org1836b64">Schedule</h2>
+<div class="outline-text-2" id="text-org1836b64">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -324,13 +348,13 @@ A: Prerequisites for this course include 1) solid knowledge of probability, stat
 <tr>
 <td class="org-left">01/27/2021</td>
 <td class="org-left">Math Basics II</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">HW1 Out</td>
 </tr>
 
 <tr>
 <td class="org-left">02/01/2021</td>
 <td class="org-left">Data Analysis Toolbox</td>
-<td class="org-left">HW1 Out</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
@@ -342,25 +366,25 @@ A: Prerequisites for this course include 1) solid knowledge of probability, stat
 <tr>
 <td class="org-left">02/08/2021</td>
 <td class="org-left">Linear Regression</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">HW1 Due</td>
 </tr>
 
 <tr>
 <td class="org-left">02/10/2021</td>
 <td class="org-left">Linear Regression</td>
-<td class="org-left">HW1 Due</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">02/15/2021</td>
 <td class="org-left">Naïve Bayes and Logistic Regression</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">HW2 Out</td>
 </tr>
 
 <tr>
 <td class="org-left">02/17/2021</td>
 <td class="org-left">Support Vector Machine</td>
-<td class="org-left">HW2 Out</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
@@ -444,19 +468,19 @@ A: Prerequisites for this course include 1) solid knowledge of probability, stat
 <tr>
 <td class="org-left">04/07/2021</td>
 <td class="org-left">Application II: Text Classification</td>
-<td class="org-left">HW4 Due</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
 <td class="org-left">04/12/2021</td>
 <td class="org-left">Review Class</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">HW4 Due</td>
 </tr>
 
 <tr>
 <td class="org-left">04/14/2021</td>
 <td class="org-left">Project Presentation and Peer Grading</td>
-<td class="org-left">project presentation video due on 04/13</td>
+<td class="org-left">presentation video due 04/13</td>
 </tr>
 
 <tr>
@@ -481,13 +505,13 @@ A: Prerequisites for this course include 1) solid knowledge of probability, stat
 </div>
 </div>
 
-<div id="outline-container-org1d99133" class="outline-2">
-<h2 id="org1d99133">Grading</h2>
-<div class="outline-text-2" id="text-org1d99133">
+<div id="outline-container-org5bd4229" class="outline-2">
+<h2 id="org5bd4229">Grading</h2>
+<div class="outline-text-2" id="text-org5bd4229">
 </div>
-<div id="outline-container-orgc873e41" class="outline-3">
-<h3 id="orgc873e41">Homework (40%)</h3>
-<div class="outline-text-3" id="text-orgc873e41">
+<div id="outline-container-org831c4ef" class="outline-3">
+<h3 id="org831c4ef">Homework (40%)</h3>
+<div class="outline-text-3" id="text-org831c4ef">
 <p>
 There will be four assignments, each account for 10% towards your final score. Each assignment could be either programming or written analysis for testing your understanding of the taught content.
 </p>
@@ -504,40 +528,31 @@ There will be four assignments, each account for 10% towards your final score. E
 </div>
 </div>
 
-<div id="outline-container-org543b472" class="outline-3">
-<h3 id="org543b472">Project (30%)</h3>
-<div class="outline-text-3" id="text-org543b472">
+<div id="outline-container-org4c70d2b" class="outline-3">
+<h3 id="org4c70d2b">Project (30%)</h3>
+<div class="outline-text-3" id="text-org4c70d2b">
 <p>
-You need to complete a project on using computational data analysis techniques to tackle a real-life data analysis problem.  Each project needs to be completed in a team of 2-4 people.
+You need to complete a project on using computational data analysis techniques to tackle a real-life data analysis problem.  Each project needs to be completed in a team of 2-4 people. Here are some <a href="./cx4240-project.html">guidelines and resources</a> for doing your project smoothly.
 </p>
-
 
 <p>
 The breakdown of the 30% project score is as follows:
 </p>
 <ul class="org-ul">
-<li>project presentation (10%)
+<li>Project presentation (10%)
 <ul class="org-ul">
 <li>Every team need to make a YouTube video presentation for your project and post the link on canvas</li>
-<li>Each presentation should be 10-15 minutes</li>
 <li>The deadline for uploading the link to your video is 04/13 11:59pm ET; we will create pages for submitting video links on Canvas.</li>
-<li>Useful tips for presentation: <a href="http://www.kumc.edu/SAH/OTEd/jradel/Preparing_talks/103.html">Presentation Tips</a> by Jeff Radel; <a href="http://pages.cs.wisc.edu/~markhill/conference-talk.html">Oral Presentation Advice</a> by Mark D. Hill</li>
 </ul></li>
-<li>project report (10%): you need to write up a final report for your project by 04/26 11:59pm
-<ul class="org-ul">
-<li>here are <a href="./cx4240-project-report.html">some instructions</a> and templates for the final project report</li>
-</ul></li>
-<li>project peer grading (10%): you need to grade 10 project presentations of other teams, each will count for 1 point;
-<ul class="org-ul">
-<li>Please use this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAKD98pQXWupKuUG-DT0LN0vFD3_yHML-EUr1lGMf1zyFTeg/viewform?usp=sf_link">Google form</a> for peer grading and see here <a href="./cx4240-project-grading.html">some FAQs</a> about peer grading</li>
-</ul></li>
+<li>Project report (10%): you need to write up a final report for your project and submit on Canvas by 04/26 11:59pm. Here are <a href="./cx4240-project.html">some instructions</a> and templates for the final project report</li>
+<li>Project peer grading (10%): you need to grade 10 project presentations of other teams, each will count for 1 point. Please use this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAKD98pQXWupKuUG-DT0LN0vFD3_yHML-EUr1lGMf1zyFTeg/viewform?usp=sf_link">Google form</a> for peer grading and see here <a href="./cx4240-project-grading.html">some FAQs</a> about peer grading</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org16e8c27" class="outline-3">
-<h3 id="org16e8c27">Midterm Exam (15%)</h3>
-<div class="outline-text-3" id="text-org16e8c27">
+<div id="outline-container-org956ab15" class="outline-3">
+<h3 id="org956ab15">Midterm Exam (15%)</h3>
+<div class="outline-text-3" id="text-org956ab15">
 <p>
 We have a take-home midterm exam on March 15 in lieu of the regular class.
 </p>
@@ -549,9 +564,9 @@ We have a take-home midterm exam on March 15 in lieu of the regular class.
 </div>
 </div>
 
-<div id="outline-container-org9f8b6e3" class="outline-3">
-<h3 id="org9f8b6e3">Final Exam (15%)</h3>
-<div class="outline-text-3" id="text-org9f8b6e3">
+<div id="outline-container-orgd447737" class="outline-3">
+<h3 id="orgd447737">Final Exam (15%)</h3>
+<div class="outline-text-3" id="text-orgd447737">
 <p>
 We have a take-home final exam on April 21 in lieu of the regular class.
 </p>
@@ -564,9 +579,9 @@ We have a take-home final exam on April 21 in lieu of the regular class.
 </div>
 </div>
 
-<div id="outline-container-orgf8c3223" class="outline-2">
-<h2 id="orgf8c3223">FAQs</h2>
-<div class="outline-text-2" id="text-orgf8c3223">
+<div id="outline-container-org6b15ba8" class="outline-2">
+<h2 id="org6b15ba8">FAQs</h2>
+<div class="outline-text-2" id="text-org6b15ba8">
 <ul class="org-ul">
 <li>For remote lectures, will there be recordings?
 <ul class="org-ul">
@@ -576,9 +591,9 @@ We have a take-home final exam on April 21 in lieu of the regular class.
 </div>
 </div>
 
-<div id="outline-container-org762dbb6" class="outline-2">
-<h2 id="org762dbb6">Resources</h2>
-<div class="outline-text-2" id="text-org762dbb6">
+<div id="outline-container-orgdb029f1" class="outline-2">
+<h2 id="orgdb029f1">Resources</h2>
+<div class="outline-text-2" id="text-orgdb029f1">
 <ul class="org-ul">
 <li><a href="http://www.cs.cmu.edu/~tom/mlbook.html">Machine learning</a>, by Tom Mitchell</li>
 <li><a href="https://www.springer.com/us/book/9780387310732">Pattern recognition and machine learning</a>, by Christopher Bishop</li>
