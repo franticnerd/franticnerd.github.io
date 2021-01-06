@@ -2,7 +2,7 @@
 {
     html {
 	margin: 0;
-	font: .9em/1.6em  Lato, Sans-serif, Helvetica, "Droid Serif", Georgia, system-ui,  Verdana, Cambria, "DejaVu Serif", serif;
+	font: .9em/1.6em  Georgia, "Droid Serif",  "DejaVu Serif", system-ui, Lato, Sans-serif, Helvetica,  Verdana,     serif;
 	background-image: url(/img/org-mode-unicorn-logo-worg.png);
 	background-attachment: fixed;
 	background-position: right bottom;
@@ -10,9 +10,11 @@
 	background-color: white;
     }
 
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+
     body {
-	font-size: 12pt;
-	color: black;
+	font-size: 14pt;
+	color: #444;
 	margin-top: 0;
 	/* line-height: 18pt; */
         line-height: 1.5;
@@ -21,10 +23,10 @@
     body #content {
 	/* padding: 2em; */
 	padding-top: 0px;
-        padding-left: 240px;
+        padding-left: 280px;
 	min-width: 700px;
 	/* max-width: 75%; */
-	max-width: 1100px;
+	max-width: 1000px;
   /* width: 1100px; */
 	margin-left: 20px;
 	background-color: white;
@@ -43,14 +45,14 @@
 
     /* TOC inspired by http://jashkenas.github.com/coffee-script */
     #table-of-contents {
-	font-size: 12pt;
+	font-size: 14pt;
 	position: fixed;
         width:220px;
         /* height: 100%; */
 	left: 0em;
 	top: 0em;
 	background: white;
-	line-height: 12pt;
+	line-height: 16pt;
 	text-align: left;
 	box-shadow: 0 0 1em #777777;
 	-webkit-box-shadow: 0 0 1em #777777;
@@ -61,7 +63,7 @@
 	max-height: 100%;
 	overflow: auto; }
     #table-of-contents h2 {
-	font-size: 13pt;
+	font-size: 14pt;
 	max-width: 9em;
 	border: 0;
 	font-weight: normal;
@@ -121,7 +123,7 @@ content: "*** "
 	font-size:1.45em;
 	line-height:16px;
 	padding:10px 0 10px 0;
-	color: black;
+	/* color: black; */
 	border-bottom: 1px solid #ddd;
     }
 
@@ -193,7 +195,7 @@ content: "*** "
 
     code {
 	font-size: 100%;
-	color: black;
+	/* color: black; */
 	border: 1px solid #DEDEDE;
 	padding: 0px 0.2em;
     }
@@ -237,7 +239,7 @@ content: "*** "
 
     pre {
 	font-family: Droid Sans Mono, Monaco, Consolas, "Lucida Console", monospace;
-	color: black;
+	/* color: black; */
 	font-size: 90%;
 	background-color: #ffffff;
 	padding: 1.2em;
@@ -950,7 +952,7 @@ content: "*** "
     #postamble {
 	font-size: 75%;
 	min-width: 700px;
-	max-width: 1100px;
+	max-width: 1000px;
 	margin-left: 20px;
 	margin-top: 10px;
 	padding: .2em;
