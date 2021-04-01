@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-03-03 Wed 14:58 -->
+<!-- 2021-03-31 Wed 23:42 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CX4240: Introduction to Computational Data Analysis (2021 Spring)</title>
@@ -39,7 +39,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -51,7 +51,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -194,50 +194,26 @@
 </style>
 <link rel="stylesheet" type="text/css" href="../main.css" />
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -247,26 +223,26 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org665adef">Logistics</a></li>
-<li><a href="#org968f341">Course Content</a></li>
-<li><a href="#org956e630">Schedule</a></li>
-<li><a href="#org508945d">Grading</a>
+<li><a href="#org09aa34a">Logistics</a></li>
+<li><a href="#org7d4ef0f">Course Content</a></li>
+<li><a href="#org035ff7f">Schedule</a></li>
+<li><a href="#org246d853">Grading</a>
 <ul>
-<li><a href="#orgb037e65">Homework (40%)</a></li>
-<li><a href="#org42aeeeb">Project (30%)</a></li>
-<li><a href="#orgdb165ad">Midterm Exam (15%)</a></li>
-<li><a href="#org0ef16d0">Final Exam (15%)</a></li>
+<li><a href="#org9bd0809">Homework (40%)</a></li>
+<li><a href="#orgb3bfa89">Project (30%)</a></li>
+<li><a href="#org9c560fe">Midterm Exam (15%)</a></li>
+<li><a href="#orgd2eb717">Final Exam (15%)</a></li>
 </ul>
 </li>
-<li><a href="#org34712b4">FAQs</a></li>
-<li><a href="#orgb014cea">Resources</a></li>
+<li><a href="#orgea3de8c">FAQs</a></li>
+<li><a href="#orgb1a5748">Resources</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org665adef" class="outline-2">
-<h2 id="org665adef">Logistics</h2>
-<div class="outline-text-2" id="text-org665adef">
+<div id="outline-container-org09aa34a" class="outline-2">
+<h2 id="org09aa34a">Logistics</h2>
+<div class="outline-text-2" id="text-org09aa34a">
 <ul class="org-ul">
 <li><b>Lecture time</b>: Mons and Weds, 3:30pm-4:45pm</li>
 <li><b>Location</b>: <a href="https://bluejeans.com/5341114422">https://bluejeans.com/5341114422</a></li>
@@ -286,9 +262,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org968f341" class="outline-2">
-<h2 id="org968f341">Course Content</h2>
-<div class="outline-text-2" id="text-org968f341">
+<div id="outline-container-org7d4ef0f" class="outline-2">
+<h2 id="org7d4ef0f">Course Content</h2>
+<div class="outline-text-2" id="text-org7d4ef0f">
 <p>
 Q: <i>What will be covered in this course?</i>
 A: This course introduces techniques for computational data analysis, with an emphasis on machine learning algorithms and their applications to real-world data. On the technique side, we will cover key supervised machine learning methods (linear regression, logistic regression, neural networks, tree-based models) and unsupervised  method (k-means, Gaussian mixture models, expectation-maximization, dimension reduction). On the application side, it will introduce various applications of these techniques, particularly on text data analysis and natural language processing. It will introduce how to formulate real-world tasks as data analysis problems, key methods for solving these problems, and their advantages and disadvantages.
@@ -306,9 +282,9 @@ A: Prerequisites for this course include 1) solid knowledge of probability, stat
 </div>
 </div>
 
-<div id="outline-container-org956e630" class="outline-2">
-<h2 id="org956e630">Schedule</h2>
-<div class="outline-text-2" id="text-org956e630">
+<div id="outline-container-org035ff7f" class="outline-2">
+<h2 id="org035ff7f">Schedule</h2>
+<div class="outline-text-2" id="text-org035ff7f">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -505,18 +481,18 @@ A: Prerequisites for this course include 1) solid knowledge of probability, stat
 </div>
 </div>
 
-<div id="outline-container-org508945d" class="outline-2">
-<h2 id="org508945d">Grading</h2>
-<div class="outline-text-2" id="text-org508945d">
+<div id="outline-container-org246d853" class="outline-2">
+<h2 id="org246d853">Grading</h2>
+<div class="outline-text-2" id="text-org246d853">
 </div>
-<div id="outline-container-orgb037e65" class="outline-3">
-<h3 id="orgb037e65">Homework (40%)</h3>
-<div class="outline-text-3" id="text-orgb037e65">
+<div id="outline-container-org9bd0809" class="outline-3">
+<h3 id="org9bd0809">Homework (40%)</h3>
+<div class="outline-text-3" id="text-org9bd0809">
 <p>
 There will be four assignments, each account for 10% towards your final score. Each assignment could be either programming or written analysis for testing your understanding of the taught content.
 </p>
 <ul class="org-ul">
-<li>Late policy: Assignments are due at 11:59PM of the due date. You will be allowed 2 total late days without penalty for the entire semester (for homework only, not applicable to exams or projects). Once those days are used, you will be penalized according to the following policy:
+<li>Late policy: Assignments are due at 11:59PM of the due date. You will be allowed 2 total late days (48 hours) without penalty for the entire semester (for homework only, not applicable to exams or projects). Once those days are used, you will be penalized according to the following policy:
 <ul class="org-ul">
 <li>Homework is worth full credit before the due time.</li>
 <li>It is worth 75% credit for the next 24 hours.</li>
@@ -528,9 +504,9 @@ There will be four assignments, each account for 10% towards your final score. E
 </div>
 </div>
 
-<div id="outline-container-org42aeeeb" class="outline-3">
-<h3 id="org42aeeeb">Project (30%)</h3>
-<div class="outline-text-3" id="text-org42aeeeb">
+<div id="outline-container-orgb3bfa89" class="outline-3">
+<h3 id="orgb3bfa89">Project (30%)</h3>
+<div class="outline-text-3" id="text-orgb3bfa89">
 <p>
 You need to complete a project on using computational data analysis techniques to tackle a real-life data analysis problem.  Each project needs to be completed in a team of 2-4 people. Here are some <a href="./cx4240-project.html">guidelines and resources</a> for doing your project smoothly.
 </p>
@@ -550,9 +526,9 @@ The breakdown of the 30% project score is as follows:
 </div>
 </div>
 
-<div id="outline-container-orgdb165ad" class="outline-3">
-<h3 id="orgdb165ad">Midterm Exam (15%)</h3>
-<div class="outline-text-3" id="text-orgdb165ad">
+<div id="outline-container-org9c560fe" class="outline-3">
+<h3 id="org9c560fe">Midterm Exam (15%)</h3>
+<div class="outline-text-3" id="text-org9c560fe">
 <p>
 A take-home midterm exam will be held on March 15 in lieu of the regular class:
 </p>
@@ -565,9 +541,9 @@ A take-home midterm exam will be held on March 15 in lieu of the regular class:
 </div>
 </div>
 
-<div id="outline-container-org0ef16d0" class="outline-3">
-<h3 id="org0ef16d0">Final Exam (15%)</h3>
-<div class="outline-text-3" id="text-org0ef16d0">
+<div id="outline-container-orgd2eb717" class="outline-3">
+<h3 id="orgd2eb717">Final Exam (15%)</h3>
+<div class="outline-text-3" id="text-orgd2eb717">
 <p>
 A take-home final exam will be held on April 21 in lieu of the regular class:
 </p>
@@ -581,9 +557,9 @@ A take-home final exam will be held on April 21 in lieu of the regular class:
 </div>
 </div>
 
-<div id="outline-container-org34712b4" class="outline-2">
-<h2 id="org34712b4">FAQs</h2>
-<div class="outline-text-2" id="text-org34712b4">
+<div id="outline-container-orgea3de8c" class="outline-2">
+<h2 id="orgea3de8c">FAQs</h2>
+<div class="outline-text-2" id="text-orgea3de8c">
 <ul class="org-ul">
 <li>For remote lectures, will there be recordings?
 <ul class="org-ul">
@@ -593,9 +569,9 @@ A take-home final exam will be held on April 21 in lieu of the regular class:
 </div>
 </div>
 
-<div id="outline-container-orgb014cea" class="outline-2">
-<h2 id="orgb014cea">Resources</h2>
-<div class="outline-text-2" id="text-orgb014cea">
+<div id="outline-container-orgb1a5748" class="outline-2">
+<h2 id="orgb1a5748">Resources</h2>
+<div class="outline-text-2" id="text-orgb1a5748">
 <ul class="org-ul">
 <li><a href="https://web.stanford.edu/~hastie/ElemStatLearn/">The Elements of Statistical Learning</a>, by Trevor Hastie, Robert Tibshirani, and Jerome Friedman</li>
 <li><a href="http://www.cs.cmu.edu/~tom/mlbook.html">Machine learning</a>, by Tom Mitchell</li>
