@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-04-05 Mon 20:37 -->
+<!-- 2021-04-12 Mon 02:32 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CX4240: Project Guidelines and Resources</title>
@@ -39,7 +39,7 @@
   }
   pre.src {
     position: relative;
-    overflow: auto;
+    overflow: visible;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -51,7 +51,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
+  pre.src:hover:before { display: inline;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -194,39 +194,63 @@
 </style>
 <link rel="stylesheet" type="text/css" href="../main.css" />
 <script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
 <!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
 </script>
 </head>
 <body>
 <div id="content">
 <h1 class="title">CX4240: Project Guidelines and Resources</h1>
 
-<div id="outline-container-org52da2fb" class="outline-2">
-<h2 id="org52da2fb">Project resources</h2>
-<div class="outline-text-2" id="text-org52da2fb">
+<div id="outline-container-orga751fc5" class="outline-2">
+<h2 id="orga751fc5">Project resources</h2>
+<div class="outline-text-2" id="text-orga751fc5">
 </div>
-<div id="outline-container-org6e27397" class="outline-3">
-<h3 id="org6e27397">How to come up with good project ideas?</h3>
-<div class="outline-text-3" id="text-org6e27397">
+<div id="outline-container-orgf2ec847" class="outline-3">
+<h3 id="orgf2ec847">How to come up with good project ideas?</h3>
+<div class="outline-text-3" id="text-orgf2ec847">
 <p>
 Here are some strategies that can be helpful for coming up with good ideas for course projects. Of course, you're not limited to the strategies, you know your own background and interests the best, so it will always be you who can come up with the best idea that suits your background and interests.
 </p>
@@ -254,9 +278,9 @@ No matter which strategies you choose, always ask yourselves the following quest
 </div>
 
 
-<div id="outline-container-org456f6f2" class="outline-3">
-<h3 id="org456f6f2">How to find proper datasets for my project?</h3>
-<div class="outline-text-3" id="text-org456f6f2">
+<div id="outline-container-org45cb62b" class="outline-3">
+<h3 id="org45cb62b">How to find proper datasets for my project?</h3>
+<div class="outline-text-3" id="text-org45cb62b">
 <p>
 There are different ways to obtain proper datasets for your project:
 </p>
@@ -281,13 +305,13 @@ There are different ways to obtain proper datasets for your project:
 </div>
 </div>
 
-<div id="outline-container-org1ee8837" class="outline-2">
-<h2 id="org1ee8837">Project report</h2>
-<div class="outline-text-2" id="text-org1ee8837">
+<div id="outline-container-org1fc16b8" class="outline-2">
+<h2 id="org1fc16b8">Project report</h2>
+<div class="outline-text-2" id="text-org1fc16b8">
 </div>
-<div id="outline-container-orgdd5e305" class="outline-3">
-<h3 id="orgdd5e305">What content should the final project report cover?</h3>
-<div class="outline-text-3" id="text-orgdd5e305">
+<div id="outline-container-org7d2987e" class="outline-3">
+<h3 id="org7d2987e">What content should the final project report cover?</h3>
+<div class="outline-text-3" id="text-org7d2987e">
 <ul class="org-ul">
 <li>Some key ingredients in your project report:
 <ul class="org-ul">
@@ -301,9 +325,9 @@ There are different ways to obtain proper datasets for your project:
 </div>
 </div>
 
-<div id="outline-container-org684ccba" class="outline-3">
-<h3 id="org684ccba">What should be the format of the final project?</h3>
-<div class="outline-text-3" id="text-org684ccba">
+<div id="outline-container-org0611ad6" class="outline-3">
+<h3 id="org0611ad6">What should be the format of the final project?</h3>
+<div class="outline-text-3" id="text-org0611ad6">
 <ul class="org-ul">
 <li>Please use single-column, single-space, 1-inch margin, font size 10pt/11pt for your report. Using latex is highly recommended, although not mandatory. you could find an example latex template <a href="https://www.overleaf.com/latex/templates/template-for-iclr-2021-conference-submission/mmpfhsxmqdkp">here</a>.</li>
 </ul>
@@ -311,9 +335,9 @@ There are different ways to obtain proper datasets for your project:
 </div>
 
 
-<div id="outline-container-org20878d9" class="outline-3">
-<h3 id="org20878d9">How long should the project report be?</h3>
-<div class="outline-text-3" id="text-org20878d9">
+<div id="outline-container-orgcd70996" class="outline-3">
+<h3 id="orgcd70996">How long should the project report be?</h3>
+<div class="outline-text-3" id="text-orgcd70996">
 <ul class="org-ul">
 <li>We do not have strict requirements on length. Concise and clear reports are always preferred. Typically, a final report is between 5-8 pages, including references.</li>
 </ul>
@@ -321,31 +345,31 @@ There are different ways to obtain proper datasets for your project:
 </div>
 </div>
 
-<div id="outline-container-org615eca3" class="outline-2">
-<h2 id="org615eca3">Video presentation</h2>
-<div class="outline-text-2" id="text-org615eca3">
+<div id="outline-container-orgbc66be2" class="outline-2">
+<h2 id="orgbc66be2">Video presentation</h2>
+<div class="outline-text-2" id="text-orgbc66be2">
 </div>
-<div id="outline-container-orgcf4fc61" class="outline-3">
-<h3 id="orgcf4fc61">How long should the video presentation be?</h3>
-<div class="outline-text-3" id="text-orgcf4fc61">
+<div id="outline-container-org522930b" class="outline-3">
+<h3 id="org522930b">How long should the video presentation be?</h3>
+<div class="outline-text-3" id="text-org522930b">
 <ul class="org-ul">
 <li>Each presentation should be 10-15 minutes</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgcfe0105" class="outline-3">
-<h3 id="orgcfe0105">Where should I upload my video presentation?</h3>
-<div class="outline-text-3" id="text-orgcfe0105">
+<div id="outline-container-orgbc6165b" class="outline-3">
+<h3 id="orgbc6165b">Where should I upload my video presentation?</h3>
+<div class="outline-text-3" id="text-orgbc6165b">
 <ul class="org-ul">
 <li>Every team need to make a YouTube video presentation for your project and post the link on canvas</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org2db5edd" class="outline-3">
-<h3 id="org2db5edd">Useful tips for presentation</h3>
-<div class="outline-text-3" id="text-org2db5edd">
+<div id="outline-container-org2d2efce" class="outline-3">
+<h3 id="org2d2efce">Useful tips for presentation</h3>
+<div class="outline-text-3" id="text-org2d2efce">
 <ul class="org-ul">
 <li><a href="http://www.kumc.edu/SAH/OTEd/jradel/Preparing_talks/103.html">Presentation Tips</a> by Jeff Radel</li>
 <li><a href="http://pages.cs.wisc.edu/~markhill/conference-talk.html">Oral Presentation Advice</a> by Mark D. Hill</li>
