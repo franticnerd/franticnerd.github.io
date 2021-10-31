@@ -966,12 +966,18 @@ content: "*** "
 
 } /* END OF @media all */
 
-@media screen
+
+@media screen and (max-width: 600px)
 {
     #table-of-contents {
-	      float: right;
-	      border: 1px solid #CCC;
-	      max-width: 50%;
-	      overflow: auto;
+        display: none;
     }
+
+    body #content {
+        padding-top: 0px;
+        padding-left: 0px;
+        max-width: 800pt;
+        background-color: white;
+    }
+
 } /* END OF @media screen */
