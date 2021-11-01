@@ -967,7 +967,7 @@ content: "*** "
 } /* END OF @media all */
 
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 680px)
 {
     #table-of-contents {
         display: none;
