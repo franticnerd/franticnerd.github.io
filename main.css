@@ -2,7 +2,7 @@
 {
     html {
         margin: 0;
-        font: .9em/1.6em  Georgia, "Droid Serif",  "DejaVu Serif", system-ui, Lato, Sans-serif, Helvetica,  Verdana,     serif;
+        font: .9em/1.6em  Roboto, Georgia, "Droid Serif",  "DejaVu Serif", system-ui, Lato, Sans-serif, Helvetica,  Verdana,     serif;
         background-image: url(/img/org-mode-unicorn-logo-worg.png);
         background-attachment: fixed;
         background-position: right bottom;
