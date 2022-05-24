@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-04-08 Fri 11:28 -->
+<!-- 2022-05-23 Mon 22:26 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Chao Zhang</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Chao Zhang " />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,22 +41,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,86 +192,39 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link href="css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="main.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">Chao Zhang</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgaafb5e6">Research</a>
+<li><a href="#orgb44a432">Research</a>
 <ul>
-<li><a href="#org4df8778">Research Interests</a></li>
-<li><a href="#org3b408ae">Research Projects</a></li>
+<li><a href="#orgd80488a">Research Interests</a></li>
+<li><a href="#org5986ef4">Research Projects</a></li>
 </ul>
 </li>
-<li><a href="#org80ad6d2">News</a></li>
-<li><a href="#org0082809">Publications</a>
+<li><a href="#org5f3751b">News</a></li>
+<li><a href="#org69b16b7">Publications</a>
 <ul>
-<li><a href="#orga9b3e60">2022</a></li>
-<li><a href="#orgf5a2754">2021</a></li>
-<li><a href="#orge937db7">2020</a></li>
-<li><a href="#orge8877d4">2019</a></li>
-<li><a href="#orgfb7ab4f">2018</a></li>
-<li><a href="#org668a4e2">2017</a></li>
-<li><a href="#orgeb3e2bd">Earlier</a></li>
+<li><a href="#orgb4b3ee4">2022</a></li>
+<li><a href="#org0735a19">2021</a></li>
+<li><a href="#org87f6677">2020</a></li>
+<li><a href="#org7b6a5a5">2019</a></li>
+<li><a href="#org8278fcb">2018</a></li>
+<li><a href="#orgb4bfe48">2017</a></li>
+<li><a href="#orgf7b1edb">Earlier</a></li>
 </ul>
 </li>
-<li><a href="#orgb319cb1">Awards</a></li>
-<li><a href="#org7943635">Software</a></li>
-<li><a href="#org1298f5a">Teaching</a></li>
-<li><a href="#orgd089116">Students</a></li>
+<li><a href="#orgc5c32d4">Awards</a></li>
+<li><a href="#org0d54bbf">Software</a></li>
+<li><a href="#org546be98">Teaching</a></li>
+<li><a href="#orgbc5ac53">Students</a></li>
 </ul>
 </div>
 <h2>Quick Links</h2>
@@ -311,13 +265,13 @@ Email: <a href="mailto:chaozhang@gatech.edu">chaozhang@gatech.edu</a>
 Hi! I am an Assistant Professor at <a href="https://cse.gatech.edu/">the School of CSE</a> at Georgia Tech. Before joining Georgia Tech, I received my Ph.D. in Computer Science from UIUC in 2018, where I worked with <a href="http://hanj.cs.illinois.edu/">Prof. Jiawei Han</a>.
 </p>
 
-<div id="outline-container-orgaafb5e6" class="outline-2">
-<h2 id="orgaafb5e6">Research</h2>
-<div class="outline-text-2" id="text-orgaafb5e6">
+<div id="outline-container-orgb44a432" class="outline-2">
+<h2 id="orgb44a432">Research</h2>
+<div class="outline-text-2" id="text-orgb44a432">
 </div>
-<div id="outline-container-org4df8778" class="outline-3">
-<h3 id="org4df8778">Research Interests</h3>
-<div class="outline-text-3" id="text-org4df8778">
+<div id="outline-container-orgd80488a" class="outline-3">
+<h3 id="orgd80488a">Research Interests</h3>
+<div class="outline-text-3" id="text-orgd80488a">
 <p>
 The goal of my research is to develop machine learning methods that model
 large-scale data to solve practical and challenging problems in science and
@@ -344,9 +298,9 @@ transportation, and public health.
 </div>
 </div>
 
-<div id="outline-container-org3b408ae" class="outline-3">
-<h3 id="org3b408ae">Research Projects</h3>
-<div class="outline-text-3" id="text-org3b408ae">
+<div id="outline-container-org5986ef4" class="outline-3">
+<h3 id="org5986ef4">Research Projects</h3>
+<div class="outline-text-3" id="text-org5986ef4">
 <p>
 Ongoing research projects at my group include:
 </p>
@@ -399,9 +353,9 @@ Ongoing research projects at my group include:
 </div>
 </div>
 </div>
-<div id="outline-container-org80ad6d2" class="outline-2">
-<h2 id="org80ad6d2">News</h2>
-<div class="outline-text-2" id="text-org80ad6d2">
+<div id="outline-container-org5f3751b" class="outline-2">
+<h2 id="org5f3751b">News</h2>
+<div class="outline-text-2" id="text-org5f3751b">
 <ul class="org-ul">
 <li>[Pinned] Check out my book <a href="https://www.morganclaypool.com/doi/10.2200/S00903ED1V01Y201902DMK017">Multidimensional Mining of Massive Text Data</a> published by Morgan &amp; Claypool, also available on  <a href="https://www.amazon.com/Multidimensional-Synthesis-Lectures-Knowledge-Discovery/dp/1681735199">Amazon</a>.</li>
 <li>Grateful to receive the <b>NSF Career</b> award!</li>
@@ -423,18 +377,26 @@ Ongoing research projects at my group include:
 </div>
 </div>
 
-<div id="outline-container-org0082809" class="outline-2">
-<h2 id="org0082809">Publications</h2>
-<div class="outline-text-2" id="text-org0082809">
+<div id="outline-container-org69b16b7" class="outline-2">
+<h2 id="org69b16b7">Publications</h2>
+<div class="outline-text-2" id="text-org69b16b7">
 <p>
 (* denotes equal contribution)
 </p>
 </div>
 
-<div id="outline-container-orga9b3e60" class="outline-3">
-<h3 id="orga9b3e60">2022</h3>
-<div class="outline-text-3" id="text-orga9b3e60">
+<div id="outline-container-orgb4b3ee4" class="outline-3">
+<h3 id="orgb4b3ee4">2022</h3>
+<div class="outline-text-3" id="text-orgb4b3ee4">
 <ul class="org-ul">
+<li>Sparse Conditional Hidden Markov Model for Weakly Supervised Named Entity Recognition<br />
+Yinghao Li, Le Song, Chao Zhang<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2022</li>
+
+<li>Adaptive Multi-view Rule Discovery for Weakly-Supervised Compatible Products Prediction<br />
+Rongzhi Zhang, Rebecca West, Xiquan Cui, Chao Zhang<br />
+ACM SIGKDD Conference on Knowledge Discovery and Pattern Mining (<b>KDD</b>), 2022</li>
+
 <li><a href="https://openreview.net/forum?id=r_2z0-tufhS">CERES: Pretraining of Graph-Conditioned Transformer for Semi-Structured Session Data</a><br />
 Rui Feng, Chen Luo, Qingyu Yin, Bing Yin, Tuo Zhao, Chao Zhang<br />
 Annual Conference of the North American Chapter of the Association for Computational Linguistics (<b>NAACL</b>), 2022</li>
@@ -457,9 +419,9 @@ The Web Conference (<b>WWW</b>), 2022</li>
 </div>
 </div>
 
-<div id="outline-container-orgf5a2754" class="outline-3">
-<h3 id="orgf5a2754">2021</h3>
-<div class="outline-text-3" id="text-orgf5a2754">
+<div id="outline-container-org0735a19" class="outline-3">
+<h3 id="org0735a19">2021</h3>
+<div class="outline-text-3" id="text-org0735a19">
 <ul class="org-ul">
 <li><a href="https://arxiv.org/abs/2106.03904">When in Doubt: Neural Non-Parametric Uncertainty Quantification for Epidemic Forecasting</a><br />
 Harshavardhan Kamarthi, Lingkai Kong, Alexander Rodríguez, Chao Zhang, B. Aditya Prakash<br />
@@ -488,9 +450,9 @@ Bioinformatics, 2021</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orge937db7" class="outline-3">
-<h3 id="orge937db7">2020</h3>
-<div class="outline-text-3" id="text-orge937db7">
+<div id="outline-container-org87f6677" class="outline-3">
+<h3 id="org87f6677">2020</h3>
+<div class="outline-text-3" id="text-org87f6677">
 <ul class="org-ul">
 <li><a href="https://ieeexplore.ieee.org/abstract/document/8809901">T-GCN: A Temporal Graph Convolutional Network for Traffic Prediction</a><br />
 Ling Zhao, Yujiao Song, Chao Zhang, Yu Liu, Pu Wang, Tao Lin, Min Deng, Haifeng Li.<br />
@@ -555,9 +517,9 @@ IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>), 2020</li>
 </div>
 </div>
 
-<div id="outline-container-orge8877d4" class="outline-3">
-<h3 id="orge8877d4">2019</h3>
-<div class="outline-text-3" id="text-orge8877d4">
+<div id="outline-container-org7b6a5a5" class="outline-3">
+<h3 id="org7b6a5a5">2019</h3>
+<div class="outline-text-3" id="text-org7b6a5a5">
 <ul class="org-ul">
 <li><a href="https://www.morganclaypool.com/doi/10.2200/S00903ED1V01Y201902DMK017">Multidimensional Mining of Massive Text Data</a><br />
 Chao Zhang, Jiawei Han.<br />
@@ -608,9 +570,9 @@ SIAM International Conference on Data Mining (<b>SDM</b>), 2019</li>
 </div>
 </div>
 
-<div id="outline-container-orgfb7ab4f" class="outline-3">
-<h3 id="orgfb7ab4f">2018</h3>
-<div class="outline-text-3" id="text-orgfb7ab4f">
+<div id="outline-container-org8278fcb" class="outline-3">
+<h3 id="org8278fcb">2018</h3>
+<div class="outline-text-3" id="text-org8278fcb">
 <ul class="org-ul">
 <li><a href="https://www.ideals.illinois.edu/handle/2142/102465">Multi-Dimensional Mining of Unstructured Data with Limited Supervision</a><br />
 Chao Zhang<br />
@@ -706,9 +668,9 @@ ACM Transactions on Multimedia Computing, Communications, and Applications (<b>T
 </div>
 </div>
 
-<div id="outline-container-org668a4e2" class="outline-3">
-<h3 id="org668a4e2">2017</h3>
-<div class="outline-text-3" id="text-org668a4e2">
+<div id="outline-container-orgb4bfe48" class="outline-3">
+<h3 id="orgb4bfe48">2017</h3>
+<div class="outline-text-3" id="text-orgb4bfe48">
 <ul class="org-ul">
 <li><a href="papers/2017-kdd-triovecevent.pdf">TrioVecEvent: Embedding-Based Online Local Event Detection in Geo-Tagged Tweet Streams</a><br />
 Chao Zhang, Liyuan Liu, Dongming Lei, Quan Yuan, Honglei Zhuang, Tim Hanratty, and Jiawei Han.<br />
@@ -784,9 +746,9 @@ Trends in Spatial Analysis and Modelling, Springer, 2017</li>
 </div>
 </div>
 
-<div id="outline-container-orgeb3e2bd" class="outline-3">
-<h3 id="orgeb3e2bd">Earlier</h3>
-<div class="outline-text-3" id="text-orgeb3e2bd">
+<div id="outline-container-orgf7b1edb" class="outline-3">
+<h3 id="orgf7b1edb">Earlier</h3>
+<div class="outline-text-3" id="text-orgf7b1edb">
 <ul class="org-ul">
 <li><a href="papers/2016-kdd-gmove.pdf">GMove: Group-Level Mobility Modeling Using Geo-Tagged Social Media</a><br />
 Chao Zhang, Keyang Zhang, Quan Yuan, Luming Zhang, Tim Hanratty, and Jiawei Han.<br />
@@ -846,9 +808,9 @@ ACM SIGIR Conference on Research and Development in Information Retrieval (<b>SI
 </div>
 </div>
 </div>
-<div id="outline-container-orgb319cb1" class="outline-2">
-<h2 id="orgb319cb1">Awards</h2>
-<div class="outline-text-2" id="text-orgb319cb1">
+<div id="outline-container-orgc5c32d4" class="outline-2">
+<h2 id="orgc5c32d4">Awards</h2>
+<div class="outline-text-2" id="text-orgc5c32d4">
 <ul class="org-ul">
 <li>2022 NSF Career Award</li>
 <li>2021 Facebook Faculty Research Award</li>
@@ -861,9 +823,9 @@ ACM SIGIR Conference on Research and Development in Information Retrieval (<b>SI
 </ul>
 </div>
 </div>
-<div id="outline-container-org7943635" class="outline-2">
-<h2 id="org7943635">Software</h2>
-<div class="outline-text-2" id="text-org7943635">
+<div id="outline-container-org0d54bbf" class="outline-2">
+<h2 id="org0d54bbf">Software</h2>
+<div class="outline-text-2" id="text-org0d54bbf">
 <ul class="org-ul">
 <li><a href="https://github.com/Lingkai-Kong/SDE-Net">SDE-Net</a>: Efficient uncertainty estimation for deep neural networks</li>
 <li><a href="https://github.com/Yinghao-Li/CHMM-ALT">CHMM</a>: BERT-conditional hidden Markov model for multi-source weakly-supervised learning</li>
@@ -876,9 +838,9 @@ ACM SIGIR Conference on Research and Development in Information Retrieval (<b>SI
 </ul>
 </div>
 </div>
-<div id="outline-container-org1298f5a" class="outline-2">
-<h2 id="org1298f5a">Teaching</h2>
-<div class="outline-text-2" id="text-org1298f5a">
+<div id="outline-container-org546be98" class="outline-2">
+<h2 id="org546be98">Teaching</h2>
+<div class="outline-text-2" id="text-org546be98">
 <ul class="org-ul">
 <li><a href="./course/cx4240-22s.html">2022 Spring: CX4240: Introduction to Computational Data Analysis</a></li>
 <li><a href="./course/cse8803-21f.html">2021 Fall: CSE8803-DLT: Deep Learning for Text Data</a></li>
@@ -890,11 +852,11 @@ ACM SIGIR Conference on Research and Development in Information Retrieval (<b>SI
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd089116" class="outline-2">
-<h2 id="orgd089116">Students</h2>
-<div class="outline-text-2" id="text-orgd089116">
+<div id="outline-container-orgbc5ac53" class="outline-2">
+<h2 id="orgbc5ac53">Students</h2>
+<div class="outline-text-2" id="text-orgbc5ac53">
 <p>
-<a id="org52a9c79"></a>
+<a id="org63b0ffd"></a>
 </p>
 
 <p>
