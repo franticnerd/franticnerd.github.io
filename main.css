@@ -1,12 +1,11 @@
 /* @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900); */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 
 @media all
 {
     html {
         margin: 0;
-        font: .9em/1.6em  Roboto, Georgia, "Droid Serif",  "DejaVu Serif", system-ui, Lato, Sans-serif, Helvetica,  Verdana,     serif;
+        font: .9em/1.6em  Georgia, Roboto, "Droid Serif",  "DejaVu Serif", system-ui, Lato, Sans-serif, Helvetica,  Verdana,     serif;
         background-image: url(/img/org-mode-unicorn-logo-worg.png);
         background-attachment: fixed;
         background-position: right bottom;
