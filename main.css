@@ -5,7 +5,7 @@
 {
     html {
         margin: 0;
-        font: .9em/1.6em  Georgia, Roboto, "Droid Serif",  "DejaVu Serif", system-ui, Lato, Sans-serif, Helvetica,  Verdana,     serif;
+        font: .9em/1.6em   system-ui, Georgia, Verdana, Roboto, "Droid Serif", "DejaVu Serif", Lato, Sans-serif, Helvetica,  serif;
         background-image: url(/img/org-mode-unicorn-logo-worg.png);
         background-attachment: fixed;
         background-position: right bottom;
@@ -16,7 +16,7 @@
     /* font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 
     body {
-        font-size: 14pt;
+        font-size: 13pt;
         color: #444;
         margin-top: 0;
         /* line-height: 18pt; */
