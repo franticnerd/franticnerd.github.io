@@ -1,6 +1,5 @@
 /* @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900); */
 
-
 @media all
 {
     html {
@@ -155,6 +154,11 @@ content: "*** "
         font-size:1.2em;
         margin-left: 1.2em;
         color: #A5573E;
+    }
+
+    img.wrap {
+        float: right;
+        margin: 0 0 0 0;
     }
 
     .outline-text-4 {
