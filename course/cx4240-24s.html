@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-01-07 Sun 19:53 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CX4240: Introduction to Computational Data Analysis (2024 Spring)</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../main.css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CX4240: Introduction to Computational Data Analysis (2024 Spring)</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org894afe5">Logistics</a></li>
+<li><a href="#orgd264ae8">Course Content</a></li>
+<li><a href="#orgf7b9409">Schedule</a></li>
+<li><a href="#org79fc789">Grading</a>
+<ul>
+<li><a href="#org1898e1d">Homework (30%)</a></li>
+<li><a href="#org1d8dc9e">Project (30%)</a></li>
+<li><a href="#org6e9f16d">Exam (40%)</a></li>
+</ul>
+</li>
+<li><a href="#org962e520">Resources</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org894afe5" class="outline-2">
+<h2 id="org894afe5">Logistics</h2>
+<div class="outline-text-2" id="text-org894afe5">
+<ul class="org-ul">
+<li><b>Lecture time</b>: Mons and Weds, 3:30pm-4:45pm</li>
+<li><b>Location</b>: J. Erskine Love Manufacturing 185</li>
+<li><b>Instructors</b>: <a href="http://chaozhang.org">Chao Zhang</a></li>
+<li><b>Teaching Assistant</b>: Yue Yu &lt;yueyu@gatech.edu&gt; and Lingkai Kong &lt;lkkong@gatech.edu&gt;</li>
+<li><b>Office Hours</b>:
+<ul class="org-ul">
+<li>Instructor: Mons 2-3pm @ <a href="https://gatech.zoom.us/j/99685577907">https://gatech.zoom.us/j/99685577907</a></li>
+<li>TA Office Hour: Weds 2-3pm @ <a href="https://gatech.zoom.us/j/96874485742">https://gatech.zoom.us/j/96874485742</a></li>
+</ul></li>
+<li><b>Piazza</b>: <a href="https://piazza.com/gatech/spring2024/cx4240">https://piazza.com/gatech/spring2024/cx4240</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd264ae8" class="outline-2">
+<h2 id="orgd264ae8">Course Content</h2>
+<div class="outline-text-2" id="text-orgd264ae8">
+<p>
+Q: <i>What will be covered in this course?</i>
+A: This course introduces techniques for computational data analysis, with an emphasis on machine learning algorithms and their applications to real-world data. On the technique side, we will cover key machine learning methods (linear regression, logistic regression, neural networks, tree-based models) and self-supervised learning for foundation models. On the application side, it will introduce various applications of these techniques, particularly on text data analysis and natural language processing. It will introduce how to formulate real-world tasks as data analysis problems, key methods for solving these problems, and their advantages and disadvantages.
+</p>
+
+<p>
+Q: <i>Who will benefit from this course?</i>
+A: The learning objective is that by the end of this course, the students are able to formulate their data analysis problems at hand, choose appropriate computational models to acquire insights from data automatically, and even come up with innovative solutions for solving open problems in this field. The course will be helpful for students who want to solve practical problems using machine learning and data science techniques. The course will provide useful techniques for students who want to do edge-cutting research in data mining, machine learning, natural language processing, and others.
+</p>
+
+<p>
+Q: <i>What are the prerequisites?</i>
+A: Prerequisites for this course include 1) solid knowledge of probability, statistics, calculus, and linear algebra; 2) basic knowledge of machine learning; 3) solid programming skills, preferably in Python.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf7b9409" class="outline-2">
+<h2 id="orgf7b9409">Schedule</h2>
+<div class="outline-text-2" id="text-orgf7b9409">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Date</th>
+<th scope="col" class="org-left">Topic</th>
+<th scope="col" class="org-left">Due</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Module 1: Background</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">01/08/2024</td>
+<td class="org-left">Course Overview</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">01/10/2024</td>
+<td class="org-left">Probability and MLE</td>
+<td class="org-left">Piazza Signup</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">01/15/2024</td>
+<td class="org-left">No Class (Martin Luther King Day)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">01/17/2024</td>
+<td class="org-left">Data Analysis Toolbox</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Module 2: Linear Models</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">01/22/2024</td>
+<td class="org-left">Linear Regression</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">01/24/2024</td>
+<td class="org-left">Linear Regression</td>
+<td class="org-left">HW1 Out</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">01/29/2024</td>
+<td class="org-left">Example Projects</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">01/31/2024</td>
+<td class="org-left">Naïve Bayes Classifier</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">02/05/2024</td>
+<td class="org-left">Logistic Regression</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">02/07/2024</td>
+<td class="org-left">Feature Design and Learning for Text</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">02/12/2024</td>
+<td class="org-left">Feature Design and Learning for Text</td>
+<td class="org-left">HW1 Due</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">02/14/2024</td>
+<td class="org-left">Project checkpoint &amp; discussion</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Module 3: Neural Networks</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">02/19/2024</td>
+<td class="org-left">Neural Networks</td>
+<td class="org-left">HW2 Out</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">02/21/2024</td>
+<td class="org-left">Neural Networks</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">02/26/2024</td>
+<td class="org-left">CNNs and RNNs</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">02/28/2024</td>
+<td class="org-left">Transformers</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Module 4: Tree Models</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">03/04/2024</td>
+<td class="org-left">Decision Trees</td>
+<td class="org-left">HW2 Due</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">03/06/2024</td>
+<td class="org-left">Random Forest</td>
+<td class="org-left">HW3 Out</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">03/11/2024</td>
+<td class="org-left"><b>Midterm Exam</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">03/13/2024</td>
+<td class="org-left">No Class (spring break)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">03/18/2024</td>
+<td class="org-left">No Class (spring break)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">03/20/2024</td>
+<td class="org-left">Project checkpoint &amp; discussion</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Module 5: Large Language Models</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">03/25/2024</td>
+<td class="org-left">Large Language Model (LLM)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">03/27/2024</td>
+<td class="org-left">LLM Instruction Fine-Tuning</td>
+<td class="org-left">HW3 Due</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">04/01/2024</td>
+<td class="org-left">LLM Alignment</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">04/03/2024</td>
+<td class="org-left">LLM Agents and Decision Making</td>
+<td class="org-left">Project presentation signup</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">04/08/2024</td>
+<td class="org-left">Project checkpoint &amp; discussion</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><b>Module 6: Projects</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">04/10/2024</td>
+<td class="org-left">No Class (Project Preparation)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">04/15/2024</td>
+<td class="org-left">Project presentation</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">04/17/2024</td>
+<td class="org-left">Project Presentation</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">04/22/2024</td>
+<td class="org-left">Project Presentation</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">04/24/2024</td>
+<td class="org-left">Project Presentation</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org79fc789" class="outline-2">
+<h2 id="org79fc789">Grading</h2>
+<div class="outline-text-2" id="text-org79fc789">
+</div>
+<div id="outline-container-org1898e1d" class="outline-3">
+<h3 id="org1898e1d">Homework (30%)</h3>
+<div class="outline-text-3" id="text-org1898e1d">
+<p>
+There will be three assignments, each account for 10% towards your final score. Each assignment includes written analysis and/or programming for testing your understanding of the taught content.
+</p>
+<ul class="org-ul">
+<li>Late policy: Assignments are due at 11:59PM of the due date. You will be allowed 2 total late days (48 hours) without penalty for the entire semester (for homework only, not applicable to exams or projects). Once those days are used, you will be penalized according to the following policy:
+<ul class="org-ul">
+<li>Homework is worth full credit before the due time.</li>
+<li>It is worth 75% credit for the next 24 hours.</li>
+<li>It is worth 50% credit for the second next 24 hours.</li>
+<li>It is worth zero credit after that.</li>
+</ul></li>
+<li>Follow the <a href="http://policylibrary.gatech.edu/student-affairs/academic-honor-code">Georgia Tech Academic Honor Code</a>.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1d8dc9e" class="outline-3">
+<h3 id="org1d8dc9e">Project (30%)</h3>
+<div class="outline-text-3" id="text-org1d8dc9e">
+<p>
+You need to complete a project on using computational data analysis techniques to tackle a real-life data analysis problem.  Each project needs to be completed in a team of 2-4 people. Here are some <a href="./cx4240-project.html">guidelines and resources</a> for doing your project smoothly.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6e9f16d" class="outline-3">
+<h3 id="org6e9f16d">Exam (40%)</h3>
+<div class="outline-text-3" id="text-org6e9f16d">
+<p>
+One exam will be held on March 11 in lieu of the regular class:
+</p>
+<ul class="org-ul">
+<li>It will be a closed-book exam, so no notes or communication with peers is allowed.</li>
+<li>There will be no make-up exams, so be sure to attend on the scheduled date. Missing the exam will result in zero credit.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org962e520" class="outline-2">
+<h2 id="org962e520">Resources</h2>
+<div class="outline-text-2" id="text-org962e520">
+<ul class="org-ul">
+<li><a href="https://web.stanford.edu/~hastie/ElemStatLearn/">The Elements of Statistical Learning</a>, by Trevor Hastie, Robert Tibshirani, and Jerome Friedman</li>
+<li><a href="http://www.cs.cmu.edu/~tom/mlbook.html">Machine learning</a>, by Tom Mitchell</li>
+<li><a href="https://www.springer.com/us/book/9780387310732">Pattern recognition and machine learning</a>, by Christopher Bishop</li>
+<li><a href="https://www.elsevier.com/books/data-mining-concepts-and-techniques/han/978-0-12-381479-1">Data Mining: Concepts and Techniques</a>, by Jiawei Han, Micheline Kamber, and Jian Pei</li>
+<li><a href="http://www.deeplearningbook.org/">Deep Learning</a>, by Ian Goodfellow, Yoshua Bengio, and Aaron Courville</li>
+<li><a href="https://d2l.ai/">Dive into Deep Learning</a>, by Aston Zhang, Zack C. Lipton, Mu Li, and Alex Smola</li>
+<li><a href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/">Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow</a>, by Aurélien Géron</li>
+</ul>
+
+<p>
+Other resources, such as machine learning toolboxes and datasets, will be provided throughout the course.
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
