@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-08-14 Thu 05:51 -->
+<!-- 2025-08-17 Sun 21:53 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Chao Zhang</title>
@@ -203,27 +203,28 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgc34902e">Research</a></li>
-<li><a href="#org914d288">I. Data-Centric LLM</a></li>
-<li><a href="#org643143e">II. LLM Agents</a></li>
-<li><a href="#org4902cf7">III. AI Alignment</a></li>
-<li><a href="#orgf376c46">IV. AI for Science</a></li>
-<li><a href="#orgb43e680">Awards</a></li>
-<li><a href="#org6afea0c">Publications</a>
+<li><a href="#org9568aca">Research</a></li>
+<li><a href="#org9c42d76">1. Post-Training for LLM Agents</a></li>
+<li><a href="#org432f9e2">2. Safe and Trustworthy AI</a></li>
+<li><a href="#orgcc7e6af">3. Data Evaluation and Benchmarks</a></li>
+<li><a href="#orgbef0764">4. AI for Scientific Discovery</a></li>
+<li><a href="#orga09f97f">5. Previous Projects</a></li>
+<li><a href="#org05e808f">Awards</a></li>
+<li><a href="#orge5e7bb7">Publications</a>
 <ul>
-<li><a href="#orge144eb4">2025</a></li>
-<li><a href="#org5b2f832">2024</a></li>
-<li><a href="#org79485e1">2023</a></li>
-<li><a href="#org4064221">2022</a></li>
-<li><a href="#org5fee964">2021</a></li>
-<li><a href="#org5c6f454">2020</a></li>
-<li><a href="#org2676636">2019</a></li>
-<li><a href="#org8ebe0fb">2018</a></li>
-<li><a href="#org5d1a61a">Earlier</a></li>
+<li><a href="#org980fa97">2025</a></li>
+<li><a href="#org7f820f6">2024</a></li>
+<li><a href="#orgfafd9ca">2023</a></li>
+<li><a href="#org8a5ebcb">2022</a></li>
+<li><a href="#org6ab86ef">2021</a></li>
+<li><a href="#orgebcd39f">2020</a></li>
+<li><a href="#org968c3e6">2019</a></li>
+<li><a href="#orge8e064f">2018</a></li>
+<li><a href="#org25a5bd3">Earlier</a></li>
 </ul>
 </li>
-<li><a href="#org2bf92df">Teaching</a></li>
-<li><a href="#org56ad599">Students</a></li>
+<li><a href="#org7c1694c">Teaching</a></li>
+<li><a href="#org8e3c1e8">Students</a></li>
 </ul>
 </div>
 <h2>Quick Links</h2>
@@ -261,11 +262,11 @@ Email: <a href="mailto:chaozhang@gatech.edu">chaozhang@gatech.edu</a>
 </tbody>
 </table>
 
-<div id="outline-container-orgc34902e" class="outline-2">
-<h2 id="orgc34902e">Research</h2>
-<div class="outline-text-2" id="text-orgc34902e">
+<div id="outline-container-org9568aca" class="outline-2">
+<h2 id="org9568aca">Research</h2>
+<div class="outline-text-2" id="text-org9568aca">
 <p>
-My research lies in the areas of data science, machine learning, and AI. My goal is to make it easier to build domain-customized foundation models and AI agents for task-solving and decision-making. My technical efforts centers on addressing key challenges in <i>data efficiency</i>, <i>computation efficiency</i>, and <i>model robustness</i>. On the application front, I am deeply interested in harnessing foundation models to advance <i>AI for science</i>.
+My research lies in the areas of data science, machine learning, and AI. My goal is to build advanced large language models and AI agents for complex task-solving and decision-making. My technical efforts center on addressing key challenges in <i>data efficiency</i>, <i>computation efficiency</i>, and <i>model robustness</i>. On the application front, I am deeply interested in harnessing foundation models to advance <i>AI for science</i>.
 </p>
 
 <p>
@@ -273,13 +274,13 @@ Currently, I am working on the following themes:
 </p>
 
 <ol class="org-ol">
-<li><b>Data-Centric LLM</b> &#x2013; Adapting Large Language Models for target domains by addressing data scarcity challenges through data-efficient methods such as <i>learning from weak supervision</i> and <i>active learning</i>.</li>
+<li><b>LLM Post-Training Data and Algorithms for Agents</b> &#x2013; Developing efficient post-training methods for adapting and fine-tuning LLMs to create intelligent agents that can learn from experience, interact with environments, and improve their reasoning and agentic capabilities.</li>
 
-<li><b>LLM Agents &amp; Reasoning</b> &#x2013; Improving LLM reasoning and planning abilities by enabling them to learn and evolve through <i>interaction with external environments for feedback</i>. The goal is to better adapt LLMs and enhance their reasoning capabilities without expensive manual curation of fine-tuning data.</li>
+<li><b>AI Safety and Trustworthy AI</b> &#x2013; Facilitating responsible and reliable deployment of AI systems through critical techniques including <i>uncertainty quantification</i>, enhancing <i>LLM factuality</i>, improving <i>LLM alignment</i>, and developing robust methods for building trustworthy AI agents.</li>
 
-<li><b>AI Alignment</b> &#x2013; Ensuring responsible and reliable deployment of AI through critical techniques including <i>uncertainty quantification</i>, enhancing <i>LLM factuality</i>, and improving <i>LLM alignment</i>.</li>
+<li><b>Datasets, Evaluation, and Benchmarks</b> &#x2013; Creating comprehensive evaluation frameworks, datasets, and benchmarks for assessing AI system performance, particularly focusing on agent capabilities, reasoning abilities, and real-world task completion across diverse domains.</li>
 
-<li><b>AI for Science</b> &#x2013; Leveraging foundation models and AI agents to accelerate scientific discovery in diverse fields such as <i>material science</i>, <i>biomedical and life sciences</i>, and <i>urban science</i>.</li>
+<li><b>AI for Scientific Discovery</b> &#x2013; Developing foundation models and AI agents to accelerate scientific discovery, with applications in diverse fields such as <i>time series analysis</i>, <i>material science</i>, <i>biomedical and life sciences</i>.</li>
 </ol>
 
 <p>
@@ -295,41 +296,11 @@ ML4H.
 </div>
 </div>
 
-<div id="outline-container-org914d288" class="outline-2">
-<h2 id="org914d288">I. Data-Centric LLM</h2>
-<div class="outline-text-2" id="text-org914d288">
+<div id="outline-container-org9c42d76" class="outline-2">
+<h2 id="org9c42d76">1. Post-Training for LLM Agents</h2>
+<div class="outline-text-2" id="text-org9c42d76">
 <p>
-We aim to adapt LLMs to various domains and complex tasks. A key bottleneck when adapting LLMs is <i>data scarcity</i> &#x2013; the lack of high-quality, representative data for the target domain.  We are tackling this bottleneck by developing methods for data-efficient LLM adaptation, including:
-</p>
-
-<img src="img/weak+self-supervision.png" class="wrap" width="500px" />
-
-<ul class="org-ul">
-<li><b>Learning from Noisy Data and Weak Supervision</b>: To address the lack of data for LLM fine-tuning, we explore using weaker forms of supervision signals that are easier to collect (e.g., labeling rules, LLM supervision, pseudo labels).
-<ul class="org-ul">
-<li><a href="https://arxiv.org/abs/2305.19395">DyGen: Fine-Tuning Language Models with Noisy Labels by Dynamics-Enhanced Generative Modeling</a>, KDD'23</li>
-<li><a href="https://arxiv.org/abs/2010.07835">Fine-Tuning Pre-trained Language Model with Weak Supervision</a>, NAACL'21</li>
-<li><a href="https://arxiv.org/abs/2205.14228">Sparse Conditional Hidden Markov Model for Weakly Supervised Named Entity Recognition</a>, KDD'22</li>
-<li><a href="https://arxiv.org/abs/2010.07245">Text Classification Using Label Names Only: A Language Model Self-Training Approach</a>, EMNLP'20</li>
-<li><a href="https://arxiv.org/abs/2006.15509">BOND: Bert-Assisted Open-Domain Named Entity Recognition with Distant Supervision</a>, KDD'20</li>
-<li><a href="https://arxiv.org/abs/1809.01478">Weakly-Supervised Neural Text Classification</a>, CIKM'18</li>
-</ul></li>
-
-<li><b>More Efficient Data Curation</b>: We develop techniques for fine-tuning LLMs with active learning, by strategically selecting data instances for curation to improve fine-tuning performance.
-<ul class="org-ul">
-<li><a href="https://arxiv.org/abs/2209.06995">Cold-start Data Selection for Better Few-shot Fine-tuning of Pretrained Language Models</a>, ACL'23</li>
-<li><a href="https://arxiv.org/abs/2203.09735">PRBoost: Prompt-Based Rule Discovery and Boosting for Interactive Weakly-Supervised Learning</a>, ACL'22</li>
-<li><a href="https://aclanthology.org/2022.naacl-main.102/">AcTune: Uncertainty-Aware Active Self-Training for Active Fine-Tuning of Language Models</a>, NAACL'22</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org643143e" class="outline-2">
-<h2 id="org643143e">II. LLM Agents</h2>
-<div class="outline-text-2" id="text-org643143e">
-<p>
-We investigate improving LLM reasoning and planning abilities by enabling them to evolve through interaction with external environments for feedback. The goal is to better adapt LLMs and enhance their reasoning capabilities without expensive manual curation of fine-tuning data.
+We investigate improving LLM reasoning and agentic abilities by enabling them to evolve through interaction with external environments for feedback. The goal is to better adapt LLMs and enhance their reasoning and agentic capabilities through efficient post-training data collection and algorithmic innovations.
 </p>
 
 <img src="img/llm.png" class="wrap" width="350px" />
@@ -340,20 +311,90 @@ We investigate improving LLM reasoning and planning abilities by enabling them t
 <li><a href="https://arxiv.org/abs/2402.08219">BBox-Adapter: Lightweight Adapting for Black-Box Large Language Models</a>, ICML'24</li>
 <li><a href="https://arxiv.org/abs/2310.13227">ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search</a>, ICLR'24</li>
 <li><a href="https://arxiv.org/abs/2305.16653">AdaPlanner: Adaptive Planning from Feedback with Language Models</a>, NeurIPS'23</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org432f9e2" class="outline-2">
+<h2 id="org432f9e2">2. Safe and Trustworthy AI</h2>
+<div class="outline-text-2" id="text-org432f9e2">
+<p>
+We aim to develop AI systems that are not only capable but also trustworthy for deployment in various domains. We study LLM factuality (e.g., RAG, agentic search), uncertainty, and alignment.
+</p>
+
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2411.16646">Self-Generated Critiques Boost Reward Modeling for Language Models</a>, NAACL'25</li>
+<li><a href="https://arxiv.org/abs/2406.05954">Aligning Large Language Models with Representation Editing: A Control Perspective</a>, NeurIPS'24</li>
+<li><a href="https://arxiv.org/abs/2407.02485">RankRAG: Unifying Retrieval-Augmented Generation and Context Ranking in LLMs</a>, NeurIPS'24</li>
+<li><a href="https://arxiv.org/abs/2402.13542">ARL2: Aligning Retrievers with Black-box Large Language Models via Self-guided Adaptive Relevance Labeling</a>, ACL'24</li>
+<li><a href="https://arxiv.org/abs/2306.15895">Large Language Model as Attributed Training Data Generator: A Tale of Diversity and Bias</a>, NeurIPS'23</li>
+<li><a href="https://aclanthology.org/2020.emnlp-main.102/">Calibrated Language Model Fine-Tuning for In- and Out-of-Distribution Data</a>, EMNLP'20</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcc7e6af" class="outline-2">
+<h2 id="orgcc7e6af">3. Data Evaluation and Benchmarks</h2>
+<div class="outline-text-2" id="text-orgcc7e6af">
+<p>
+We develop new datasets, benchmarks, and evaluation protocols for training and assessing LLM performance, with particular focus on agent capabilities, reasoning abilities, and real-world task completion.
+</p>
+
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2407.23456">MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine Learning Engineering</a>, arXiv'25</li>
+<li><a href="https://arxiv.org/abs/2406.09130">Time-MMD: A New Multi-Domain Multimodal Dataset for Time Series Analysis</a>, NeurIPS'24</li>
+<li><a href="https://arxiv.org/abs/2306.10060">MUBen: Benchmarking the Uncertainty of Pre-Trained Models for Molecular Property Prediction</a>, TMLR'24</li>
+<li><a href="https://arxiv.org/abs/2311.07715">POLYIE: A Dataset of Information Extraction from Polymer Material Scientific Literature</a>, NAACL'24</li>
 <li><a href="https://arxiv.org/abs/2306.13304">ToolQA: A Dataset for LLM Question Answering with External Tools</a>, NeurIPS'23</li>
 </ul>
 </div>
 </div>
 
 
-<div id="outline-container-org4902cf7" class="outline-2">
-<h2 id="org4902cf7">III. AI Alignment</h2>
-<div class="outline-text-2" id="text-org4902cf7">
+<div id="outline-container-orgbef0764" class="outline-2">
+<h2 id="orgbef0764">4. AI for Scientific Discovery</h2>
+<div class="outline-text-2" id="text-orgbef0764">
+<img src="img/md.gif" class="wrap" width="250px" />
+
 <p>
-We aim to develop AI systems that are not only capable but also trustworthy for deployment in various domains. We study the following topics in the space of trustworthy AI: uncertainty quantification, LLM factuality, and LLM alignment.
+We aim to leverage AI and foundation models for advancing scientific discovery. We develop domain-specific foundation models and LLM agents for different scientific domains. On the application side, we collaborate with domain-experts to advance scientific discovery in material design, biomedical and life science, and urban science:
 </p>
 
-<img src="img/uq.png" class="wrap" width="250px" />
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2406.16976">Efficient Evolutionary Search Over Chemical Space with Large Language Models</a>, ICLR'25</li>
+<li><a href="https://arxiv.org/abs/2406.13163">LLMatDesign: Autonomous Materials Discovery with Large Language Models</a>, preprint</li>
+<li><a href="https://arxiv.org/abs/2308.14759">May the Force be with You: Unified Force-Centric Pre-Training for 3D Molecular Conformations</a>, NeurIPS'23</li>
+<li><a href="https://www.biorxiv.org/content/10.1101/2024.02.11.579859v1.abstract">Contrastive Fitness Learning: Reprogramming Protein Language Models for Low-N Learning of Protein Fitness Landscape</a>, RECOMB'24</li>
+<li><a href="https://arxiv.org/pdf/1811.05320.pdf">T-GCN: A Temporal Graph Convolutional Network for Traffic Prediction</a>, IEEE ITS'20</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga09f97f" class="outline-2">
+<h2 id="orga09f97f">5. Previous Projects</h2>
+<div class="outline-text-2" id="text-orga09f97f">
+<p>
+This section includes our previous work on weak supervision, active learning, and uncertainty quantification for language models and traditional machine learning tasks.
+</p>
+
+<ul class="org-ul">
+<li><b>Learning from Noisy Data and Weak Supervision</b>: Our foundational work on addressing data scarcity challenges through weak supervision and noisy label learning for smaller language models and traditional NLP tasks.
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2305.19395">DyGen: Fine-Tuning Language Models with Noisy Labels by Dynamics-Enhanced Generative Modeling</a>, KDD'23</li>
+<li><a href="https://arxiv.org/abs/2010.07835">Fine-Tuning Pre-trained Language Model with Weak Supervision</a>, NAACL'21</li>
+<li><a href="https://arxiv.org/abs/2205.14228">Sparse Conditional Hidden Markov Model for Weakly Supervised Named Entity Recognition</a>, KDD'22</li>
+<li><a href="https://arxiv.org/abs/2010.07245">Text Classification Using Label Names Only: A Language Model Self-Training Approach</a>, EMNLP'20</li>
+<li><a href="https://arxiv.org/abs/2006.15509">BOND: Bert-Assisted Open-Domain Named Entity Recognition with Distant Supervision</a>, KDD'20</li>
+</ul></li>
+
+<li><b>Active Learning and Data Curation</b>: Techniques for efficient data selection and curation to improve model performance with limited labeled data.
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2209.06995">Cold-start Data Selection for Better Few-shot Fine-tuning of Pretrained Language Models</a>, ACL'23</li>
+<li><a href="https://arxiv.org/abs/2203.09735">PRBoost: Prompt-Based Rule Discovery and Boosting for Interactive Weakly-Supervised Learning</a>, ACL'22</li>
+<li><a href="https://aclanthology.org/2022.naacl-main.102/">AcTune: Uncertainty-Aware Active Self-Training for Active Fine-Tuning of Language Models</a>, NAACL'22</li>
+</ul></li>
+</ul>
+
 
 <ul class="org-ul">
 <li><b>Uncertainty Quantification for Deep Learning:</b> Uncertainty-aware ML models are crucial for building trustworthy AI systems. Many deep learning models produce uncertainty-agnostic point estimates or miscalibrated distributions. We are addressing this issue by designing techniques for quantifying uncertainty in deep learning models. We also study decision-focused learning under uncertainty to make learning informed by downstream decision-making tasks. 
@@ -363,25 +404,6 @@ We aim to develop AI systems that are not only capable but also trustworthy for 
 <li><a href="https://arxiv.org/abs/2211.13837">End-to-end Stochastic Programming with Energy-based Model</a>, NeurIPS'22</li>
 <li><a href="https://arxiv.org/abs/2106.03904">When in Doubt: Neural Non-Parametric Uncertainty Quantification for Epidemic Forecasting</a>, NeurIPS'21</li>
 <li><a href="http://proceedings.mlr.press/v119/kong20b/kong20b.pdf">SDE-Net: Equipping Deep Neural Networks with Uncertainty Estimates</a>, ICML'20</li>
-<li><a href="https://arxiv.org/pdf/1709.02980.pdf">RDeepSense: Reliable Deep Mobile Computing Models with Uncertainty Estimations</a>, UbiComp'18</li>
-</ul></li>
-</ul>
-
-
-<ul class="org-ul">
-<li><b>LLM Factuality and RAG</b>: We develop methods to enhance the factual accuracy of LLMs through more robust and intelligent retrieval-augmented generation (RAG) and context ranking. 
-<ul class="org-ul">
-<li><a href="https://arxiv.org/abs/2407.02485">RankRAG: Unifying Retrieval-Augmented Generation and Context Ranking in LLMs</a>, NeurIPS'24</li>
-<li><a href="https://arxiv.org/abs/2402.13542">ARL2: Aligning Retrievers with Black-box Large Language Models via Self-guided Adaptive Relevance Labeling</a>, ACL'24</li>
-<li><a href="https://arxiv.org/abs/2210.15212">COCO-DR: Combating the Distribution Shift in Zero-Shot Dense Retrieval with Contrastive and Distributional Robust Learning</a>, EMNLP'22</li>
-</ul></li>
-
-<li><b>LLM Alignment and Robust Fine-Tuning</b>: We investigate robust fine-tuning methods for LLMs to improve generalization on out-of-distribution data, as well as identifying vulnerabilities in LLMs and scalably aligning them:
-<ul class="org-ul">
-<li><a href="https://arxiv.org/abs/2411.16646">Self-Generated Critiques Boost Reward Modeling for Language Models</a>, NAACL'25</li>
-<li><a href="https://arxiv.org/abs/2406.05954">Aligning Large Language Models with Representation Editing: A Control Perspective</a>, NeurIPS'24</li>
-<li><a href="https://arxiv.org/abs/2306.15895">Large Language Model as Attributed Training Data Generator: A Tale of Diversity and Bias</a>, NeurIPS'23</li>
-<li><a href="https://aclanthology.org/2020.emnlp-main.102/">Calibrated Language Model Fine-Tuning for In- and Out-of-Distribution Data</a>, EMNLP'20</li>
 </ul></li>
 </ul>
 </div>
@@ -389,55 +411,10 @@ We aim to develop AI systems that are not only capable but also trustworthy for 
 
 
 
-<div id="outline-container-orgf376c46" class="outline-2">
-<h2 id="orgf376c46">IV. AI for Science</h2>
-<div class="outline-text-2" id="text-orgf376c46">
-<img src="img/md.gif" class="wrap" width="250px" />
 
-<p>
-We aim to leverage AI and foundation models for advancing scientific discovery. We develop domain-specific foundation models and LLM agents for different scientific domains. On the application side, we collaborate with domain-experts to advance scientific discovery in material design, biomedical and life science, and urban science:
-</p>
-
-<ul class="org-ul">
-<li><b>AI for Material Science:</b> 
-<ul class="org-ul">
-<li><a href="https://arxiv.org/abs/2406.16976">Efficient Evolutionary Search Over Chemical Space with Large Language Models</a>, ICLR'25</li>
-<li><a href="https://arxiv.org/abs/2406.13163">LLMatDesign: Autonomous Materials Discovery with Large Language Models</a>, preprint</li>
-<li><a href="https://arxiv.org/abs/2308.14759">May the Force be with You: Unified Force-Centric Pre-Training for 3D Molecular Conformations</a>, NeurIPS'23</li>
-<li><a href="https://arxiv.org/abs/2307.08849">Autoregressive Diffusion Model for Graph Generation</a>, ICML'23</li>
-<li><a href="https://arxiv.org/abs/2306.10060">MUBen: Benchmarking the Uncertainty of Pre-Trained Models for Molecular Property Prediction</a>, TMLR'24</li>
-<li><a href="https://arxiv.org/abs/2311.07715">POLYIE: A Dataset of Information Extraction from Polymer Material Scientific Literature</a>, NAACL'24</li>
-</ul></li>
-</ul>
-
-
-<img src="img/protein.png" class="wrap" width="250px" />
-
-
-<ul class="org-ul">
-<li><b>AI for Biomedical and Life Science</b>:
-<ul class="org-ul">
-<li><a href="https://www.biorxiv.org/content/10.1101/2024.02.11.579859v1.abstract">Contrastive Fitness Learning: Reprogramming Protein Language Models for Low-N Learning of Protein Fitness Landscape</a>, RECOMB'24</li>
-<li><a href="https://proceedings.mlr.press/v225/xu23a/xu23a.pdf">TransEHR: Self-Supervised Transformer for Clinical Time Series Data</a>, ML4H'23</li>
-<li><a href="https://arxiv.org/abs/2106.03904">When in Doubt: Neural Non-Parametric Uncertainty Quantification for Epidemic Forecasting</a>, NeurIPS'21</li>
-<li><a href="https://arxiv.org/abs/2210.14427">ReSel: N-ary Relation Extraction from Scientific Text and Tables by Learning to Retrieve and Select</a>, EMNLP'22</li>
-</ul></li>
-
-<li><b>AI for Urban Science</b>:
-<ul class="org-ul">
-<li><a href="https://arxiv.org/pdf/1811.05320.pdf">T-GCN: A Temporal Graph Convolutional Network for Traffic Prediction</a>, IEEE ITS'20</li>
-<li><a href="https://ieeexplore.ieee.org/document/9306921">A Linear Time Approach to Computing Time Series Similarity based on Deep Metric Learning</a>, TKDE'20</li>
-<li><a href="https://dl.acm.org/doi/10.1145/3178876.3186058">DeepMove: Predicting Human Mobility with Attentional Recurrent Networks</a>, WWW'18</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-
-
-<div id="outline-container-orgb43e680" class="outline-2">
-<h2 id="orgb43e680">Awards</h2>
-<div class="outline-text-2" id="text-orgb43e680">
+<div id="outline-container-org05e808f" class="outline-2">
+<h2 id="org05e808f">Awards</h2>
+<div class="outline-text-2" id="text-org05e808f">
 <ul class="org-ul">
 <li>2024 GaTech CoC Outstanding Junior Faculty Award</li>
 <li>2022 NSF Career Award</li>
@@ -454,18 +431,22 @@ We aim to leverage AI and foundation models for advancing scientific discovery. 
 </div>
 </div>
 
-<div id="outline-container-org6afea0c" class="outline-2">
-<h2 id="org6afea0c">Publications</h2>
-<div class="outline-text-2" id="text-org6afea0c">
+<div id="outline-container-orge5e7bb7" class="outline-2">
+<h2 id="orge5e7bb7">Publications</h2>
+<div class="outline-text-2" id="text-orge5e7bb7">
 <p>
 (* denotes equal contribution)
 </p>
 </div>
 
-<div id="outline-container-orge144eb4" class="outline-3">
-<h3 id="orge144eb4">2025</h3>
-<div class="outline-text-3" id="text-orge144eb4">
+<div id="outline-container-org980fa97" class="outline-3">
+<h3 id="org980fa97">2025</h3>
+<div class="outline-text-3" id="text-org980fa97">
 <ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2407.23456">MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine Learning Engineering</a><br />
+Rushi Qiang, Yuchen Zhuang, Yinghao Li, Dingu Sagar V K, Rongzhi Zhang, ChangHao Li, Ian Shu-Hei Wong, Sherry Yang, Percy Liang, Chao Zhang, Bo Dai<br />
+arXiv, 2025</li>
+
 <li><a href="https://arxiv.org/abs/2502.06589">Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training</a><br />
 Yuchen Zhuang, Jingfeng Yang, Haoming Jiang, Xin Liu, Kewei Cheng, Sanket Lokegaonkar, Yifan Gao, Qing Ping, Tianyi Liu, Binxuan Huang, Zheng Li, Zhengyang Wang, Pei Chen, Ruijie Wang, Rongzhi Zhang, Nasser Zalmout, Priyanka Nigam, Bing Yin, Chao Zhang<br />
 Annual Conference of the North American Chapter of the Association for Computational Linguistics (<b>NAACL</b>), 2025</li>
@@ -483,8 +464,11 @@ Annual Conference of the North American Chapter of the Association for Computati
 </ul>
 
 
-
 <ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2407.34567">LLM-Augmented Chemical Synthesis and Design Decision Programs</a><br />
+Haorui Wang, Jeff Guo, Lingkai Kong, Rampi Ramprasad, Philippe Schwaller, Yuanqi Du, Chao Zhang<br />
+International Conference on Machine Learning (<b>ICML</b>), 2025</li>
+
 <li><a href="https://arxiv.org/abs/2406.16976">Efficient Evolutionary Search Over Chemical Space with Large Language Models</a><br />
 Haorui Wang, Marta Skreta, Cher Tian Ser, Wenhao Gao, Lingkai Kong, Felix Strieth-Kalthoff, Chenru Duan, Yuchen Zhuang, Yue Yu, Yanqiao Zhu, Yuanqi Du, Alan Aspuru-Guzik, Kirill Neklyudov, Chao Zhang<br />
 International Conference on Learning Representations (<b>ICLR</b>), 2025</li>
@@ -496,13 +480,26 @@ International Conference on Learning Representations (<b>ICLR</b>), 2025</li>
 <li><a href="https://arxiv.org/abs/2402.18012">Diffusion Models as Constrained Samplers for Optimization with Unknown Constraints</a><br />
 Lingkai Kong, Yuanqi Du, Wenhao Mu, Kirill Neklyudov, Valentin De Bortoli, Dongxia Wu, Haorui Wang, Aaron M Ferber, Yian Ma, Carla P Gomes, Chao Zhang<br />
 International Conference on Artificial Intelligence and Statistics (<b>AISTATS</b>), 2025</li>
+
+<li><a href="https://arxiv.org/abs/2407.45678">AutoMixAlign: Adaptive Data Mixing for Multi-Task Preference Optimization in LLMs</a><br />
+Nicholas E. Corrado, Julian Katz-Samuels, Adithya M Devraj, Hyokun Yun, Chao Zhang, Yi Xu, Yi Pan, Bing Yin, Trishul Chilimbi<br />
+Annual Meeting of the Association for Computational Linguistics (<b>ACL</b>), 2025</li>
+
+<li><a href="https://arxiv.org/abs/2407.12345">Language Model Uncertainty Quantification with Attention Chain</a><br />
+Yinghao Li, Rushi Qiang, Lama Moukheiber, Chao Zhang<br />
+Conference on Language Modeling (<b>COLM</b>), 2025</li>
+
+<li><a href="https://arxiv.org/abs/2407.56789">Self-Rewarding PPO: Aligning Large Language Models with Demonstrations Only</a><br />
+Qingru Zhang, Liang Qiu, Ilgee Hong, Zhenghao Xu, Tianyi Liu, Shiyang Li, Rongzhi Zhang, Zheng Li, Lihong Li, Bing Yin, Chao Zhang, Jianshu Chen, Haoming Jiang, Tuo Zhao<br />
+Conference on Language Modeling (<b>COLM</b>), 2025</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org5b2f832" class="outline-3">
-<h3 id="org5b2f832">2024</h3>
-<div class="outline-text-3" id="text-org5b2f832">
+
+<div id="outline-container-org7f820f6" class="outline-3">
+<h3 id="org7f820f6">2024</h3>
+<div class="outline-text-3" id="text-org7f820f6">
 <ul class="org-ul">
 <li><a href="https://arxiv.org/abs/2401.13849">TPD: Enhancing Student Language Model Reasoning via Principle Discovery and Guidance</a><br />
 Haorui Wang, Rongzhi Zhang, Yinghao Li, Lingkai Kong, Yuchen Zhuang, Xiusi Chen, Chao Zhang<br />
@@ -610,9 +607,9 @@ Conference of the European Chapter of the Association for Computational Linguist
 
 
 
-<div id="outline-container-org79485e1" class="outline-3">
-<h3 id="org79485e1">2023</h3>
-<div class="outline-text-3" id="text-org79485e1">
+<div id="outline-container-orgfafd9ca" class="outline-3">
+<h3 id="orgfafd9ca">2023</h3>
+<div class="outline-text-3" id="text-orgfafd9ca">
 <ul class="org-ul">
 <li><a href="https://arxiv.org/abs/2305.16653">AdaPlanner: Adaptive Planning from Feedback with Language Models</a><br />
 Haotian Sun, Yuchen Zhuang, Lingkai Kong, Bo Dai, Chao Zhang<br />
@@ -723,9 +720,9 @@ npj Comput Materials 9(52), 2023</li>
 
 
 
-<div id="outline-container-org4064221" class="outline-3">
-<h3 id="org4064221">2022</h3>
-<div class="outline-text-3" id="text-org4064221">
+<div id="outline-container-org8a5ebcb" class="outline-3">
+<h3 id="org8a5ebcb">2022</h3>
+<div class="outline-text-3" id="text-org8a5ebcb">
 <ul class="org-ul">
 <li><a href="https://openreview.net/pdf?id=_sYOodxTMcF">End-to-end Stochastic Optimization with Energy-based Model</a><br />
 Lingkai Kong, Jiaming Cui, Yuchen Zhuang, Rui Feng, B. Aditya Prakash, Chao Zhang<br />
@@ -778,9 +775,9 @@ Findings of Annual Conference of the North American Chapter of the Association f
 </div>
 </div>
 
-<div id="outline-container-org5fee964" class="outline-3">
-<h3 id="org5fee964">2021</h3>
-<div class="outline-text-3" id="text-org5fee964">
+<div id="outline-container-org6ab86ef" class="outline-3">
+<h3 id="org6ab86ef">2021</h3>
+<div class="outline-text-3" id="text-org6ab86ef">
 <ul class="org-ul">
 <li><a href="https://arxiv.org/abs/2106.03904">When in Doubt: Neural Non-Parametric Uncertainty Quantification for Epidemic Forecasting</a><br />
 Harshavardhan Kamarthi, Lingkai Kong, Alexander Rodríguez, Chao Zhang, B. Aditya Prakash<br />
@@ -810,9 +807,9 @@ Bioinformatics, 2021</li>
 </div>
 </div>
 
-<div id="outline-container-org5c6f454" class="outline-3">
-<h3 id="org5c6f454">2020</h3>
-<div class="outline-text-3" id="text-org5c6f454">
+<div id="outline-container-orgebcd39f" class="outline-3">
+<h3 id="orgebcd39f">2020</h3>
+<div class="outline-text-3" id="text-orgebcd39f">
 <ul class="org-ul">
 <li><a href="https://ieeexplore.ieee.org/abstract/document/8809901">T-GCN: A Temporal Graph Convolutional Network for Traffic Prediction</a><br />
 Ling Zhao, Yujiao Song, Chao Zhang, Yu Liu, Pu Wang, Tao Lin, Min Deng, Haifeng Li.<br />
@@ -877,9 +874,9 @@ Honglei Zhuang, Fang Guo, Chao Zhang, Liyuan Liu and Jiawei Han.<br />
 </div>
 </div>
 
-<div id="outline-container-org2676636" class="outline-3">
-<h3 id="org2676636">2019</h3>
-<div class="outline-text-3" id="text-org2676636">
+<div id="outline-container-org968c3e6" class="outline-3">
+<h3 id="org968c3e6">2019</h3>
+<div class="outline-text-3" id="text-org968c3e6">
 <ul class="org-ul">
 <li><a href="https://www.morganclaypool.com/doi/10.2200/S00903ED1V01Y201902DMK017">Multidimensional Mining of Massive Text Data</a><br />
 Chao Zhang, Jiawei Han.<br />
@@ -930,9 +927,9 @@ SIAM International Conference on Data Mining (<b>SDM</b>), 2019</li>
 </div>
 </div>
 
-<div id="outline-container-org8ebe0fb" class="outline-3">
-<h3 id="org8ebe0fb">2018</h3>
-<div class="outline-text-3" id="text-org8ebe0fb">
+<div id="outline-container-orge8e064f" class="outline-3">
+<h3 id="orge8e064f">2018</h3>
+<div class="outline-text-3" id="text-orge8e064f">
 <ul class="org-ul">
 <li><a href="https://www.ideals.illinois.edu/handle/2142/102465">Multi-Dimensional Mining of Unstructured Data with Limited Supervision</a><br />
 Chao Zhang<br />
@@ -1028,9 +1025,9 @@ ACM Transactions on Multimedia Computing, Communications, and Applications (<b>T
 </div>
 </div>
 
-<div id="outline-container-org5d1a61a" class="outline-3">
-<h3 id="org5d1a61a">Earlier</h3>
-<div class="outline-text-3" id="text-org5d1a61a">
+<div id="outline-container-org25a5bd3" class="outline-3">
+<h3 id="org25a5bd3">Earlier</h3>
+<div class="outline-text-3" id="text-org25a5bd3">
 <ul class="org-ul">
 <li><a href="papers/2017-kdd-triovecevent.pdf">TrioVecEvent: Embedding-Based Online Local Event Detection in Geo-Tagged Tweet Streams</a><br />
 Chao Zhang, Liyuan Liu, Dongming Lei, Quan Yuan, Honglei Zhuang, Tim Hanratty, and Jiawei Han.<br />
@@ -1154,9 +1151,9 @@ ACM SIGIR Conference on Research and Development in Information Retrieval (<b>SI
 </div>
 </div>
 
-<div id="outline-container-org2bf92df" class="outline-2">
-<h2 id="org2bf92df">Teaching</h2>
-<div class="outline-text-2" id="text-org2bf92df">
+<div id="outline-container-org7c1694c" class="outline-2">
+<h2 id="org7c1694c">Teaching</h2>
+<div class="outline-text-2" id="text-org7c1694c">
 <ul class="org-ul">
 <li><a href="./course/cx4240.html">CX4240: Introduction to Computational Data Analysis</a></li>
 <li><a href="./course/cse8803.html">CSE8803-DLT: Deep Learning for Text Data</a></li>
@@ -1164,11 +1161,11 @@ ACM SIGIR Conference on Research and Development in Information Retrieval (<b>SI
 </div>
 </div>
 
-<div id="outline-container-org56ad599" class="outline-2">
-<h2 id="org56ad599">Students</h2>
-<div class="outline-text-2" id="text-org56ad599">
+<div id="outline-container-org8e3c1e8" class="outline-2">
+<h2 id="org8e3c1e8">Students</h2>
+<div class="outline-text-2" id="text-org8e3c1e8">
 <p>
-<a id="org6e70e9a"></a>
+<a id="orgf99cd34"></a>
 </p>
 
 <p>
