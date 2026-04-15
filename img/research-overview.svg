@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="Inter, -apple-system, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="methodGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="domainGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2332" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#1a2332" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#1a2332" letter-spacing="0.3">LLM Agents for Open-Ended Discovery</text>
+  <line x1="180" y1="40" x2="420" y2="40" stroke="#2563eb" stroke-width="2" stroke-opacity="0.3"/>
+
+  <!-- Label: Method Foundations -->
+  <text x="300" y="66" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" letter-spacing="1.5" text-transform="uppercase">METHOD FOUNDATIONS</text>
+
+  <!-- Left method box -->
+  <rect x="30" y="80" width="255" height="70" rx="10" fill="url(#methodGrad)" stroke="#2563eb" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="157" y="108" text-anchor="middle" font-size="14" font-weight="700" fill="#1a2332">Diversity-Driven</text>
+  <text x="157" y="126" text-anchor="middle" font-size="14" font-weight="700" fill="#1a2332">Agent Search</text>
+  <text x="157" y="143" text-anchor="middle" font-size="9" fill="#64748b">QD · evolutionary · novelty · A*</text>
+
+  <!-- Right method box -->
+  <rect x="315" y="80" width="255" height="70" rx="10" fill="url(#methodGrad)" stroke="#2563eb" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="442" y="108" text-anchor="middle" font-size="14" font-weight="700" fill="#1a2332">Long-Horizon Agent</text>
+  <text x="442" y="126" text-anchor="middle" font-size="14" font-weight="700" fill="#1a2332">Learning</text>
+  <text x="442" y="143" text-anchor="middle" font-size="9" fill="#64748b">multi-turn RL · self-rewarding · adaptation</text>
+
+  <!-- Converging arrows -->
+  <line x1="157" y1="150" x2="260" y2="195" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="442" y1="150" x2="340" y2="195" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Connector dot -->
+  <circle cx="300" cy="200" r="3" fill="#94a3b8"/>
+
+  <!-- Arrow down -->
+  <line x1="300" y1="203" x2="300" y2="225" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Label: Discovery Proving Grounds -->
+  <text x="300" y="248" text-anchor="middle" font-size="10" font-weight="600" fill="#64748b" letter-spacing="1.5">DISCOVERY PROVING GROUNDS</text>
+
+  <!-- Domain box -->
+  <rect x="60" y="258" width="480" height="68" rx="10" fill="url(#domainGrad)" stroke="#1a2332" stroke-width="1.2" stroke-opacity="0.3" filter="url(#shadow)"/>
+
+  <!-- Sub-labels as pills -->
+  <rect x="100" y="273" width="180" height="30" rx="15" fill="#2563eb" fill-opacity="0.1" stroke="#2563eb" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="190" y="293" text-anchor="middle" font-size="12" font-weight="600" fill="#2563eb">Automating ML Research</text>
+
+  <rect x="310" y="273" width="200" height="30" rx="15" fill="#2563eb" fill-opacity="0.1" stroke="#2563eb" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="410" y="293" text-anchor="middle" font-size="12" font-weight="600" fill="#2563eb">Scientific Discovery</text>
+</svg>
