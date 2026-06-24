@@ -42,7 +42,7 @@
       <p><strong>James Edenfield Associate Professor</strong></p>
       <p><a href="https://cse.gatech.edu">School of Computational Science and Engineering</a><br>
          <a href="https://www.cc.gatech.edu">College of Computing</a>, <a href="https://www.gatech.edu">Georgia Institute of Technology</a></p>
-      <p>I am an Associate Professor and Amazon Scholar at Georgia Tech. I received my Ph.D. from the University of Illinois at Urbana-Champaign, advised by Jiawei Han. My research is on LLM agents for long-horizon problem solving — the search algorithms, post-training methods, and training infrastructure that let agents reason and improve over many-step tasks. We are particularly interested in scientific discovery applications in chemistry and materials science.</p>
+      <p>I am an Associate Professor and Amazon Scholar at Georgia Tech. I received my Ph.D. from the University of Illinois at Urbana-Champaign, advised by Jiawei Han. My research is on LLM agents for long-horizon problem solving — the search algorithms, post-training methods, and agent environments that let agents reason and improve over many-step tasks. We are particularly interested in scientific discovery applications in chemistry and materials science.</p>
       <p class="links">
         <a href="https://scholar.google.com/citations?hl=en&user=CeEO6SIAAAAJ">Google Scholar</a>
         <a href="https://www.linkedin.com/in/chao-zhang-8a246952/">LinkedIn</a>
@@ -53,11 +53,11 @@
 
   <section id="research">
     <h2>Research</h2>
-    <p>We build LLM agents for long-horizon problem solving — agents that reason across many steps, search large action spaces, and improve from sparse or delayed feedback. The core difficulties are combinatorial: too many plausible paths to try exhaustively, credit that is hard to assign over long trajectories, and evaluations that are expensive. We develop inference-time search and planning algorithms, post-training methods that strengthen multi-step reasoning from interaction traces, and training infrastructure that makes the propose–evaluate–improve loop fast enough to iterate on. We apply these methods to scientific discovery in chemistry and materials science, where the search spaces are vast, evaluation is expensive, and feedback arrives over multiple stages.</p>
+    <p>We build LLM agents for long-horizon problem solving — agents that reason across many steps, search large action spaces, and improve from sparse or delayed feedback. The core difficulties are combinatorial: too many plausible paths to try exhaustively, credit that is hard to assign over long trajectories, and evaluations that are expensive. We develop inference-time search and planning algorithms, post-training methods that strengthen multi-step reasoning from interaction traces, and agent environments and harnesses that make the propose–evaluate–improve loop fast enough to iterate on. We apply these methods to scientific discovery in chemistry and materials science, where the search spaces are vast, evaluation is expensive, and feedback arrives over multiple stages.</p>
     <ul class="research-bullets">
-      <li><strong>Search and Planning</strong> — <em>Tree search</em> over compositional action spaces, <em>quality-diversity</em> methods that maintain breadth across candidate pools, and <em>uncertainty-guided selection</em> for routing limited evaluation budgets. <a href="#search-planning">→ details</a></li>
-      <li><strong>Post-Training Algorithms and Data</strong> — <em>Multi-turn RL</em> from end-to-end task outcomes, <em>continual pre-training</em> for core agent capabilities, <em>self-rewarding</em> without external reward models, and preference data constructed from full interaction traces. <a href="#post-training">→ details</a></li>
-      <li><strong>Efficient Training Infrastructure</strong> — <em>Interactive environments</em>, <em>multi-agent evaluation pipelines</em>, and <em>async orchestration</em> that close the train–evaluate–improve loop from days to hours. <a href="#infrastructure">→ details</a></li>
+      <li><strong>Search and Planning</strong> — <em>Tree search</em> over compositional action spaces, <em>quality-diversity</em> methods for maintaining candidate diversity, and <em>uncertainty-guided selection</em> under limited budgets. <a href="#search-planning">→ details</a></li>
+      <li><strong>Post-Training Algorithms and Data</strong> — <em>Multi-turn RL</em> from task outcomes, <em>continual pre-training</em> for agent capabilities, <em>self-rewarding</em> without external rewards, and preference data from interaction traces. <a href="#post-training">→ details</a></li>
+      <li><strong>Agent Environments and Harnesses</strong> — <em>Interactive environments</em>, <em>execution harnesses</em>, and <em>multi-agent evaluation pipelines</em> that close the propose–evaluate–improve loop. <a href="#infrastructure">→ details</a></li>
       <li><strong>AI for Scientific Discovery</strong> — <em>Synthesis planning</em>, <em>evolutionary molecular search</em> under synthesizability constraints, <em>autonomous materials discovery</em>, and <em>uncertainty-aware property prediction</em>. <a href="#scientific-discovery">→ details</a></li>
     </ul>
   </section>
@@ -90,9 +90,9 @@
   </section>
 
   <section id="infrastructure">
-    <h2>Efficient Training Infrastructure</h2>
-    <p>Better algorithms mean nothing if each training run is prohibitively expensive. The bottleneck in agent research is often efficiency: building realistic environments, orchestrating multi-agent pipelines at scale, and iterating fast enough to close the train-evaluate-improve loop within practical compute budgets.</p>
-    <p>We build infrastructure that makes agent training fast and cheap. MLE-Dojo provides interactive environments that capture real ML research workflows. MLE-Smith scales evaluation with automated multi-agent pipelines. Our ongoing work targets asynchronous orchestration, small-model distillation, and cost-efficient evaluation at scale.</p>
+    <h2>Agent Environments and Harnesses</h2>
+    <p>Long-horizon agents need more than algorithms — they need realistic environments to act in, execution harnesses that manage tool calls and trace collection, and evaluation pipelines that measure progress reliably.</p>
+    <p>We build environments and harnesses for studying LLM agents in realistic workflows. MLE-Dojo provides interactive environments that capture real ML research tasks. MLE-Smith scales evaluation with automated multi-agent pipelines. Our ongoing work targets scalable orchestration and cost-efficient evaluation.</p>
     <ul class="paper-list">
       <li><a href="https://arxiv.org/abs/2505.07782">MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine Learning Engineering</a>, NeurIPS'25</li>
       <li><a href="https://arxiv.org/abs/2510.07307">MLE-Smith: Scaling MLE Tasks with Automated Multi-agent Pipeline</a>, ICLR'26</li>
