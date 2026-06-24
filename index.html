@@ -66,7 +66,7 @@
     <h2>Search and Planning</h2>
     <img src="img/toolchain-mcts-vs-astar.png" class="pillar-figure" alt="MCTS vs A* search in ToolChain*: two tree search strategies compared">
     <p>When the space of possible hypotheses, tool sequences, or molecular candidates is combinatorially vast and each evaluation is expensive, naive LLM sampling is hopeless. The core problem is selecting which candidate to evaluate next given a limited budget.</p>
-    <p>We develop inference-time algorithms that let agents search structured action and design spaces: A* tree search over compositional tool chains, evolutionary quality-diversity methods that maintain breadth across chemical space, and uncertainty-guided selection that routes evaluation budget toward the most informative candidates.</p>
+    <p>Our work in this area includes A* tree search over compositional tool chains, evolutionary quality-diversity methods that maintain breadth across chemical space, and uncertainty-guided selection that routes evaluation budget toward the most informative candidates.</p>
     <ul class="paper-list">
       <li><a href="https://arxiv.org/abs/2606.10587">Towards Diverse Scientific Hypothesis Search with Large Language Models</a>, ICML'26</li>
       <li><a href="https://arxiv.org/abs/2310.13227">ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search</a>, ICLR'24</li>
@@ -79,8 +79,7 @@
   <section id="post-training">
     <h2>Post-Training Algorithms and Data</h2>
     <img src="img/long-horizon-learning.svg" class="pillar-figure" alt="Agent training from research trajectories: multi-turn RL, self-rewarding, and continual pre-training methods">
-    <p>Agents improve by updating weights — but standard supervised fine-tuning breaks down when supervision is sparse, delayed, or unavailable. We study training-time methods that learn from complete interaction trajectories rather than single-turn instruction pairs.</p>
-    <p>This includes multi-turn RL from end-to-end task outcomes, continual pre-training that builds core agent capabilities from unlabeled interaction data, self-rewarding methods that eliminate external reward models, and lightweight adaptation that specializes agents to new domains without catastrophic forgetting.</p>
+    <p>Long-horizon agent tasks demand sample-efficient training from multi-step trajectories, where errors compound and feedback is sparse. Recent work includes multi-turn RL from end-to-end task outcomes, on-policy distillation into smaller models to avoid error compounding, continual pre-training that builds core agent capabilities, and self-rewarding methods that eliminate external reward models.</p>
     <ul class="paper-list">
       <li><a href="https://arxiv.org/abs/2605.12913">Revisiting DAgger in the Era of LLM-Agents</a>, 2026</li>
       <li><a href="https://arxiv.org/abs/2505.16421">Webagent-R1: Training Web Agents via End-to-End Multi-Turn Reinforcement Learning</a>, EMNLP'25</li>
