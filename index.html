@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chao Zhang</title>
-  <meta name="description" content="Chao Zhang — Associate Professor at Georgia Tech. Building LLM agents for open-ended discovery.">
+  <meta name="description" content="Chao Zhang — Associate Professor at Georgia Tech. Building LLM agents that conduct research autonomously.">
   <meta property="og:title" content="Chao Zhang — Georgia Tech">
-  <meta property="og:description" content="Building LLM agents for open-ended discovery.">
+  <meta property="og:description" content="Building LLM agents that conduct research autonomously.">
   <meta property="og:image" content="img/chao.jpg">
   <link rel="stylesheet" href="style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -42,7 +42,7 @@
       <p><strong>James Edenfield Associate Professor</strong></p>
       <p><a href="https://cse.gatech.edu">School of Computational Science and Engineering</a><br>
          <a href="https://www.cc.gatech.edu">College of Computing</a>, <a href="https://www.gatech.edu">Georgia Institute of Technology</a></p>
-      <p>I am an Associate Professor (and Amazon Scholar) at Georgia Tech. I received my Ph.D. from the University of Illinois at Urbana-Champaign, advised by Jiawei Han. My research builds LLM agents for open-ended discovery — from automating ML research to scientific discovery.</p>
+      <p>I am an Associate Professor and Amazon Scholar at Georgia Tech. I received my Ph.D. from the University of Illinois at Urbana-Champaign, advised by Jiawei Han. My research is on LLM agents for long-horizon problem solving — the search algorithms, post-training methods, and training infrastructure that let agents reason and improve over many-step tasks. We are particularly interested in scientific discovery applications in chemistry and materials science.</p>
       <p class="links">
         <a href="https://scholar.google.com/citations?hl=en&user=CeEO6SIAAAAJ">Google Scholar</a>
         <a href="https://www.linkedin.com/in/chao-zhang-8a246952/">LinkedIn</a>
@@ -53,21 +53,22 @@
 
   <section id="research">
     <h2>Research</h2>
-    <p>I build LLM agents for open-ended discovery — agents that navigate vast design spaces, form and revise hypotheses, and learn from sparse, delayed, and noisy feedback. My group develops diversity-driven search and long-horizon learning methods, validated on ML research automation and scientific discovery.</p>
+    <p>We build LLM agents for long-horizon problem solving — agents that reason across many steps, search large action spaces, and improve from sparse or delayed feedback. The core difficulties are combinatorial: too many plausible paths to try exhaustively, credit that is hard to assign over long trajectories, and evaluations that are expensive. We develop inference-time search and planning algorithms, post-training methods that strengthen multi-step reasoning from interaction traces, and training infrastructure that makes the propose–evaluate–improve loop fast enough to iterate on. We apply these methods to scientific discovery in chemistry and materials science, where the search spaces are vast, evaluation is expensive, and feedback arrives over multiple stages.</p>
     <ul class="research-bullets">
-      <li><strong>Diversity-Driven Agent Search</strong> — Quality-diversity methods, evolutionary search (A*), novelty-seeking exploration, and uncertainty-guided selection over vast design spaces. <a href="#search-planning">→ details</a></li>
-      <li><strong>Long-Horizon Agent Learning</strong> — Multi-turn RL from sparse, delayed outcomes, continual pre-training for core agent capabilities, self-rewarding without external reward models, black-box model adaptation. <a href="#learning-feedback">→ details</a></li>
-      <li><strong>Automating ML Research</strong> — Training environments and evaluation infrastructure for discovery agents (MLE-Dojo), multi-agent research pipelines (MLE-Smith). <a href="#discovery-domains">→ details</a></li>
-      <li><strong>AI for Scientific Discovery</strong> — Molecular design, materials discovery, LLM-augmented synthesis planning. <a href="#discovery-domains">→ details</a></li>
+      <li><strong>Search and Planning</strong> — <em>Tree search</em> over compositional action spaces, <em>quality-diversity</em> methods that maintain breadth across candidate pools, and <em>uncertainty-guided selection</em> for routing limited evaluation budgets. <a href="#search-planning">→ details</a></li>
+      <li><strong>Post-Training Algorithms and Data</strong> — <em>Multi-turn RL</em> from end-to-end task outcomes, <em>continual pre-training</em> for core agent capabilities, <em>self-rewarding</em> without external reward models, and preference data constructed from full interaction traces. <a href="#post-training">→ details</a></li>
+      <li><strong>Efficient Training Infrastructure</strong> — <em>Interactive environments</em>, <em>multi-agent evaluation pipelines</em>, and <em>async orchestration</em> that close the train–evaluate–improve loop from days to hours. <a href="#infrastructure">→ details</a></li>
+      <li><strong>AI for Scientific Discovery</strong> — <em>Synthesis planning</em>, <em>evolutionary molecular search</em> under synthesizability constraints, <em>autonomous materials discovery</em>, and <em>uncertainty-aware property prediction</em>. <a href="#scientific-discovery">→ details</a></li>
     </ul>
   </section>
 
   <section id="search-planning">
-    <h2>Diversity-Driven Agent Search</h2>
+    <h2>Search and Planning</h2>
     <img src="img/toolchain-mcts-vs-astar.png" class="pillar-figure" alt="MCTS vs A* search in ToolChain*: two tree search strategies compared">
-    <p>Discovery spaces are combinatorially vast: molecular space contains more candidates than atoms in the observable universe; the space of possible ML algorithms, architectures, and training procedures is effectively unbounded. Random exploration is hopeless in these spaces, and naive language model sampling wastes the structured knowledge that could guide search toward promising regions.</p>
-    <p>The core challenge is not just longer reasoning traces; it is choosing which hypotheses, candidates, or experiments to try next when the space is vast and each evaluation is expensive. We combine tree search over compositional action and design spaces, quality-diversity methods that preserve breadth, and uncertainty-guided selection that prioritizes the most informative next evaluations.</p>
+    <p>When the space of possible hypotheses, tool sequences, or molecular candidates is combinatorially vast and each evaluation is expensive, naive LLM sampling is hopeless. The core problem is selecting which candidate to evaluate next given a limited budget.</p>
+    <p>We develop inference-time algorithms that let agents search structured action and design spaces: A* tree search over compositional tool chains, evolutionary quality-diversity methods that maintain breadth across chemical space, and uncertainty-guided selection that routes evaluation budget toward the most informative candidates.</p>
     <ul class="paper-list">
+      <li><a href="https://arxiv.org/abs/2606.10587">Towards Diverse Scientific Hypothesis Search with Large Language Models</a>, ICML'26</li>
       <li><a href="https://arxiv.org/abs/2310.13227">ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search</a>, ICLR'24</li>
       <li><a href="https://arxiv.org/abs/2406.16976">Efficient Evolutionary Search Over Chemical Space with Large Language Models</a>, ICLR'25</li>
       <li><a href="https://arxiv.org/abs/2305.16653">AdaPlanner: Adaptive Planning from Feedback with Language Models</a>, NeurIPS'23</li>
@@ -75,11 +76,11 @@
     </ul>
   </section>
 
-  <section id="learning-feedback">
-    <h2>Long-Horizon Agent Learning</h2>
-    <img src="img/long-horizon-learning.svg" class="pillar-figure" alt="Long-horizon agent learning: discovery trajectory with sparse outcome and intermediate feedback signals flowing into multi-turn RL, self-rewarding, and domain adaptation methods">
-    <p>Discovery agents must learn from feedback that is sparse, delayed, expensive, and noisy. A failed experiment is not wasted — it carries information. Even strong execution-agent recipes break down when supervision comes as sparse, delayed, domain-specific outcomes rather than correct traces or preference labels.</p>
-    <p>We study how discovery agents should update from weak real-world feedback: multi-turn RL from partial outcomes, continual pre-training to strengthen core agent capabilities, and lightweight adaptation methods that specialize models to new domains without overwriting prior capabilities.</p>
+  <section id="post-training">
+    <h2>Post-Training Algorithms and Data</h2>
+    <img src="img/long-horizon-learning.svg" class="pillar-figure" alt="Agent training from research trajectories: multi-turn RL, self-rewarding, and continual pre-training methods">
+    <p>Agents improve by updating weights — but standard supervised fine-tuning breaks down when supervision is sparse, delayed, or unavailable. We study training-time methods that learn from complete interaction trajectories rather than single-turn instruction pairs.</p>
+    <p>This includes multi-turn RL from end-to-end task outcomes, continual pre-training that builds core agent capabilities from unlabeled interaction data, self-rewarding methods that eliminate external reward models, and lightweight adaptation that specializes agents to new domains without catastrophic forgetting.</p>
     <ul class="paper-list">
       <li><a href="https://arxiv.org/abs/2505.16421">Webagent-R1: Training Web Agents via End-to-End Multi-Turn Reinforcement Learning</a>, EMNLP'25</li>
       <li><a href="https://arxiv.org/abs/2502.06589">Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training</a>, NAACL'25</li>
@@ -88,22 +89,25 @@
     </ul>
   </section>
 
-  <section id="discovery-domains">
-    <h2>Application Domains</h2>
-
-    <h3>Automating ML Research</h3>
-    <p>We deploy the full stack — search, learning, and environments — to build ML agents that automate the research cycle from hypothesis to experiment to iteration. MLE-Dojo provides interactive training environments that capture the structure of real ML research workflows. MLE-Smith scales this with automated multi-agent pipelines. These systems enable agents to tackle open-ended research tasks end-to-end.</p>
+  <section id="infrastructure">
+    <h2>Efficient Training Infrastructure</h2>
+    <img src="img/multi-agent-architecture.svg" class="pillar-figure" alt="Multi-agent training infrastructure: environments, pipelines, and orchestration">
+    <p>Better algorithms mean nothing if each training run is prohibitively expensive. The bottleneck in agent research is often efficiency: building realistic environments, orchestrating multi-agent pipelines at scale, and iterating fast enough to close the train-evaluate-improve loop within practical compute budgets.</p>
+    <p>We build infrastructure that makes agent training fast and cheap. MLE-Dojo provides interactive environments that capture real ML research workflows. MLE-Smith scales evaluation with automated multi-agent pipelines. Our ongoing work targets asynchronous orchestration, small-model distillation, and cost-efficient evaluation at scale.</p>
     <ul class="paper-list">
       <li><a href="https://arxiv.org/abs/2505.07782">MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine Learning Engineering</a>, NeurIPS'25</li>
       <li><a href="https://arxiv.org/abs/2510.07307">MLE-Smith: Scaling MLE Tasks with Automated Multi-agent Pipeline</a>, ICLR'26</li>
     </ul>
+  </section>
 
-    <h3>Science: Chemistry, Materials, and Molecular Design</h3>
-    <p>In chemistry and materials science, we navigate molecular and materials design spaces where each candidate requires synthesis and physical characterization. Our work spans LLM-augmented synthesis planning, evolutionary search over chemical space, autonomous materials discovery, and uncertainty-aware molecular property prediction.</p>
+  <section id="scientific-discovery">
+    <h2>AI for Scientific Discovery</h2>
     <div class="science-figures">
       <img src="img/molleo-framework.png" alt="Molecular discovery evolutionary loop with LLM-guided mutation and crossover">
       <img src="img/md.gif" alt="Molecular dynamics simulation">
     </div>
+    <p>We deploy our agent methods to scientific domains where each proposed candidate requires real synthesis and physical characterization — making every evaluation expensive and every failed attempt informative. Current focus: chemistry, materials science, and molecular design.</p>
+    <p>Our work spans LLM-augmented synthesis planning that proposes viable reaction routes, evolutionary search that navigates molecular space under synthesizability constraints, autonomous materials discovery systems, and uncertainty-aware molecular property prediction.</p>
     <ul class="paper-list">
       <li><a href="https://arxiv.org/abs/2505.07027">LLM-Augmented Chemical Synthesis and Design Decision Programs</a>, ICML'25</li>
       <li><a href="https://arxiv.org/abs/2406.16976">Efficient Evolutionary Search Over Chemical Space with Large Language Models</a>, ICLR'25</li>
@@ -169,6 +173,10 @@
     <details open>
       <summary>2026</summary>
       <ul>
+        <li><a href="https://arxiv.org/abs/2606.10587">Towards Diverse Scientific Hypothesis Search with Large Language Models</a><br>
+        Haorui Wang, Parshin Shojaee, Kazem Meidani, Kunyang Sun, José Miguel Hernández-Lobato, Teresa Head-Gordon, Jiajun He, Chandan K. Reddy, Chao Zhang, Yuanqi Du<br>
+        International Conference on Machine Learning (<strong>ICML</strong>), 2026</li>
+
         <li><a href="https://arxiv.org/abs/2510.07307">MLE-Smith: Scaling MLE Tasks with Automated Multi-agent Pipeline</a><br>
         Rushi Qiang, Yuchen Zhuang, Anikait Singh, Percy Liang, Chao Zhang, Sherry Yang, Bo Dai<br>
         International Conference on Learning Representations (<strong>ICLR</strong>), 2026</li>
@@ -898,7 +906,7 @@
   </section>
 
   <footer>
-    &copy; 2026 Chao Zhang &middot; Last updated April 2026
+    &copy; 2026 Chao Zhang &middot; Last updated June 2026
   </footer>
 
 </div>

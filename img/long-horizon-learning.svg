@@ -11,9 +11,6 @@
     </filter>
   </defs>
 
-  <!-- Title -->
-  <text x="190" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#1a2332">Long-Horizon Agent Learning</text>
-
   <!-- Agent box -->
   <rect x="120" y="36" width="140" height="40" rx="8" fill="#2563eb" filter="url(#sh)"/>
   <text x="190" y="55" text-anchor="middle" font-size="12" font-weight="700" fill="white">Discovery Agent</text>
