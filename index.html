@@ -42,7 +42,7 @@
       <p><strong>James Edenfield Associate Professor</strong></p>
       <p><a href="https://cse.gatech.edu">School of Computational Science and Engineering</a><br>
          <a href="https://www.cc.gatech.edu">College of Computing</a>, <a href="https://www.gatech.edu">Georgia Institute of Technology</a></p>
-      <p>I am an Associate Professor at Georgia Tech and an Amazon Scholar. I received my Ph.D. from the University of Illinois at Urbana-Champaign, advised by Jiawei Han. My research makes LLM agents trainable on long-horizon tasks — developing the search algorithms, post-training methods, and evaluation infrastructure that turn agent trial-and-error into measurable improvement. We validate on scientific discovery in chemistry and materials science.</p>
+      <p>I am an Associate Professor at Georgia Tech and an Amazon Scholar. I received my Ph.D. from the University of Illinois at Urbana-Champaign, advised by Jiawei Han. My research builds scalable training and evaluation loops for LLM agents on long-horizon tasks. We develop inference-time search, post-training algorithms, and agent harnesses that turn agent trajectories into better data, faster feedback, and stronger models — applied to scientific discovery.</p>
       <p class="links">
         <a href="https://scholar.google.com/citations?hl=en&user=CeEO6SIAAAAJ">Google Scholar</a>
         <a href="https://www.linkedin.com/in/chao-zhang-8a246952/">LinkedIn</a>
@@ -53,10 +53,10 @@
 
   <section id="research">
     <h2>Research</h2>
-    <p>We study how to make LLM agents improve on long-horizon tasks — tasks with large action spaces, sparse or delayed feedback, expensive evaluations, and compounding errors. Our work spans three technical axes: inference-time search and planning, post-training from agent interaction traces, and environments and harnesses for scalable agent evaluation. We validate primarily on scientific discovery in chemistry and materials science.</p>
+    <p>Long-horizon tasks remain hard for LLM agents: action spaces are large, feedback is sparse or delayed, evaluation is expensive, and errors compound over many steps. Our group works across three axes — inference-time search and planning, post-training algorithms and data from agent trajectories, and scalable environments and harnesses for agent evaluation. We apply these methods to scientific discovery in chemistry and materials science.</p>
     <ul class="research-bullets">
       <li><strong>Search and Planning</strong> — <em>Tree search</em> over compositional action spaces (<a href="https://arxiv.org/abs/2310.13227">ToolChain*</a>, ICLR'24), <em>quality-diversity</em> methods for candidate diversity (<a href="https://arxiv.org/abs/2406.16976">EvoSearch</a>, ICLR'25; <a href="https://arxiv.org/abs/2606.10587">DHS</a>, ICML'26), <em>uncertainty-guided selection</em> (<a href="https://arxiv.org/abs/2503.19168">Attention Chain</a>, COLM'25).</li>
-      <li><strong>Post-Training Algorithms and Data</strong> — <em>Multi-turn RL</em> from task outcomes (<a href="https://arxiv.org/abs/2505.22942">WorkForceAgent-R1</a>, EACL'26), <em>continual pre-training</em> for agent capabilities (<a href="https://arxiv.org/abs/2502.06589">Hephaestus</a>, NAACL'25), <em>self-rewarding</em> without external rewards (<a href="https://arxiv.org/abs/2510.21090">SR-PPO</a>, COLM'25).</li>
+      <li><strong>Post-Training Algorithms and Data</strong> — <em>Multi-turn RL</em> from task outcomes (<a href="https://arxiv.org/abs/2505.22942">WorkForceAgent-R1</a>, EACL'26), <em>on-policy data aggregation</em> for long-horizon agents (<a href="https://arxiv.org/abs/2605.12913">DAgger-LM</a>, 2026), <em>continual pre-training</em> (<a href="https://arxiv.org/abs/2502.06589">Hephaestus</a>, NAACL'25), <em>self-rewarding</em> without external rewards (<a href="https://arxiv.org/abs/2510.21090">SR-PPO</a>, COLM'25).</li>
       <li><strong>Agent Environments and Harnesses</strong> — <em>Interactive environments</em> for ML research workflows (<a href="https://arxiv.org/abs/2505.07782">MLE-Dojo</a>, NeurIPS'25), <em>multi-agent evaluation pipelines</em> (<a href="https://arxiv.org/abs/2510.07307">MLE-Smith</a>, ICLR'26).</li>
       <li><strong>AI for Scientific Discovery</strong> — <em>Synthesis planning</em> (<a href="https://arxiv.org/abs/2505.07027">LLM-Chem</a>, ICML'25), <em>evolutionary molecular search</em> (<a href="https://arxiv.org/abs/2406.16976">EvoSearch</a>, ICLR'25), <em>autonomous materials discovery</em> (<a href="https://arxiv.org/abs/2406.13163">LLMatDesign</a>), <em>uncertainty-aware property prediction</em> (<a href="https://arxiv.org/abs/2306.10060">MUBen</a>, TMLR'24).</li>
     </ul>
@@ -82,6 +82,7 @@
     <p>Agents improve by updating weights — but standard supervised fine-tuning breaks down when supervision is sparse, delayed, or unavailable. We study training-time methods that learn from complete interaction trajectories rather than single-turn instruction pairs.</p>
     <p>This includes multi-turn RL from end-to-end task outcomes, continual pre-training that builds core agent capabilities from unlabeled interaction data, self-rewarding methods that eliminate external reward models, and lightweight adaptation that specializes agents to new domains without catastrophic forgetting.</p>
     <ul class="paper-list">
+      <li><a href="https://arxiv.org/abs/2605.12913">Revisiting DAgger in the Era of LLM-Agents</a>, 2026</li>
       <li><a href="https://arxiv.org/abs/2505.16421">Webagent-R1: Training Web Agents via End-to-End Multi-Turn Reinforcement Learning</a>, EMNLP'25</li>
       <li><a href="https://arxiv.org/abs/2502.06589">Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training</a>, NAACL'25</li>
       <li><a href="https://arxiv.org/abs/2510.21090">Self-Rewarding PPO: Aligning Large Language Models with Demonstrations Only</a>, COLM'25</li>
@@ -183,6 +184,10 @@
         <li><a href="https://arxiv.org/abs/2505.22942">WorkForceAgent-R1: Incentivizing Reasoning Capability in LLM-based Web Agents via Reinforcement Learning</a><br>
         Yuchen Zhuang, Di Jin, Jiaao Chen, Wenqi Shi, Hanrui Wang, Chao Zhang<br>
         Conference of the European Chapter of the Association for Computational Linguistics (<strong>EACL</strong>), 2026</li>
+
+        <li><a href="https://arxiv.org/abs/2605.12913">Revisiting DAgger in the Era of LLM-Agents</a><br>
+        Changhao Li, Rushi Qiang, Jiawei Huang, Chenxiao Gao, Chao Zhang, Niao He, Bo Dai<br>
+        Preprint, 2026</li>
       </ul>
     </details>
 
